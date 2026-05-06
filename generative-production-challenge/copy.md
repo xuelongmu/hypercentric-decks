@@ -1,10 +1,9 @@
 # Generative Production Challenge Deck Copy
 
-Edit the text inside each `copy:` block, then run:
+Edit the text inside each `copy:` block, then run from the repo root:
 
 ```powershell
-cd D:\hypercentric-decks\generative-production-challenge
-node .\sync-copy.mjs
+node .\scripts\sync-copy.mjs generative-production-challenge
 ```
 
 Keep a block on one line unless you intentionally want a line break in the slide. The sync script escapes HTML, so edit this as plain text.

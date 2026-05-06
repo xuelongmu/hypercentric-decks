@@ -6,6 +6,8 @@ This repo contains a static Reveal.js sponsorship deck.
 
 - Primary file: `sponsorship-deck/index.html`
 - Generative Challenge deck: `generative-production-challenge/index.html`
+- Creative AI NYC deck: `creative-ai-nyc/index.html`
+- Editable slide copy lives in each deck's `copy.md`; sync from the repo root with `node .\scripts\sync-copy.mjs --all`.
 - Keep asset paths relative to `sponsorship-deck/index.html`.
 - For Generative Challenge image swaps, optimize/copy source images into `generative-production-challenge/assets/`; slide 9 uses `assets/zerospace-stage-zmx.webp` from `tmp/zerospace-stage-zmx.jpg`.
 - Do not add a build system unless asked.

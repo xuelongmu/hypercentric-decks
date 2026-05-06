@@ -7,6 +7,7 @@ This repository contains static sponsorship presentations for ZeroSpace Labs. Th
 ```text
 sponsorship-deck/
   index.html            # Reveal.js sponsorship deck
+  copy.md               # Editable slide copy source
   assets/               # Venue, event, and ZeroSpace Labs imagery
   bts-pics/             # Behind-the-scenes event photos
   bts-video/            # Local video loops and example deliverables
@@ -15,13 +16,23 @@ sponsorship-deck/
 generative-production-challenge/
   index.html            # Specialized sponsor deck for the Generative Production Challenge
   copy.md               # Editable slide copy source
-  sync-copy.mjs         # Syncs copy.md blocks into index.html
   assets/               # Local imagery copied from the source deck
   bts-pics/             # Event and production stills used in the deck
   bts-video/            # Local video loop used in the deck
   font/                 # Local OCR A Std font
+creative-ai-nyc/
+  index.html            # Specialized sponsor deck for Creative AI NYC
+  copy.md               # Editable slide copy source
+  assets/               # Local imagery copied from the source deck
+  bts-pics/             # Event and production stills used in the deck
+  bts-video/            # Local video loops used in the deck
+  font/                 # Local OCR A Std font
+  logos/                # Sponsor and partner logos
+scripts/
+  sync-copy.mjs         # Syncs deck copy.md blocks into index.html files
 docs/
   ZeroSpace Labs Sponsorship Deck - Updated Outline and Copy.md
+  Creative AI NYC Sponsorship Deck - Outline and Copy.md
 ```
 
 ## Viewing the Deck
@@ -44,21 +55,32 @@ cd generative-production-challenge
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000`.
-
-## Editing Generative Production Challenge Copy
-
-Edit the copy blocks in `generative-production-challenge/copy.md`, then sync them into the Reveal deck:
-
 ```powershell
-cd generative-production-challenge
-node .\sync-copy.mjs
+cd creative-ai-nyc
+python -m http.server 8000
 ```
 
-To verify the Markdown and HTML are already aligned:
+Then open `http://localhost:8000`.
+
+## Editing Deck Copy
+
+Each deck has a `copy.md` file next to its `index.html`. Edit the text inside the `copy:` blocks, then sync from the repo root:
 
 ```powershell
-node .\sync-copy.mjs --check
+node .\scripts\sync-copy.mjs --all
+```
+
+To sync or check one deck:
+
+```powershell
+node .\scripts\sync-copy.mjs creative-ai-nyc
+node .\scripts\sync-copy.mjs sponsorship-deck --check
+```
+
+To verify every deck without writing:
+
+```powershell
+node .\scripts\sync-copy.mjs --all --check
 ```
 
 ## Runtime Notes

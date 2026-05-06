@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #024ad8;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: none;
+      }
+
+      .st3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .st4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st2" width="200" height="200"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="st2" width="200" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="Logo_with_keyline">
+    <g class="st4">
+      <g class="st3">
+        <path class="st1" d="M100,0C44.8,0,0,44.8,0,100s44.8,100,100,100,100-44.8,100-100S155.2,0,100,0"/>
+        <path class="st0" d="M100,192.6c-.9,0-1.8,0-2.8,0l18.9-52h26c4.6,0,9.6-3.5,11.2-7.8l20.5-56.4c3.4-9.2-1.9-16.8-11.8-16.8h-36.1l-30.3,83.3h0l-17.2,47.2C37.7,180.4,7.4,143.7,7.4,100S36,21.7,75,10.8l-17.7,48.7h0l-29.5,81h19.6l25.1-68.8h14.8l-25.1,68.8h19.6l23.4-64.2c3.4-9.2-1.9-16.8-11.7-16.8h-16.5L95.8,7.5c1.4,0,2.8,0,4.2,0,51.1,0,92.6,41.5,92.6,92.6s-41.5,92.6-92.6,92.6M156,71.7h-14.7l-20.7,56.7h14.8l20.7-56.7h0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
