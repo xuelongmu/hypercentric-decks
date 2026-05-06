@@ -56,7 +56,7 @@ The future of production will be tested under real creative pressure.
 
 ### Copy
 <!-- copy:s02.copy -->
-Teams shoot original live-action material, move directly into AI-assisted post, and premiere finished micro-shorts the same night. Sponsors' platforms and tools become part of filmmaking process rather than just logos on a poster.
+Teams shoot original live-action material, move directly into AI-assisted post, and premiere finished micro-shorts the same night. Sponsors' platforms and tools become part of the filmmaking process instead of logos on a poster.
 <!-- /copy -->
 
 
