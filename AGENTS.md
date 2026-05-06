@@ -14,4 +14,4 @@ This repo contains a static Reveal.js sponsorship deck.
 
 ## Verify
 
-For visual edits, open or serve `sponsorship-deck/index.html` and check slides for broken assets, clipped text, and layout regressions.
+These are static Reveal.js HTML decks. For visual edits, serve the target deck, render/check at 1920 x 1080, and check for broken assets, clipped text, low contrast, and layout regressions.

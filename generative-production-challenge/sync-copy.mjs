@@ -30,8 +30,40 @@ function escapeHtml(value) {
     .replace(/"/g, '&quot;');
 }
 
+function isSafeLinkUrl(value) {
+  try {
+    const url = new URL(value);
+    return ['http:', 'https:', 'mailto:'].includes(url.protocol);
+  } catch {
+    return false;
+  }
+}
+
+function renderInline(value) {
+  const linkPattern = /\[([^\]\n]+)\]\(([^)\s]+)\)/g;
+  let rendered = '';
+  let lastIndex = 0;
+
+  for (const match of value.matchAll(linkPattern)) {
+    const [raw, label, href] = match;
+    rendered += escapeHtml(value.slice(lastIndex, match.index));
+
+    if (isSafeLinkUrl(href)) {
+      const target = href.startsWith('mailto:') ? '' : ' target="_blank" rel="noopener"';
+      rendered += `<a class="copy-link" href="${escapeHtml(href)}"${target}>${escapeHtml(label)}</a>`;
+    } else {
+      rendered += escapeHtml(raw);
+    }
+
+    lastIndex = match.index + raw.length;
+  }
+
+  rendered += escapeHtml(value.slice(lastIndex));
+  return rendered;
+}
+
 function renderCopy(value) {
-  return escapeHtml(value).replace(/\r?\n/g, '<br>');
+  return value.split(/\r?\n/).map(renderInline).join('<br>');
 }
 
 const markdown = fs.readFileSync(copyPath, 'utf8');

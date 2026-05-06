@@ -73,6 +73,7 @@
     }
     .reveal strong { color: var(--white); font-weight: 700; }
 
+    /* Live-read body/caption floor: 0.72em, about 20px at the 1920x1080 deck scale. */
     .slide-bg {
       background-position: center;
       background-size: cover;
@@ -112,6 +113,7 @@
       margin-bottom: 0.9em;
       text-transform: uppercase;
     }
+    .eyebrow:empty { display: none; }
     .kicker {
       color: var(--lime);
       font-family: var(--font-condensed);
@@ -215,7 +217,7 @@
       margin-bottom: 1em;
     }
     .body-copy {
-      font-size: 0.68em;
+      font-size: 0.72em;
       max-width: 780px;
     }
     .media-grid {
@@ -243,7 +245,7 @@
       bottom: 0;
       color: var(--white);
       font-family: var(--font-condensed);
-      font-size: 0.55em;
+      font-size: 0.72em;
       left: 0;
       letter-spacing: 0.08em;
       padding: 0.75em 1em;
@@ -272,7 +274,7 @@
     .metric-label {
       color: var(--muted);
       font-family: var(--font-condensed);
-      font-size: 0.55em;
+      font-size: 0.72em;
       letter-spacing: 0.07em;
       margin-top: 0.25em;
       text-transform: uppercase;
@@ -294,7 +296,7 @@
     .time {
       color: var(--quiet);
       font-family: var(--font-brand);
-      font-size: 0.45em;
+      font-size: 0.52em;
       letter-spacing: 0.09em;
       margin-bottom: 0.85em;
       text-transform: uppercase;
@@ -304,17 +306,17 @@
       margin-bottom: 0.55em;
     }
     .time-block p {
-      font-size: 0.54em;
+      font-size: 0.72em;
       line-height: 1.36;
     }
 
     .venue-grid {
       display: grid;
       gap: 0.45em;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      height: 660px;
-      margin-top: 1em;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      height: 670px;
+      margin-top: 0.78em;
     }
     .venue-card {
       overflow: hidden;
@@ -326,7 +328,7 @@
       width: 100%;
     }
     .venue-card::after {
-      background: linear-gradient(0deg, rgba(0,0,0,0.84), rgba(0,0,0,0.05));
+      background: linear-gradient(0deg, rgba(0,0,0,0.66) 0%, rgba(0,0,0,0.24) 38%, rgba(0,0,0,0.02) 78%);
       content: '';
       inset: 0;
       position: absolute;
@@ -335,13 +337,20 @@
       bottom: 0.85em;
       color: var(--white);
       font-family: var(--font-condensed);
-      font-size: 0.62em;
+      font-size: 0.72em;
       left: 0.95em;
       letter-spacing: 0.08em;
       position: absolute;
       right: 0.95em;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.92);
       text-transform: uppercase;
       z-index: 1;
+    }
+    .venue-card.location-card span {
+      font-size: 0.72em;
+    }
+    .venue-card.gowanus-neighborhood img {
+      object-position: center center;
     }
     .venue-card.venue-note {
       align-items: flex-end;
@@ -359,7 +368,7 @@
     }
     .venue-note-body p {
       color: var(--muted);
-      font-size: 0.58em;
+      font-size: 0.72em;
       line-height: 1.35;
     }
     .venue-triptych {
@@ -390,7 +399,7 @@
       bottom: 0.8em;
       color: var(--white);
       font-family: var(--font-condensed);
-      font-size: 0.58em;
+      font-size: 0.72em;
       left: 0.85em;
       letter-spacing: 0.08em;
       position: absolute;
@@ -416,7 +425,7 @@
       font-size: 0.82em;
       margin-bottom: 0.45em;
     }
-    .role p { font-size: 0.56em; }
+    .role p { font-size: 0.72em; }
 
     .workflow {
       align-items: stretch;
@@ -442,12 +451,12 @@
       top: 0.45em;
     }
     .workflow-step h3 {
-      font-size: 0.68em;
+      font-size: 0.72em;
       margin-bottom: 0.45em;
       max-width: 150px;
     }
     .workflow-step p {
-      font-size: 0.47em;
+      font-size: 0.72em;
       line-height: 1.32;
     }
     .content-examples {
@@ -477,14 +486,14 @@
     .tier-table th {
       color: var(--white);
       font-family: var(--font-heading);
-      font-size: 0.58em;
+      font-size: 0.72em;
       letter-spacing: 0.08em;
       padding: 0.75em 0.8em;
       text-transform: uppercase;
     }
     .tier-table td {
       border-top: 1px solid var(--line);
-      font-size: 0.53em;
+      font-size: 0.72em;
       padding: 0.7em 0.8em;
       vertical-align: top;
     }
@@ -548,7 +557,7 @@
     .tier-card.visionary .tier-price { color: var(--cyan); font-size: 1.35em; }
     .tier-desc {
       color: var(--muted);
-      font-size: 0.62em;
+      font-size: 0.72em;
       line-height: 1.38;
     }
 
@@ -575,7 +584,7 @@
       color: var(--lime);
       font-size: 0.72em;
     }
-    .award p { font-size: 0.56em; }
+    .award p { font-size: 0.72em; }
 
     .proof-grid {
       display: grid;
@@ -592,7 +601,7 @@
       font-size: 0.75em;
       margin-bottom: 0.55em;
     }
-    .proof p { font-size: 0.54em; }
+    .proof p { font-size: 0.72em; }
     .proof-slide .slide-content {
       justify-content: flex-start;
     }
@@ -656,7 +665,7 @@
       font-size: 0.74em;
       text-transform: uppercase;
     }
-    .ask-item p { font-size: 0.58em; }
+    .ask-item p { font-size: 0.72em; }
     .contact-card {
       background: rgba(0, 0, 0, 0.62);
       border-left: 4px solid var(--lime);
@@ -667,8 +676,18 @@
       margin-bottom: 0.7em;
     }
     .contact-card p {
-      font-size: 0.62em;
+      font-size: 0.72em;
       line-height: 1.55;
+    }
+    .contact-card a.copy-link {
+      color: var(--white);
+      text-decoration: underline;
+      text-decoration-color: rgba(0, 255, 255, 0.58);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.16em;
+    }
+    .contact-card a.copy-link:hover {
+      color: var(--cyan);
     }
     .bottom-brand {
       bottom: 1.4em;
@@ -693,7 +712,7 @@
             <div class="brand-symbol"></div>
             <div class="brand-text"><!-- copy:s01.brand -->ZeroSpace<!-- /copy --></div>
           </div>
-          <p class="eyebrow"><!-- copy:s01.eyebrow -->Sponsorship Opportunities<!-- /copy --></p>
+          <p class="eyebrow"><!-- copy:s01.eyebrow --><!-- /copy --></p>
           <h1><!-- copy:s01.title -->Generative Production Challenge<!-- /copy --></h1>
           <p class="subtitle"><!-- copy:s01.subtitle -->A one-day live-action and AI post-production sprint designed for the next generation of filmmakers.<!-- /copy --></p>
           <div class="cover-meta">
@@ -719,7 +738,7 @@
         <div class="slide-content">
           <div class="split center">
             <div>
-              <p class="eyebrow"><!-- copy:s03.eyebrow -->Why Now<!-- /copy --></p>
+              <p class="eyebrow"><!-- copy:s03.eyebrow --><!-- /copy --></p>
               <h2><!-- copy:s03.title -->AI tools need proof inside real production.<!-- /copy --></h2>
               <hr class="accent-line cyan">
               <p class="lead"><!-- copy:s03.lead -->The market is crowded with demos. The Challenge creates live, observable adoption: filmmakers using emerging tools while solving the same constraints they face on real sets.<!-- /copy --></p>
@@ -773,7 +792,7 @@
             <div class="time-block">
               <div class="time"><!-- copy:s04.step4.time -->12:00-4:00 PM<!-- /copy --></div>
               <h3><!-- copy:s04.step4.title -->Live-Action Production<!-- /copy --></h3>
-              <p><!-- copy:s04.step4.copy -->Teams rotate through ZeroSpace sets, LED volume, greenscreen, and Mercado Central.<!-- /copy --></p>
+              <p><!-- copy:s04.step4.copy -->Teams rotate through ZeroSpace sets, and exterior locations.<!-- /copy --></p>
             </div>
             <div class="time-block">
               <div class="time"><!-- copy:s04.step5.time -->4:00-7:00 PM<!-- /copy --></div>
@@ -782,7 +801,7 @@
             </div>
             <div class="time-block">
               <div class="time"><!-- copy:s04.step6.time -->7:00-9:00 PM<!-- /copy --></div>
-              <h3><!-- copy:s04.step6.title -->Final Exports + Premiere<!-- /copy --></h3>
+              <h3><!-- copy:s04.step6.title -->Exports + Premiere<!-- /copy --></h3>
               <p><!-- copy:s04.step6.copy -->Final deadline, playback tech check, live screening, judge feedback, sponsor awards, and closing.<!-- /copy --></p>
             </div>
           </div>
@@ -791,43 +810,41 @@
 
       <section>
         <div class="slide-content">
-          <p class="eyebrow"><!-- copy:s05.eyebrow -->Production Playground<!-- /copy --></p>
+          <p class="eyebrow"><!-- copy:s05.eyebrow --><!-- /copy --></p>
           <h2><!-- copy:s05.title -->Premium locations in and around our Brooklyn studio.<!-- /copy --></h2>
           <hr class="accent-line cyan">
           <div class="venue-grid">
             <div class="venue-card">
               <img src="assets/facilities_image4.webp" alt="ZeroSpace LED wall">
-              <span><!-- copy:s05.venue1 -->ZeroSpace LED wall - dynamic virtual environments<!-- /copy --></span>
+              <span><!-- copy:s05.venue1 -->LED wall - virtual environments<!-- /copy --></span>
             </div>
             <div class="venue-card">
               <img src="assets/labs2026_image25.webp" alt="ZeroSpace subway set">
-              <span><!-- copy:s05.venue2 -->Pre-built subway set - immediate cinematic texture<!-- /copy --></span>
-            </div>
-            <div class="venue-card">
-              <img src="assets/facilities_image22.webp" alt="Industrial production space">
-              <span><!-- copy:s05.venue3 -->Industrial spaces - practical production scale<!-- /copy --></span>
+              <span><!-- copy:s05.venue2 -->Subway set - urban texture<!-- /copy --></span>
             </div>
             <div class="venue-card">
               <img src="assets/facilities_image64.webp" alt="Markerless motion capture stage">
-              <span><!-- copy:s05.venue4 -->Markerless motion capture - performance data without suits<!-- /copy --></span>
+              <span><!-- copy:s05.venue3 -->Motion capture - 3D animation<!-- /copy --></span>
             </div>
             <div class="venue-card">
               <img src="assets/green-screen.webp" alt="Green-screen production stage">
-              <span><!-- copy:s05.venue5 -->Green-screen stage - clean plates for generative worlds<!-- /copy --></span>
+              <span><!-- copy:s05.venue4 -->Green screen stage - clean plates<!-- /copy --></span>
             </div>
-            <div class="venue-card venue-triptych">
-              <div class="triptych-frame">
-                <img src="assets/mercado-central.webp" alt="Mercado Central store interior">
-                <span><!-- copy:s05.venue6 -->Mercado Central<!-- /copy --></span>
-              </div>
-              <div class="triptych-frame">
-                <img src="assets/gowanus-canal.webp" alt="Gowanus Canal location">
-                <span><!-- copy:s05.venue7 -->Gowanus Canal<!-- /copy --></span>
-              </div>
-              <div class="triptych-frame">
-                <img src="assets/prospect-park.webp" alt="Prospect Park location">
-                <span><!-- copy:s05.venue8 -->Prospect Park<!-- /copy --></span>
-              </div>
+            <div class="venue-card location-card">
+              <img src="assets/mercado-central.webp" alt="Mercado Central store interior">
+              <span><!-- copy:s05.venue5 -->Mercado Central<!-- /copy --></span>
+            </div>
+            <div class="venue-card location-card">
+              <img src="assets/gowanus-canal.webp" alt="Gowanus Canal location">
+              <span><!-- copy:s05.venue6 -->Gowanus Canal<!-- /copy --></span>
+            </div>
+            <div class="venue-card location-card gowanus-neighborhood">
+              <img src="assets/gowanus-neighborhood.webp" alt="Gowanus neighborhood location">
+              <span><!-- copy:s05.venue7 -->Gowanus Neighborhood<!-- /copy --></span>
+            </div>
+            <div class="venue-card location-card">
+              <img src="assets/prospect-park.webp" alt="Prospect Park location">
+              <span><!-- copy:s05.venue8 -->Prospect Park<!-- /copy --></span>
             </div>
           </div>
         </div>
@@ -835,7 +852,7 @@
 
       <section>
         <div class="slide-content">
-          <p class="eyebrow"><!-- copy:s06.eyebrow -->Participant Strategy<!-- /copy --></p>
+          <p class="eyebrow"><!-- copy:s06.eyebrow --><!-- /copy --></p>
           <h2><!-- copy:s06.title -->Every team blends film craft with AI fluency.<!-- /copy --></h2>
           <hr class="accent-line lime">
           <p class="lead"><!-- copy:s06.lead -->The event is curated so teams do not split into production and post silos. Each roster combines filmmakers, AI artists, and mentors who can keep decisions moving under deadline.<!-- /copy --></p>
@@ -870,8 +887,8 @@
 
       <section>
         <div class="slide-content">
-          <p class="eyebrow"><!-- copy:s07.eyebrow -->Sponsor Integration<!-- /copy --></p>
-          <h2><!-- copy:s07.title -->Sponsors enter the workflow, not just the step-and-repeat.<!-- /copy --></h2>
+          <p class="eyebrow"><!-- copy:s07.eyebrow --><!-- /copy --></p>
+          <h2><!-- copy:s07.title -->Sponsor Integrations<!-- /copy --></h2>
           <hr class="accent-line cyan">
           <div class="workflow">
             <div class="workflow-step" data-step="01">
@@ -906,8 +923,8 @@
 
       <section>
         <div class="slide-content">
-          <p class="eyebrow"><!-- copy:s08.eyebrow -->Sponsorship Tiers<!-- /copy --></p>
-          <h2><!-- copy:s08.title -->Designed around sponsor objectives.<!-- /copy --></h2>
+          <p class="eyebrow"><!-- copy:s08.eyebrow --><!-- /copy --></p>
+          <h2><!-- copy:s08.title -->Sponsorship Tiers<!-- /copy --></h2>
           <hr class="accent-line lime">
           <div class="tier-stack">
             <div class="tier-card visionary">
@@ -947,8 +964,8 @@
           <img src="assets/zerospace-stage-zmx.webp" alt="">
         </div>
         <div class="slide-content">
-          <p class="eyebrow"><!-- copy:s09.eyebrow -->Why ZeroSpace<!-- /copy --></p>
-          <h2><!-- copy:s09.title -->Built for fast, visible production.<!-- /copy --></h2>
+          <p class="eyebrow"><!-- copy:s09.eyebrow --><!-- /copy --></p>
+          <h2><!-- copy:s09.title -->A venue built for fast, visible production.<!-- /copy --></h2>
           <hr class="accent-line lime">
           <p class="lead"><!-- copy:s09.lead -->ZeroSpace gives the Challenge a controlled production base, a cinematic stage, and a sponsor-ready content pipeline.<!-- /copy --></p>
           <div class="proof-grid">
@@ -1000,7 +1017,7 @@
             </div>
             <div class="contact-card">
               <h3><!-- copy:s10.contact.title -->Start the conversation<!-- /copy --></h3>
-              <p><strong><!-- copy:s10.contact.name -->Xuelong Mu<!-- /copy --></strong><br><span class="contact-line"><!-- copy:s10.contact.role -->Technical Director<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.email -->xuelong.mu@zerospace.co<!-- /copy --></span><br><br><span class="contact-line"><!-- copy:s10.contact.website -->zerospace.co<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.instagram -->@zerospace<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.instagram_labs -->@zerospacelabs<!-- /copy --></span></p>
+              <p><strong><!-- copy:s10.contact.name -->Xuelong Mu<!-- /copy --></strong><br><span class="contact-line"><!-- copy:s10.contact.role -->Technical Director<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.email -->xuelong.mu@zerospace.co<!-- /copy --></span><br><br><span class="contact-line"><!-- copy:s10.contact.website --><a class="copy-link" href="https://zerospace.co" target="_blank" rel="noopener">zerospace.co</a><!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.instagram --><a class="copy-link" href="https://instagram.com/zerospace" target="_blank" rel="noopener">@zerospace</a><!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.instagram_labs --><a class="copy-link" href="https://instagram.com/zerospacelabs" target="_blank" rel="noopener">@zerospacelabs</a><!-- /copy --></span></p>
             </div>
           </div>
           <div class="bottom-brand"><!-- copy:s10.bottom_brand -->Generative Production Challenge<!-- /copy --></div>

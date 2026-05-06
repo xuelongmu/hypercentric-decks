@@ -18,7 +18,7 @@ ZeroSpace
 
 ### Eyebrow
 <!-- copy:s01.eyebrow -->
-Sponsorship Opportunities
+
 <!-- /copy -->
 
 ### Title
@@ -64,7 +64,7 @@ Teams shoot original live-action material, move directly into AI-assisted post, 
 
 ### Eyebrow
 <!-- copy:s03.eyebrow -->
-Why Now
+
 <!-- /copy -->
 
 ### Title
@@ -182,7 +182,7 @@ Live-Action Production
 
 ### Step 4 Copy
 <!-- copy:s04.step4.copy -->
-Teams rotate through ZeroSpace sets, LED volume, greenscreen, and Mercado Central.
+Teams rotate through ZeroSpace sets, and exterior locations.
 <!-- /copy -->
 
 ### Step 5 Time
@@ -207,7 +207,7 @@ Teams edit, generate VFX, build sound, grade, and render with sponsor tools and 
 
 ### Step 6 Title
 <!-- copy:s04.step6.title -->
-Final Exports + Premiere
+Exports + Premiere
 <!-- /copy -->
 
 ### Step 6 Copy
@@ -220,7 +220,7 @@ Final deadline, playback tech check, live screening, judge feedback, sponsor awa
 
 ### Eyebrow
 <!-- copy:s05.eyebrow -->
-Production Playground
+
 <!-- /copy -->
 
 ### Title
@@ -230,37 +230,37 @@ Premium locations in and around our Brooklyn studio.
 
 ### Venue 1
 <!-- copy:s05.venue1 -->
-ZeroSpace LED wall - dynamic virtual environments
+LED wall - virtual environments
 <!-- /copy -->
 
 ### Venue 2
 <!-- copy:s05.venue2 -->
-Pre-built subway set - immediate cinematic texture
+Subway set - urban texture
 <!-- /copy -->
 
 ### Venue 3
 <!-- copy:s05.venue3 -->
-Industrial spaces - practical production scale
+Motion capture - 3D animation
 <!-- /copy -->
 
 ### Venue 4
 <!-- copy:s05.venue4 -->
-Markerless motion capture - performance data without suits
+Green screen stage - clean plates
 <!-- /copy -->
 
 ### Venue 5
 <!-- copy:s05.venue5 -->
-Green-screen stage - clean plates for generative worlds
+Mercado Central
 <!-- /copy -->
 
 ### Venue 6
 <!-- copy:s05.venue6 -->
-Mercado Central
+Gowanus Canal
 <!-- /copy -->
 
 ### Venue 7
 <!-- copy:s05.venue7 -->
-Gowanus Canal
+Gowanus Neighborhood
 <!-- /copy -->
 
 ### Venue 8
@@ -273,7 +273,7 @@ Prospect Park
 
 ### Eyebrow
 <!-- copy:s06.eyebrow -->
-Participant Strategy
+
 <!-- /copy -->
 
 ### Title
@@ -351,12 +351,12 @@ Guide teams through production choices, tool decisions, post workflows, and dead
 
 ### Eyebrow
 <!-- copy:s07.eyebrow -->
-Sponsor Integration
+
 <!-- /copy -->
 
 ### Title
 <!-- copy:s07.title -->
-Sponsors enter the workflow, not just the step-and-repeat.
+Sponsor Integrations
 <!-- /copy -->
 
 Alternative title options:
@@ -425,12 +425,12 @@ BTS / interview / event recap format
 
 ### Eyebrow
 <!-- copy:s08.eyebrow -->
-Sponsorship Tiers
+
 <!-- /copy -->
 
 ### Title
 <!-- copy:s08.title -->
-Designed around sponsor objectives.
+Sponsorship Tiers
 <!-- /copy -->
 
 ### Tier 1 Name
@@ -498,12 +498,12 @@ Goods, services, gear, food, space, or prizes exchanged for official partner nam
 
 ### Eyebrow
 <!-- copy:s09.eyebrow -->
-Why ZeroSpace
+
 <!-- /copy -->
 
 ### Title
 <!-- copy:s09.title -->
-Built for fast, visible production.
+A venue built for fast, visible production.
 <!-- /copy -->
 
 ### Lead
@@ -626,17 +626,17 @@ xuelong.mu@zerospace.co
 
 ### Contact Website
 <!-- copy:s10.contact.website -->
-zerospace.co
+[zerospace.co](https://zerospace.co)
 <!-- /copy -->
 
 ### Contact Instagram
 <!-- copy:s10.contact.instagram -->
-@zerospace
+[@zerospace](https://instagram.com/zerospace)
 <!-- /copy -->
 
 ### Contact Instagram Labs
 <!-- copy:s10.contact.instagram_labs -->
-@zerospacelabs
+[@zerospacelabs](https://instagram.com/zerospacelabs)
 <!-- /copy -->
 
 ### Bottom Brand
