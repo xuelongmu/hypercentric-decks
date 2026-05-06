@@ -34,3 +34,4 @@ coverage/
 # Local export/output folders for generated deck artifacts
 out/
 exports/
+tmp/
