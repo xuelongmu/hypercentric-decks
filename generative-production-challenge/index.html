@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generative Production Challenge - Sponsorship Opportunities</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&family=Lato:wght@300&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'OCR A Std';
+      src: url('font/OCR A Std Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --font-brand: 'OCR A Std', monospace;
+      --font-heading: 'Oswald', sans-serif;
+      --font-body: 'Roboto', sans-serif;
+      --font-condensed: 'Roboto Condensed', sans-serif;
+      --font-light: 'Lato', sans-serif;
+      --bg-dark: #181818;
+      --bg-black: #000;
+      --panel: #242424;
+      --panel-soft: #2d2d2d;
+      --line: #3d3d3d;
+      --cyan: #00ffff;
+      --lime: #d8ff32;
+      --white: #fff;
+      --muted: #d0d0d0;
+      --quiet: #8b8b8b;
+    }
+
+    .reveal-viewport { background: var(--bg-dark); }
+    .reveal {
+      font-family: var(--font-body);
+      color: var(--white);
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .reveal .slides section {
+      background: var(--bg-dark);
+      box-sizing: border-box;
+      height: 100%;
+      padding: 0;
+      text-align: left;
+      width: 100%;
+    }
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4 {
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      line-height: 1.05;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .reveal p,
+    .reveal li,
+    .reveal td,
+    .reveal th {
+      color: var(--muted);
+      font-family: var(--font-body);
+      font-weight: 300;
+      line-height: 1.42;
+      margin: 0;
+    }
+    .reveal strong { color: var(--white); font-weight: 700; }
+
+    .slide-bg {
+      background-position: center;
+      background-size: cover;
+      inset: 0;
+      position: absolute;
+      z-index: 0;
+    }
+    .slide-bg::after {
+      background: rgba(0, 0, 0, 0.62);
+      content: '';
+      inset: 0;
+      position: absolute;
+    }
+    .slide-bg.heavy::after { background: rgba(0, 0, 0, 0.74); }
+    .slide-content {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 2.65em 3.35em;
+      position: relative;
+      z-index: 1;
+    }
+    .accent-line {
+      border: 0;
+      height: 3px;
+      margin: 0.55em 0 1.0em;
+      width: 90px;
+    }
+    .accent-line.cyan { background: var(--cyan); }
+    .accent-line.lime { background: var(--lime); }
+    .eyebrow {
+      color: var(--cyan);
+      font-family: var(--font-brand);
+      font-size: 0.58em;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.9em;
+      text-transform: uppercase;
+    }
+    .kicker {
+      color: var(--lime);
+      font-family: var(--font-condensed);
+      font-size: 0.74em;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .muted { color: var(--quiet) !important; }
+
+    .slide-cover .slide-content {
+      align-items: flex-start;
+      justify-content: center;
+      padding-left: 4.1em;
+      padding-right: 4.1em;
+    }
+    .brand-lockup {
+      align-items: center;
+      display: flex;
+      gap: 0.75em;
+      left: 3em;
+      position: absolute;
+      top: 2.1em;
+    }
+    .brand-symbol {
+      background: url('assets/ZeroSpace_Labs_Symbol_Transparent.webp') center/contain no-repeat;
+      height: 58px;
+      width: 58px;
+    }
+    .brand-text {
+      color: var(--white);
+      font-family: var(--font-brand);
+      font-size: 0.54em;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .slide-cover h1 {
+      font-size: 3.25em;
+      max-width: 980px;
+    }
+    .slide-cover .subtitle {
+      color: var(--white);
+      font-family: var(--font-light);
+      font-size: 0.95em;
+      font-weight: 400;
+      margin-top: 0.25em;
+      max-width: 870px;
+    }
+    .cover-meta {
+      bottom: 2.2em;
+      color: var(--muted);
+      display: flex;
+      font-family: var(--font-condensed);
+      font-size: 0.62em;
+      gap: 2em;
+      letter-spacing: 0.08em;
+      position: absolute;
+      text-transform: uppercase;
+    }
+
+    .statement-slide .slide-content {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .statement {
+      font-family: var(--font-heading);
+      font-size: 2.25em;
+      line-height: 1.12;
+      max-width: 1160px;
+      text-transform: uppercase;
+    }
+    .statement-copy {
+      color: var(--muted);
+      font-size: 0.82em;
+      margin-top: 1.2em;
+      max-width: 980px;
+    }
+
+    .split {
+      display: grid;
+      gap: 2.4em;
+      grid-template-columns: 0.9fr 1.1fr;
+      height: 100%;
+    }
+    .split.center { align-items: center; }
+    .split h2,
+    .slide-title h2 {
+      font-size: 1.65em;
+    }
+    .lead {
+      color: var(--white);
+      font-family: var(--font-light);
+      font-size: 1.0em;
+      margin-bottom: 1em;
+    }
+    .body-copy {
+      font-size: 0.68em;
+      max-width: 780px;
+    }
+    .media-grid {
+      display: grid;
+      gap: 6px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 100%;
+      min-height: 0;
+    }
+    .media-grid img,
+    .media-grid video,
+    .full-image img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    .full-image {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .image-caption {
+      background: rgba(0, 0, 0, 0.72);
+      bottom: 0;
+      color: var(--white);
+      font-family: var(--font-condensed);
+      font-size: 0.55em;
+      left: 0;
+      letter-spacing: 0.08em;
+      padding: 0.75em 1em;
+      position: absolute;
+      right: 0;
+      text-transform: uppercase;
+    }
+
+    .metric-row {
+      display: grid;
+      gap: 1em;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 1.3em;
+    }
+    .metric {
+      border-left: 3px solid var(--cyan);
+      padding-left: 0.65em;
+    }
+    .metric:nth-child(2) { border-color: var(--lime); }
+    .metric-num {
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 1.35em;
+      line-height: 1;
+    }
+    .metric-label {
+      color: var(--muted);
+      font-family: var(--font-condensed);
+      font-size: 0.55em;
+      letter-spacing: 0.07em;
+      margin-top: 0.25em;
+      text-transform: uppercase;
+    }
+
+    .schedule {
+      display: grid;
+      gap: 0.7em;
+      grid-template-columns: repeat(5, 1fr);
+      margin-top: 1.3em;
+    }
+    .time-block {
+      background: linear-gradient(180deg, #2a2a2a 0%, #1f1f1f 100%);
+      border-top: 3px solid var(--cyan);
+      min-height: 360px;
+      padding: 1em 0.9em;
+    }
+    .time-block:nth-child(even) { border-top-color: var(--lime); }
+    .time {
+      color: var(--quiet);
+      font-family: var(--font-brand);
+      font-size: 0.45em;
+      letter-spacing: 0.09em;
+      margin-bottom: 0.85em;
+      text-transform: uppercase;
+    }
+    .time-block h3 {
+      font-size: 0.86em;
+      margin-bottom: 0.55em;
+    }
+    .time-block p {
+      font-size: 0.54em;
+      line-height: 1.36;
+    }
+
+    .venue-grid {
+      display: grid;
+      gap: 0.45em;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      height: 660px;
+      margin-top: 1em;
+    }
+    .venue-card {
+      overflow: hidden;
+      position: relative;
+    }
+    .venue-card img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    .venue-card::after {
+      background: linear-gradient(0deg, rgba(0,0,0,0.84), rgba(0,0,0,0.05));
+      content: '';
+      inset: 0;
+      position: absolute;
+    }
+    .venue-card span {
+      bottom: 0.85em;
+      color: var(--white);
+      font-family: var(--font-condensed);
+      font-size: 0.62em;
+      left: 0.95em;
+      letter-spacing: 0.08em;
+      position: absolute;
+      right: 0.95em;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+    .venue-card.venue-note {
+      align-items: flex-end;
+      background:
+        linear-gradient(135deg, rgba(0,255,255,0.15), rgba(216,255,50,0.18)),
+        #202020;
+      display: flex;
+      padding: 1em;
+    }
+    .venue-card.venue-note::after { display: none; }
+    .venue-note-body h3 {
+      color: var(--white);
+      font-size: 1.0em;
+      margin-bottom: 0.45em;
+    }
+    .venue-note-body p {
+      color: var(--muted);
+      font-size: 0.58em;
+      line-height: 1.35;
+    }
+    .venue-triptych {
+      background: #202020;
+      display: grid;
+      gap: 5px;
+      grid-column: span 2;
+      grid-template-columns: repeat(3, 1fr);
+      overflow: hidden;
+    }
+    .venue-triptych::after { display: none; }
+    .triptych-frame {
+      overflow: hidden;
+      position: relative;
+    }
+    .triptych-frame img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    .triptych-frame::after {
+      background: linear-gradient(0deg, rgba(0,0,0,0.78), rgba(0,0,0,0.05));
+      content: '';
+      inset: 0;
+      position: absolute;
+    }
+    .triptych-frame span {
+      bottom: 0.8em;
+      color: var(--white);
+      font-family: var(--font-condensed);
+      font-size: 0.58em;
+      left: 0.85em;
+      letter-spacing: 0.08em;
+      position: absolute;
+      right: 0.85em;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+
+    .role-grid {
+      display: grid;
+      gap: 0.75em;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 1.4em;
+    }
+    .role {
+      background: var(--panel);
+      border-left: 3px solid var(--cyan);
+      min-height: 170px;
+      padding: 0.9em;
+    }
+    .role:nth-child(even) { border-color: var(--lime); }
+    .role h3 {
+      font-size: 0.82em;
+      margin-bottom: 0.45em;
+    }
+    .role p { font-size: 0.56em; }
+
+    .workflow {
+      align-items: stretch;
+      display: grid;
+      gap: 0.75em;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 1.35em;
+    }
+    .workflow-step {
+      background: #222;
+      border: 1px solid var(--line);
+      min-height: 330px;
+      padding: 1em;
+      position: relative;
+    }
+    .workflow-step::before {
+      color: var(--lime);
+      content: attr(data-step);
+      font-family: var(--font-heading);
+      font-size: 1.3em;
+      position: absolute;
+      right: 0.65em;
+      top: 0.45em;
+    }
+    .workflow-step h3 {
+      font-size: 0.78em;
+      margin-bottom: 0.7em;
+      max-width: 170px;
+    }
+    .workflow-step p { font-size: 0.55em; }
+    .content-examples {
+      display: grid;
+      gap: 0.55em;
+      grid-template-columns: repeat(2, 1fr);
+      height: 250px;
+      margin-top: 0.85em;
+    }
+    .content-example {
+      overflow: hidden;
+      position: relative;
+    }
+    .content-example video {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .reveal .tier-table {
+      border-collapse: collapse;
+      margin: 1em 0 0;
+      table-layout: fixed;
+      width: 100%;
+    }
+    .tier-table th {
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 0.58em;
+      letter-spacing: 0.08em;
+      padding: 0.75em 0.8em;
+      text-transform: uppercase;
+    }
+    .tier-table td {
+      border-top: 1px solid var(--line);
+      font-size: 0.53em;
+      padding: 0.7em 0.8em;
+      vertical-align: top;
+    }
+    .tier-table th:nth-child(2),
+    .tier-table td:nth-child(2) { color: var(--cyan); }
+    .tier-table th:nth-child(3),
+    .tier-table td:nth-child(3) { color: var(--lime); }
+    .tier-table .price {
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 1.45em;
+      line-height: 1;
+    }
+    .tier-table .tier-note {
+      color: var(--muted);
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.86em;
+      line-height: 1.35;
+      margin-top: 0.35em;
+    }
+    .tier-stack {
+      display: grid;
+      gap: 0.62em;
+      grid-template-rows: 1.15fr repeat(3, 0.95fr);
+      margin-top: 0.95em;
+    }
+    .tier-card {
+      align-items: center;
+      background: #222;
+      border-left: 4px solid var(--cyan);
+      display: grid;
+      gap: 1em;
+      grid-template-columns: 260px 1fr;
+      min-height: 116px;
+      padding: 0.82em 1em;
+    }
+    .tier-card.visionary {
+      background: linear-gradient(90deg, rgba(0,255,255,0.18), rgba(34,34,34,1));
+      border-left-color: var(--cyan);
+      min-height: 146px;
+    }
+    .tier-card.innovator { border-left-color: var(--lime); }
+    .tier-card.creator { border-left-color: var(--cyan); }
+    .tier-card.inkind { border-left-color: var(--lime); }
+    .tier-name {
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 0.92em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .tier-price {
+      color: var(--lime);
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 1.15em;
+      line-height: 1;
+      margin-top: 0.18em;
+    }
+    .tier-card.visionary .tier-price { color: var(--cyan); font-size: 1.35em; }
+    .tier-desc {
+      color: var(--muted);
+      font-size: 0.62em;
+      line-height: 1.38;
+    }
+
+    .award-grid {
+      display: grid;
+      gap: 0.8em;
+      grid-template-columns: 1.1fr 0.9fr;
+      height: 100%;
+      margin-top: 0.8em;
+    }
+    .award-list {
+      display: grid;
+      gap: 0.6em;
+    }
+    .award {
+      align-items: baseline;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 0.9em;
+      grid-template-columns: 0.55fr 1fr;
+      padding: 0.52em 0;
+    }
+    .award h3 {
+      color: var(--lime);
+      font-size: 0.72em;
+    }
+    .award p { font-size: 0.56em; }
+
+    .proof-grid {
+      display: grid;
+      gap: 1em;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 1.2em;
+    }
+    .proof {
+      border-top: 3px solid var(--cyan);
+      padding-top: 0.8em;
+    }
+    .proof:nth-child(even) { border-color: var(--lime); }
+    .proof h3 {
+      font-size: 0.75em;
+      margin-bottom: 0.55em;
+    }
+    .proof p { font-size: 0.54em; }
+
+    .ask-layout {
+      align-items: center;
+      display: grid;
+      gap: 2.2em;
+      grid-template-columns: 1.1fr 0.9fr;
+      height: 100%;
+    }
+    .ask-list {
+      display: grid;
+      gap: 0.7em;
+      margin-top: 1.2em;
+    }
+    .ask-item {
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      padding-bottom: 0.55em;
+    }
+    .ask-item span {
+      color: var(--cyan);
+      font-family: var(--font-heading);
+      font-size: 0.74em;
+      text-transform: uppercase;
+    }
+    .ask-item p { font-size: 0.58em; }
+    .contact-card {
+      background: rgba(0, 0, 0, 0.62);
+      border-left: 4px solid var(--lime);
+      padding: 1.2em;
+    }
+    .contact-card h3 {
+      font-size: 0.92em;
+      margin-bottom: 0.7em;
+    }
+    .contact-card p {
+      font-size: 0.62em;
+      line-height: 1.55;
+    }
+    .bottom-brand {
+      bottom: 1.4em;
+      color: var(--quiet);
+      font-family: var(--font-brand);
+      font-size: 0.43em;
+      left: 3.3em;
+      letter-spacing: 0.16em;
+      position: absolute;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section class="slide-cover">
+        <div class="slide-bg heavy" style="background-image: url('bts-pics/Zerospace_StudioA.webp');"></div>
+        <div class="slide-content">
+          <div class="brand-lockup">
+            <div class="brand-symbol"></div>
+            <div class="brand-text"><!-- copy:s01.brand -->ZeroSpace Labs<!-- /copy --></div>
+          </div>
+          <p class="eyebrow"><!-- copy:s01.eyebrow -->Sponsorship Opportunities<!-- /copy --></p>
+          <h1><!-- copy:s01.title -->Generative Production Challenge<!-- /copy --></h1>
+          <p class="subtitle"><!-- copy:s01.subtitle -->A one-day live-action and AI post-production sprint designed for the next generation of filmmakers.<!-- /copy --></p>
+          <div class="cover-meta">
+            <span><!-- copy:s01.meta.location -->Brooklyn, NY<!-- /copy --></span>
+            <span><!-- copy:s01.meta.format -->Live shoot + AI post + premiere<!-- /copy --></span>
+            <span><!-- copy:s01.meta.presented -->&lt;!-- Presented by ZeroSpace Labs --&gt;<!-- /copy --></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="statement-slide">
+        <div class="slide-bg heavy" style="background-image: url('assets/labs2026_image34.webp');"></div>
+        <div class="slide-content">
+          <div class="statement"><!-- copy:s02.statement -->The future of production will be tested under real creative pressure.<!-- /copy --></div>
+          <hr class="accent-line lime">
+          <p class="statement-copy"><!-- copy:s02.copy -->Teams shoot original live-action material, move directly into AI-assisted post, and premiere finished micro-shorts the same night. Sponsors' platforms and tools become part of filmmaking process rather than just logos on a poster.<!-- /copy --></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="split center">
+            <div>
+              <p class="eyebrow"><!-- copy:s03.eyebrow -->Why Now<!-- /copy --></p>
+              <h2><!-- copy:s03.title -->AI tools need proof inside real production.<!-- /copy --></h2>
+              <hr class="accent-line cyan">
+              <p class="lead"><!-- copy:s03.lead -->The market is crowded with demos. The Challenge creates live, observable adoption: filmmakers using emerging tools while solving the same constraints they face on real sets.<!-- /copy --></p>
+              <p class="body-copy"><!-- copy:s03.body -->Sponsors gain access to filmmakers, artists, technologists, and the finished artifacts that prove what their products can enable.<!-- /copy --></p>
+              <div class="metric-row">
+                <div class="metric">
+                  <div class="metric-num"><!-- copy:s03.metric1.number -->1 day<!-- /copy --></div>
+                  <div class="metric-label"><!-- copy:s03.metric1.label -->from concept to premiere<!-- /copy --></div>
+                </div>
+                <div class="metric">
+                  <div class="metric-num"><!-- copy:s03.metric2.number -->3 stages<!-- /copy --></div>
+                  <div class="metric-label"><!-- copy:s03.metric2.label -->shoot, post, screen<!-- /copy --></div>
+                </div>
+                <div class="metric">
+                  <div class="metric-num"><!-- copy:s03.metric3.number -->10+<!-- /copy --></div>
+                  <div class="metric-label"><!-- copy:s03.metric3.label -->creator teams<!-- /copy --></div>
+                </div>
+              </div>
+            </div>
+            <div class="media-grid">
+              <img src="bts-pics/DSCF1413.webp" alt="Production team on set">
+              <img src="bts-pics/DSCF1518.webp" alt="Creative production workspace">
+              <img src="bts-pics/DSCF1524.webp" alt="Filmmaking sprint">
+              <img src="bts-pics/IMG_2155.webp" alt="Sponsor demo area">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <p class="eyebrow"><!-- copy:s04.eyebrow -->&lt;!-- One-Day Format --&gt;<!-- /copy --></p>
+          <h2><!-- copy:s04.title -->From kickoff to premiere in a single sprint.<!-- /copy --></h2>
+          <hr class="accent-line lime">
+          <div class="schedule">
+            <div class="time-block">
+              <div class="time"><!-- copy:s04.step1.time -->9:00-10:00 AM<!-- /copy --></div>
+              <h3><!-- copy:s04.step1.title -->Arrival + Kickoff<!-- /copy --></h3>
+              <p><!-- copy:s04.step1.copy -->Teams finalize rosters, receive the theme, and hear the technical and safety brief.<!-- /copy --></p>
+            </div>
+            <div class="time-block">
+              <div class="time"><!-- copy:s04.step2.time -->10:00 AM-3:00 PM<!-- /copy --></div>
+              <h3><!-- copy:s04.step2.title -->Live-Action Production<!-- /copy --></h3>
+              <p><!-- copy:s04.step2.copy -->Teams rotate through ZeroSpace sets, LED volume, greenscreen, and Mercado Central.<!-- /copy --></p>
+            </div>
+            <div class="time-block">
+              <div class="time"><!-- copy:s04.step3.time -->3:00-7:00 PM<!-- /copy --></div>
+              <h3><!-- copy:s04.step3.title -->AI Post Sprint<!-- /copy --></h3>
+              <p><!-- copy:s04.step3.copy -->Teams edit, generate VFX, build sound, grade, and render with sponsor tools and mentors nearby.<!-- /copy --></p>
+            </div>
+            <div class="time-block">
+              <div class="time"><!-- copy:s04.step4.time -->7:00-7:30 PM<!-- /copy --></div>
+              <h3><!-- copy:s04.step4.title -->Submissions<!-- /copy --></h3>
+              <p><!-- copy:s04.step4.copy -->Hard deadline, final exports, playback tech check, and screening order lock.<!-- /copy --></p>
+            </div>
+            <div class="time-block">
+              <div class="time"><!-- copy:s04.step5.time -->7:30-9:00 PM<!-- /copy --></div>
+              <h3><!-- copy:s04.step5.title -->Premiere + Awards<!-- /copy --></h3>
+              <p><!-- copy:s04.step5.copy -->Live screening, judge feedback, sponsor-presented awards, and closing celebration.<!-- /copy --></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <p class="eyebrow"><!-- copy:s05.eyebrow -->Production Playground<!-- /copy --></p>
+          <h2><!-- copy:s05.title -->Premium locations in and around our Brooklyn studio.<!-- /copy --></h2>
+          <hr class="accent-line cyan">
+          <div class="venue-grid">
+            <div class="venue-card">
+              <img src="assets/facilities_image4.webp" alt="ZeroSpace LED wall">
+              <span><!-- copy:s05.venue1 -->ZeroSpace LED wall - dynamic virtual environments<!-- /copy --></span>
+            </div>
+            <div class="venue-card">
+              <img src="assets/labs2026_image25.webp" alt="ZeroSpace subway set">
+              <span><!-- copy:s05.venue2 -->Pre-built subway set - immediate cinematic texture<!-- /copy --></span>
+            </div>
+            <div class="venue-card">
+              <img src="assets/facilities_image22.webp" alt="Industrial production space">
+              <span><!-- copy:s05.venue3 -->Industrial spaces - practical production scale<!-- /copy --></span>
+            </div>
+            <div class="venue-card">
+              <img src="assets/facilities_image64.webp" alt="Markerless motion capture stage">
+              <span><!-- copy:s05.venue4 -->Markerless motion capture - performance data without suits<!-- /copy --></span>
+            </div>
+            <div class="venue-card">
+              <img src="assets/green-screen.webp" alt="Green-screen production stage">
+              <span><!-- copy:s05.venue5 -->Green-screen stage - clean plates for generative worlds<!-- /copy --></span>
+            </div>
+            <div class="venue-card venue-triptych">
+              <div class="triptych-frame">
+                <img src="assets/mercado-central.webp" alt="Mercado Central store interior">
+                <span><!-- copy:s05.venue6 -->Mercado Central<!-- /copy --></span>
+              </div>
+              <div class="triptych-frame">
+                <img src="assets/gowanus-canal.webp" alt="Gowanus Canal location">
+                <span><!-- copy:s05.venue7 -->Gowanus Canal<!-- /copy --></span>
+              </div>
+              <div class="triptych-frame">
+                <img src="assets/prospect-park.webp" alt="Prospect Park location">
+                <span><!-- copy:s05.venue8 -->Prospect Park<!-- /copy --></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <p class="eyebrow"><!-- copy:s06.eyebrow -->Participant Strategy<!-- /copy --></p>
+          <h2><!-- copy:s06.title -->Every team blends film craft with AI fluency.<!-- /copy --></h2>
+          <hr class="accent-line lime">
+          <p class="lead"><!-- copy:s06.lead -->The event is curated so teams do not split into production and post silos. Each roster combines filmmakers, AI artists, and mentors who can keep decisions moving under deadline.<!-- /copy --></p>
+          <div class="role-grid">
+            <div class="role">
+              <h3><!-- copy:s06.role1.title -->Directors + Producers<!-- /copy --></h3>
+              <p><!-- copy:s06.role1.copy -->Own story, pace, team decisions, and the finished film's creative point of view.<!-- /copy --></p>
+            </div>
+            <div class="role">
+              <h3><!-- copy:s06.role2.title -->Actors + Performers<!-- /copy --></h3>
+              <p><!-- copy:s06.role2.copy -->Give teams original footage, character moments, and source material that AI can extend.<!-- /copy --></p>
+            </div>
+            <div class="role">
+              <h3><!-- copy:s06.role3.title -->Cinematographers<!-- /copy --></h3>
+              <p><!-- copy:s06.role3.copy -->Capture strong live-action plates across studio, LED, greenscreen, and market locations.<!-- /copy --></p>
+            </div>
+            <div class="role">
+              <h3><!-- copy:s06.role4.title -->Editors + Sound<!-- /copy --></h3>
+              <p><!-- copy:s06.role4.copy -->Turn a sprint of footage, generated assets, and music into a finished premiere file.<!-- /copy --></p>
+            </div>
+            <div class="role">
+              <h3><!-- copy:s06.role5.title -->AI Artists<!-- /copy --></h3>
+              <p><!-- copy:s06.role5.copy -->Shape visual transformations, generative VFX, worldbuilding, and style continuity.<!-- /copy --></p>
+            </div>
+            <div class="role">
+              <h3><!-- copy:s06.role6.title -->Mentors<!-- /copy --></h3>
+              <p><!-- copy:s06.role6.copy -->Guide teams through production choices, tool decisions, post workflows, and deadline pressure.<!-- /copy --></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <p class="eyebrow"><!-- copy:s07.eyebrow -->Sponsor Integration<!-- /copy --></p>
+          <h2><!-- copy:s07.title -->Sponsors enter the workflow, not just the step-and-repeat.<!-- /copy --></h2>
+          <hr class="accent-line cyan">
+          <div class="workflow">
+            <div class="workflow-step" data-step="01">
+              <h3><!-- copy:s07.step1.title -->Tools in Use<!-- /copy --></h3>
+              <p><!-- copy:s07.step1.copy -->Software, models, hardware, credits, and platform access become official resources teams can build with during the sprint.<!-- /copy --></p>
+            </div>
+            <div class="workflow-step" data-step="02">
+              <h3><!-- copy:s07.step2.title -->Experts in the Room<!-- /copy --></h3>
+              <p><!-- copy:s07.step2.copy -->Sponsor technical leads can host quick-start labs, then stay on site as master mentors for production and post hurdles.<!-- /copy --></p>
+            </div>
+            <div class="workflow-step" data-step="03">
+              <h3><!-- copy:s07.step3.title -->Visible Brand Moments<!-- /copy --></h3>
+              <p><!-- copy:s07.step3.copy -->LED wall environments, kickoff remarks, award presentations, signage, social recaps, and livestream overlays create premium visibility.<!-- /copy --></p>
+            </div>
+            <div class="workflow-step" data-step="04">
+              <h3><!-- copy:s07.step4.title -->Reusable Content<!-- /copy --></h3>
+              <p><!-- copy:s07.step4.copy -->Finished films, behind-the-scenes footage, workshop clips, and winner stories give sponsors concrete artifacts after the event.<!-- /copy --></p>
+            </div>
+          </div>
+          <div class="content-examples">
+            <div class="content-example">
+              <video src="bts-video/2601_Lightricks_Presentation_V1.mp4" autoplay muted loop playsinline></video>
+              <div class="image-caption"><!-- copy:s07.caption1 -->Example sponsor presentation content<!-- /copy --></div>
+            </div>
+            <div class="content-example">
+              <video src="bts-video/Rhizome_VibeShift_Full_16x9_V5_540p.mp4" autoplay muted loop playsinline></video>
+              <div class="image-caption"><!-- copy:s07.caption2 -->BTS / interview / event recap format<!-- /copy --></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <p class="eyebrow"><!-- copy:s08.eyebrow -->Sponsorship Tiers<!-- /copy --></p>
+          <h2><!-- copy:s08.title -->Designed around sponsor objectives.<!-- /copy --></h2>
+          <hr class="accent-line lime">
+          <div class="tier-stack">
+            <div class="tier-card visionary">
+              <div>
+                <div class="tier-name"><!-- copy:s08.tier1.name -->Visionary<!-- /copy --></div>
+                <span class="tier-price"><!-- copy:s08.tier1.price -->$25K+ exclusive<!-- /copy --></span>
+              </div>
+              <p class="tier-desc"><!-- copy:s08.tier1.desc -->Presenting sponsor ownership with naming, LED wall presence, keynote workshop, and overall award.<!-- /copy --></p>
+            </div>
+            <div class="tier-card innovator">
+              <div>
+                <div class="tier-name"><!-- copy:s08.tier2.name -->Innovator<!-- /copy --></div>
+                <span class="tier-price"><!-- copy:s08.tier2.price -->$10K-$20K<!-- /copy --></span>
+              </div>
+              <p class="tier-desc"><!-- copy:s08.tier2.desc -->Technology or platform partner with tool integration, mentor seat, judging panel, breakout lab, and category award.<!-- /copy --></p>
+            </div>
+            <div class="tier-card creator">
+              <div>
+                <div class="tier-name"><!-- copy:s08.tier3.name -->Creator<!-- /copy --></div>
+                <span class="tier-price"><!-- copy:s08.tier3.price -->$3K-$5K<!-- /copy --></span>
+              </div>
+              <p class="tier-desc"><!-- copy:s08.tier3.desc -->Supporting sponsor presence through logo placement, premiere access, social mentions, and email inclusion.<!-- /copy --></p>
+            </div>
+            <div class="tier-card inkind">
+              <div>
+                <div class="tier-name"><!-- copy:s08.tier4.name -->In-Kind / A La Carte<!-- /copy --></div>
+                <span class="tier-price"><!-- copy:s08.tier4.price -->Trade value<!-- /copy --></span>
+              </div>
+              <p class="tier-desc"><!-- copy:s08.tier4.desc -->Goods, services, gear, food, space, or prizes exchanged for official partner naming, schedule visibility, and recap inclusion.<!-- /copy --></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <p class="eyebrow"><!-- copy:s09.eyebrow -->Why ZeroSpace<!-- /copy --></p>
+          <h2><!-- copy:s09.title -->Built for fast, visible production.<!-- /copy --></h2>
+          <hr class="accent-line lime">
+          <p class="lead"><!-- copy:s09.lead -->ZeroSpace gives the Challenge a controlled production base, a cinematic stage, and a sponsor-ready content pipeline.<!-- /copy --></p>
+          <div class="proof-grid">
+            <div class="proof">
+              <h3><!-- copy:s09.proof1.title -->Production Scale<!-- /copy --></h3>
+              <p><!-- copy:s09.proof1.copy -->60,000+ sq ft of studio infrastructure, standing sets, LED volume, capture, and event space.<!-- /copy --></p>
+            </div>
+            <div class="proof">
+              <h3><!-- copy:s09.proof2.title -->Content Delivery<!-- /copy --></h3>
+              <p><!-- copy:s09.proof2.copy -->Professional event capture, edited clips, sponsor segments, and post-production workflows on site.<!-- /copy --></p>
+            </div>
+            <div class="proof">
+              <h3><!-- copy:s09.proof3.title -->Creative-Tech Audience<!-- /copy --></h3>
+              <p><!-- copy:s09.proof3.copy -->The leading creative technology community in NYC with monthly programming for founders, filmmakers, AI artists, creative technologists.<!-- /copy --></p>
+            </div>
+            <div class="proof">
+              <h3><!-- copy:s09.proof4.title -->Immersive Branding<!-- /copy --></h3>
+              <p><!-- copy:s09.proof4.copy -->Sponsors can appear in environments, workflows, mentorship, awards, social content, and the final films.<!-- /copy --></p>
+            </div>
+          </div>
+          <div class="full-image" style="height: 360px; margin-top: 1.3em;">
+            <img src="assets/facilities_image22.webp" alt="ZeroSpace event stage">
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-cover">
+        <div class="slide-bg heavy" style="background-image: url('assets/labs2026_image7.webp');"></div>
+        <div class="slide-content">
+          <div class="ask-layout">
+            <div>
+              <p class="eyebrow"><!-- copy:s10.eyebrow -->&lt;!-- The Ask --&gt;<!-- /copy --></p>
+              <h1 style="font-size: 2.08em; line-height: 1.08; text-transform: none;"><!-- copy:s10.title -->Start with the sponsor objective. Shape the package around it.<!-- /copy --></h1>
+              <div class="ask-list">
+                <div class="ask-item">
+                  <span><!-- copy:s10.ask1.label -->Adoption<!-- /copy --></span>
+                  <p><!-- copy:s10.ask1.copy -->Put tools directly into creator workflows during production and post.<!-- /copy --></p>
+                </div>
+                <div class="ask-item">
+                  <span><!-- copy:s10.ask2.label -->Talent<!-- /copy --></span>
+                  <p><!-- copy:s10.ask2.copy -->Meet hybrid filmmakers, AI artists, mentors, and technical creative operators.<!-- /copy --></p>
+                </div>
+                <div class="ask-item">
+                  <span><!-- copy:s10.ask3.label -->Awareness<!-- /copy --></span>
+                  <p><!-- copy:s10.ask3.copy -->Own a highly visible creative-tech event with stage, social, and recap assets.<!-- /copy --></p>
+                </div>
+                <div class="ask-item">
+                  <span><!-- copy:s10.ask4.label -->Content<!-- /copy --></span>
+                  <p><!-- copy:s10.ask4.copy -->Leave with reusable films, behind-the-scenes footage, and sponsor stories.<!-- /copy --></p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <h3><!-- copy:s10.contact.title -->Start the conversation<!-- /copy --></h3>
+              <p><strong><!-- copy:s10.contact.name -->Xuelong Mu<!-- /copy --></strong><br><span class="contact-line"><!-- copy:s10.contact.role -->Technical Director<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.email -->xuelong.mu@zerospace.co<!-- /copy --></span><br><br><span class="contact-line"><!-- copy:s10.contact.website -->zerospace.co<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.instagram -->@zerospace<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.instagram_labs -->@zerospacelabs<!-- /copy --></span></p>
+            </div>
+          </div>
+          <div class="bottom-brand"><!-- copy:s10.bottom_brand -->Generative Production Challenge - ZeroSpace Labs<!-- /copy --></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      width: 1920,
+      height: 1080,
+      margin: 0,
+      minScale: 0.2,
+      maxScale: 2.0,
+      transition: 'fade',
+      transitionSpeed: 'slow',
+      backgroundTransition: 'fade',
+      controls: true,
+      progress: true,
+      center: false
+    });
+  </script>
+</body>
+</html>
