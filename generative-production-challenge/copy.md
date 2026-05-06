@@ -13,7 +13,7 @@ Keep a block on one line unless you intentionally want a line break in the slide
 
 ### Brand Lockup
 <!-- copy:s01.brand -->
-ZeroSpace Labs
+ZeroSpace
 <!-- /copy -->
 
 ### Eyebrow
@@ -43,7 +43,7 @@ Live shoot + AI post + premiere
 
 ### Meta Presented By
 <!-- copy:s01.meta.presented -->
-<!-- Presented by ZeroSpace Labs -->
+
 <!-- /copy -->
 
 
@@ -117,7 +117,7 @@ creator teams
 
 ### Eyebrow
 <!-- copy:s04.eyebrow -->
-<!-- One-Day Format -->
+
 <!-- /copy -->
 
 ### Title
@@ -142,62 +142,77 @@ Teams finalize rosters, receive the theme, and hear the technical and safety bri
 
 ### Step 2 Time
 <!-- copy:s04.step2.time -->
-10:00 AM-3:00 PM
+10:00-11:00 AM
 <!-- /copy -->
 
 ### Step 2 Title
 <!-- copy:s04.step2.title -->
-Live-Action Production
+Keynote + Sponsor Demos
 <!-- /copy -->
 
 ### Step 2 Copy
 <!-- copy:s04.step2.copy -->
-Teams rotate through ZeroSpace sets, LED volume, greenscreen, and Mercado Central.
+Opening keynote, sponsor demos, tool access setup, and production constraints.
 <!-- /copy -->
 
 ### Step 3 Time
 <!-- copy:s04.step3.time -->
-3:00-7:00 PM
+11:00 AM-12:00 PM
 <!-- /copy -->
 
 ### Step 3 Title
 <!-- copy:s04.step3.title -->
-AI Post Sprint
+Writing + Pre-Production
 <!-- /copy -->
 
 ### Step 3 Copy
 <!-- copy:s04.step3.copy -->
-Teams edit, generate VFX, build sound, grade, and render with sponsor tools and mentors nearby.
+Teams write scripts, lock concepts, plan shots, assign roles, and decide where sponsor tools fit.
 <!-- /copy -->
 
 ### Step 4 Time
 <!-- copy:s04.step4.time -->
-7:00-7:30 PM
+12:00-4:00 PM
 <!-- /copy -->
 
 ### Step 4 Title
 <!-- copy:s04.step4.title -->
-Submissions
+Live-Action Production
 <!-- /copy -->
 
 ### Step 4 Copy
 <!-- copy:s04.step4.copy -->
-Hard deadline, final exports, playback tech check, and screening order lock.
+Teams rotate through ZeroSpace sets, LED volume, greenscreen, and Mercado Central.
 <!-- /copy -->
 
 ### Step 5 Time
 <!-- copy:s04.step5.time -->
-7:30-9:00 PM
+4:00-7:00 PM
 <!-- /copy -->
 
 ### Step 5 Title
 <!-- copy:s04.step5.title -->
-Premiere + Awards
+AI Post Sprint
 <!-- /copy -->
 
 ### Step 5 Copy
 <!-- copy:s04.step5.copy -->
-Live screening, judge feedback, sponsor-presented awards, and closing celebration.
+Teams edit, generate VFX, build sound, grade, and render with sponsor tools and mentors nearby.
+<!-- /copy -->
+
+### Step 6 Time
+<!-- copy:s04.step6.time -->
+7:00-9:00 PM
+<!-- /copy -->
+
+### Step 6 Title
+<!-- copy:s04.step6.title -->
+Final Exports + Premiere
+<!-- /copy -->
+
+### Step 6 Copy
+<!-- copy:s04.step6.copy -->
+Final deadline, playback tech check, live screening, judge feedback, sponsor awards, and closing.
 <!-- /copy -->
 
 
@@ -343,6 +358,17 @@ Sponsor Integration
 <!-- copy:s07.title -->
 Sponsors enter the workflow, not just the step-and-repeat.
 <!-- /copy -->
+
+Alternative title options:
+
+- Sponsors become part of the production system.
+- Sponsor tools move from demo to set.
+- The brand moment happens while the work gets made.
+- From logo placement to live adoption.
+- Put sponsor technology inside the creative process.
+- Sponsors show up where decisions happen.
+- The integration is the workflow.
+- Tools, mentors, and brands in the room.
 
 ### Step 1 Title
 <!-- copy:s07.step1.title -->
@@ -530,7 +556,7 @@ Sponsors can appear in environments, workflows, mentorship, awards, social conte
 
 ### Eyebrow
 <!-- copy:s10.eyebrow -->
-<!-- The Ask -->
+
 <!-- /copy -->
 
 ### Title
@@ -615,5 +641,5 @@ zerospace.co
 
 ### Bottom Brand
 <!-- copy:s10.bottom_brand -->
-Generative Production Challenge - ZeroSpace Labs
+Generative Production Challenge
 <!-- /copy -->

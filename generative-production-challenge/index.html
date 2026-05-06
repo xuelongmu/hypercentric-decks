@@ -176,6 +176,13 @@
       justify-content: center;
       text-align: center;
     }
+    .statement-panel {
+      background: rgba(0, 0, 0, 0.68);
+      border: 2px solid rgba(0, 0, 0, 0.96);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 26px 70px rgba(0, 0, 0, 0.58);
+      max-width: 1260px;
+      padding: 1.25em 1.55em 1.35em;
+    }
     .statement {
       font-family: var(--font-heading);
       font-size: 2.25em;
@@ -274,7 +281,7 @@
     .schedule {
       display: grid;
       gap: 0.7em;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       margin-top: 1.3em;
     }
     .time-block {
@@ -643,7 +650,7 @@
         <div class="slide-content">
           <div class="brand-lockup">
             <div class="brand-symbol"></div>
-            <div class="brand-text"><!-- copy:s01.brand -->ZeroSpace Labs<!-- /copy --></div>
+            <div class="brand-text"><!-- copy:s01.brand -->ZeroSpace<!-- /copy --></div>
           </div>
           <p class="eyebrow"><!-- copy:s01.eyebrow -->Sponsorship Opportunities<!-- /copy --></p>
           <h1><!-- copy:s01.title -->Generative Production Challenge<!-- /copy --></h1>
@@ -651,7 +658,7 @@
           <div class="cover-meta">
             <span><!-- copy:s01.meta.location -->Brooklyn, NY<!-- /copy --></span>
             <span><!-- copy:s01.meta.format -->Live shoot + AI post + premiere<!-- /copy --></span>
-            <span><!-- copy:s01.meta.presented -->&lt;!-- Presented by ZeroSpace Labs --&gt;<!-- /copy --></span>
+            <span><!-- copy:s01.meta.presented --><!-- /copy --></span>
           </div>
         </div>
       </section>
@@ -659,9 +666,11 @@
       <section class="statement-slide">
         <div class="slide-bg heavy" style="background-image: url('assets/labs2026_image34.webp');"></div>
         <div class="slide-content">
-          <div class="statement"><!-- copy:s02.statement -->The future of production will be tested under real creative pressure.<!-- /copy --></div>
-          <hr class="accent-line lime">
-          <p class="statement-copy"><!-- copy:s02.copy -->Teams shoot original live-action material, move directly into AI-assisted post, and premiere finished micro-shorts the same night. Sponsors' platforms and tools become part of filmmaking process rather than just logos on a poster.<!-- /copy --></p>
+          <div class="statement-panel">
+            <div class="statement"><!-- copy:s02.statement -->The future of production will be tested under real creative pressure.<!-- /copy --></div>
+            <hr class="accent-line lime">
+            <p class="statement-copy"><!-- copy:s02.copy -->Teams shoot original live-action material, move directly into AI-assisted post, and premiere finished micro-shorts the same night. Sponsors' platforms and tools become part of filmmaking process rather than just logos on a poster.<!-- /copy --></p>
+          </div>
         </div>
       </section>
 
@@ -701,7 +710,7 @@
 
       <section>
         <div class="slide-content">
-          <p class="eyebrow"><!-- copy:s04.eyebrow -->&lt;!-- One-Day Format --&gt;<!-- /copy --></p>
+          <p class="eyebrow"><!-- copy:s04.eyebrow --><!-- /copy --></p>
           <h2><!-- copy:s04.title -->From kickoff to premiere in a single sprint.<!-- /copy --></h2>
           <hr class="accent-line lime">
           <div class="schedule">
@@ -711,24 +720,29 @@
               <p><!-- copy:s04.step1.copy -->Teams finalize rosters, receive the theme, and hear the technical and safety brief.<!-- /copy --></p>
             </div>
             <div class="time-block">
-              <div class="time"><!-- copy:s04.step2.time -->10:00 AM-3:00 PM<!-- /copy --></div>
-              <h3><!-- copy:s04.step2.title -->Live-Action Production<!-- /copy --></h3>
-              <p><!-- copy:s04.step2.copy -->Teams rotate through ZeroSpace sets, LED volume, greenscreen, and Mercado Central.<!-- /copy --></p>
+              <div class="time"><!-- copy:s04.step2.time -->10:00-11:00 AM<!-- /copy --></div>
+              <h3><!-- copy:s04.step2.title -->Keynote + Sponsor Demos<!-- /copy --></h3>
+              <p><!-- copy:s04.step2.copy -->Opening keynote, sponsor demos, tool access setup, and production constraints.<!-- /copy --></p>
             </div>
             <div class="time-block">
-              <div class="time"><!-- copy:s04.step3.time -->3:00-7:00 PM<!-- /copy --></div>
-              <h3><!-- copy:s04.step3.title -->AI Post Sprint<!-- /copy --></h3>
-              <p><!-- copy:s04.step3.copy -->Teams edit, generate VFX, build sound, grade, and render with sponsor tools and mentors nearby.<!-- /copy --></p>
+              <div class="time"><!-- copy:s04.step3.time -->11:00 AM-12:00 PM<!-- /copy --></div>
+              <h3><!-- copy:s04.step3.title -->Writing + Pre-Production<!-- /copy --></h3>
+              <p><!-- copy:s04.step3.copy -->Teams write scripts, lock concepts, plan shots, assign roles, and decide where sponsor tools fit.<!-- /copy --></p>
             </div>
             <div class="time-block">
-              <div class="time"><!-- copy:s04.step4.time -->7:00-7:30 PM<!-- /copy --></div>
-              <h3><!-- copy:s04.step4.title -->Submissions<!-- /copy --></h3>
-              <p><!-- copy:s04.step4.copy -->Hard deadline, final exports, playback tech check, and screening order lock.<!-- /copy --></p>
+              <div class="time"><!-- copy:s04.step4.time -->12:00-4:00 PM<!-- /copy --></div>
+              <h3><!-- copy:s04.step4.title -->Live-Action Production<!-- /copy --></h3>
+              <p><!-- copy:s04.step4.copy -->Teams rotate through ZeroSpace sets, LED volume, greenscreen, and Mercado Central.<!-- /copy --></p>
             </div>
             <div class="time-block">
-              <div class="time"><!-- copy:s04.step5.time -->7:30-9:00 PM<!-- /copy --></div>
-              <h3><!-- copy:s04.step5.title -->Premiere + Awards<!-- /copy --></h3>
-              <p><!-- copy:s04.step5.copy -->Live screening, judge feedback, sponsor-presented awards, and closing celebration.<!-- /copy --></p>
+              <div class="time"><!-- copy:s04.step5.time -->4:00-7:00 PM<!-- /copy --></div>
+              <h3><!-- copy:s04.step5.title -->AI Post Sprint<!-- /copy --></h3>
+              <p><!-- copy:s04.step5.copy -->Teams edit, generate VFX, build sound, grade, and render with sponsor tools and mentors nearby.<!-- /copy --></p>
+            </div>
+            <div class="time-block">
+              <div class="time"><!-- copy:s04.step6.time -->7:00-9:00 PM<!-- /copy --></div>
+              <h3><!-- copy:s04.step6.title -->Final Exports + Premiere<!-- /copy --></h3>
+              <p><!-- copy:s04.step6.copy -->Final deadline, playback tech check, live screening, judge feedback, sponsor awards, and closing.<!-- /copy --></p>
             </div>
           </div>
         </div>
@@ -912,7 +926,7 @@
             </div>
           </div>
           <div class="full-image" style="height: 360px; margin-top: 1.3em;">
-            <img src="assets/facilities_image22.webp" alt="ZeroSpace event stage">
+            <img src="assets/zerospace-stage-zmx.webp" alt="ZeroSpace stage event production">
           </div>
         </div>
       </section>
@@ -922,7 +936,7 @@
         <div class="slide-content">
           <div class="ask-layout">
             <div>
-              <p class="eyebrow"><!-- copy:s10.eyebrow -->&lt;!-- The Ask --&gt;<!-- /copy --></p>
+              <p class="eyebrow"><!-- copy:s10.eyebrow --><!-- /copy --></p>
               <h1 style="font-size: 2.08em; line-height: 1.08; text-transform: none;"><!-- copy:s10.title -->Start with the sponsor objective. Shape the package around it.<!-- /copy --></h1>
               <div class="ask-list">
                 <div class="ask-item">
@@ -948,7 +962,7 @@
               <p><strong><!-- copy:s10.contact.name -->Xuelong Mu<!-- /copy --></strong><br><span class="contact-line"><!-- copy:s10.contact.role -->Technical Director<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.email -->xuelong.mu@zerospace.co<!-- /copy --></span><br><br><span class="contact-line"><!-- copy:s10.contact.website -->zerospace.co<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.instagram -->@zerospace<!-- /copy --></span><br><span class="contact-line"><!-- copy:s10.contact.instagram_labs -->@zerospacelabs<!-- /copy --></span></p>
             </div>
           </div>
-          <div class="bottom-brand"><!-- copy:s10.bottom_brand -->Generative Production Challenge - ZeroSpace Labs<!-- /copy --></div>
+          <div class="bottom-brand"><!-- copy:s10.bottom_brand -->Generative Production Challenge<!-- /copy --></div>
         </div>
       </section>
 
