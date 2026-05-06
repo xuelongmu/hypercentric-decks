@@ -421,46 +421,50 @@
     .workflow {
       align-items: stretch;
       display: grid;
-      gap: 0.75em;
+      gap: 0.55em;
       grid-template-columns: repeat(4, 1fr);
-      margin-top: 1.35em;
+      margin-top: 0.85em;
     }
     .workflow-step {
       background: #222;
       border: 1px solid var(--line);
-      min-height: 330px;
-      padding: 1em;
+      min-height: 168px;
+      padding: 0.72em 0.82em;
       position: relative;
     }
     .workflow-step::before {
       color: var(--lime);
       content: attr(data-step);
       font-family: var(--font-heading);
-      font-size: 1.3em;
+      font-size: 1.02em;
       position: absolute;
       right: 0.65em;
       top: 0.45em;
     }
     .workflow-step h3 {
-      font-size: 0.78em;
-      margin-bottom: 0.7em;
-      max-width: 170px;
+      font-size: 0.68em;
+      margin-bottom: 0.45em;
+      max-width: 150px;
     }
-    .workflow-step p { font-size: 0.55em; }
+    .workflow-step p {
+      font-size: 0.47em;
+      line-height: 1.32;
+    }
     .content-examples {
       display: grid;
       gap: 0.55em;
       grid-template-columns: repeat(2, 1fr);
-      height: 250px;
-      margin-top: 0.85em;
+      margin-top: 0.75em;
     }
     .content-example {
+      aspect-ratio: 16 / 9;
+      background: #050505;
       overflow: hidden;
       position: relative;
     }
     .content-example video {
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       width: 100%;
     }
 
@@ -589,6 +593,43 @@
       margin-bottom: 0.55em;
     }
     .proof p { font-size: 0.54em; }
+    .proof-slide .slide-content {
+      justify-content: flex-start;
+    }
+    .slide-bg.proof-bg {
+      background: #000;
+      overflow: hidden;
+    }
+    .slide-bg.proof-bg img {
+      filter: brightness(1.32) saturate(1.08) contrast(1.02);
+      height: 100%;
+      inset: 0;
+      object-fit: cover;
+      object-position: center center;
+      position: absolute;
+      transform: translateY(76px);
+      width: 100%;
+      z-index: 0;
+    }
+    .slide-bg.proof-bg::after {
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0.98) 0%, rgba(0,0,0,0.78) 7%, rgba(0,0,0,0.34) 22%, rgba(0,0,0,0.18) 46%, rgba(0,0,0,0.38) 100%),
+        linear-gradient(90deg, rgba(0,0,0,0.54), rgba(0,0,0,0.03) 45%, rgba(0,0,0,0.44));
+      z-index: 1;
+    }
+    .proof-slide .lead {
+      max-width: 1180px;
+      text-shadow: 0 2px 18px rgba(0,0,0,0.95);
+    }
+    .proof-slide .proof-grid {
+      margin-top: 1.5em;
+    }
+    .proof-slide .proof {
+      background: rgba(0, 0, 0, 0.63);
+      box-shadow: 0 18px 44px rgba(0,0,0,0.38);
+      min-height: 150px;
+      padding: 0.86em 0.78em;
+    }
 
     .ask-layout {
       align-items: center;
@@ -901,7 +942,10 @@
         </div>
       </section>
 
-      <section>
+      <section class="proof-slide">
+        <div class="slide-bg proof-bg">
+          <img src="assets/zerospace-stage-zmx.webp" alt="">
+        </div>
         <div class="slide-content">
           <p class="eyebrow"><!-- copy:s09.eyebrow -->Why ZeroSpace<!-- /copy --></p>
           <h2><!-- copy:s09.title -->Built for fast, visible production.<!-- /copy --></h2>
@@ -924,9 +968,6 @@
               <h3><!-- copy:s09.proof4.title -->Immersive Branding<!-- /copy --></h3>
               <p><!-- copy:s09.proof4.copy -->Sponsors can appear in environments, workflows, mentorship, awards, social content, and the final films.<!-- /copy --></p>
             </div>
-          </div>
-          <div class="full-image" style="height: 360px; margin-top: 1.3em;">
-            <img src="assets/zerospace-stage-zmx.webp" alt="ZeroSpace stage event production">
           </div>
         </div>
       </section>
