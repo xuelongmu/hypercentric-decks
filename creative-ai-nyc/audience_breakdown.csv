@@ -1,0 +1,11 @@
+metric_type,segment,survey_respondents,survey_n,survey_percent,extrapolated_approved_audience,notes
+Persona,Founders,146,502,29.1,658,Derived from "What best describes your role?"
+Persona,AI Designers / AI Artists,115,502,22.9,518,Derived from "What best describes your role?"
+Persona,Agency / Freelance / Other,97,502,19.3,437,Derived from "What best describes your role?"
+Persona,AI / Video Developers,76,502,15.1,342,Derived from "What best describes your role?"
+Persona,Students,27,502,5.4,122,Derived from "What best describes your role?"
+Persona,Investors,22,502,4.4,99,Derived from "What best describes your role?"
+Persona,ComfyUI Developers,19,502,3.8,85,Derived from "What best describes your role?"
+Familiarity,New to ComfyUI,274,502,54.6,1234,Derived from "How familiar are you with ComfyUI?"
+Familiarity,Somewhat familiar,156,502,31.1,703,Derived from "How familiar are you with ComfyUI?"
+Familiarity,Very familiar,72,502,14.3,324,Derived from "How familiar are you with ComfyUI?"
