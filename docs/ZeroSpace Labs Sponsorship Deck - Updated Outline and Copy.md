@@ -117,14 +117,14 @@ Reference update:
 ## SLIDE 4: THE VENUE
 
 **The Venue**  
-ZeroSpace - Brooklyn, NY - 60,000+ sq ft next-generation production studio
+ZeroSpace - Brooklyn, NY - 50,000+ sq ft next-generation production studio
 
 Venue assets:
 
 - LED Volume & XR Stage - 8K x 2K curved wall
 - Standing Sets - full-scale subway car and modular stages
 - Motion Capture - full-body mocap with real-time visualization
-- Live Events - 60,000 sq ft for audiences of 400+
+- Live Events - 50,000 sq ft for audiences of 400+
 - Film Production - camera rigs, monitors, and on-site editing
 - Immersive Projection - full-room projection mapping
 

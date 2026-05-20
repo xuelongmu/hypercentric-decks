@@ -10,7 +10,7 @@ Keep a block on one line unless you intentionally want a line break in the slide
 
 ## Slide 01
 
-### Text 001 - ZeroSpace Labs
+### Text 001 - Hypercentric
 <!-- copy:s01.t001 -->
 Hypercentric
 <!-- /copy -->
@@ -40,9 +40,9 @@ Brooklyn, NY
 Talks + demos + workflow breakdowns
 <!-- /copy -->
 
-### Text 007 - Presented by ZeroSpace Labs
+### Text 007 - Presented by Hypercentric
 <!-- copy:s01.t007 -->
-Presented by ZeroSpace Labs
+Presented by Hypercentric
 <!-- /copy -->
 
 ## Slide 02
@@ -79,14 +79,14 @@ The open-source community gave us the first clear signal: creators want to gathe
 ComfyUI NYC is the start. Creative AI NYC expands that energy into a broader event for hybrid production, where artists and technicians use the best available model, tool, or workflow for the shot in front of them.
 <!-- /copy -->
 
-### Text 005 - 14
+### Text 005 - 18
 <!-- copy:s03.t005 -->
-14
+18
 <!-- /copy -->
 
-### Text 006 - ComfyUI NYC events
+### Text 006 - creative AI events
 <!-- copy:s03.t006 -->
-ComfyUI NYC events
+creative AI events
 <!-- /copy -->
 
 ### Text 007 - 13x
@@ -99,19 +99,19 @@ ComfyUI NYC events
 flagship event growth
 <!-- /copy -->
 
-### Text 009 - 2,977
+### Text 009 - 4,000+
 <!-- copy:s03.t009 -->
-2,977
+4,000+
 <!-- /copy -->
 
-### Text 010 - approved attendees
+### Text 010 - approved registrations
 <!-- copy:s03.t010 -->
-approved attendees
+approved registrations
 <!-- /copy -->
 
-### Text 011 - ~24%
+### Text 011 - ~34%
 <!-- copy:s03.t011 -->
-~24%
+~34%
 <!-- /copy -->
 
 ### Text 012 - return rate
@@ -174,6 +174,73 @@ Fixit Culture
 ### Text 011 - Production work depends on iteration, cleanup, relighting, upscaling, co...
 <!-- copy:s04.t011 -->
 Production work depends on iteration, cleanup, relighting, upscaling, continuity fixes, and editorial judgment.
+<!-- /copy -->
+
+## Slide 05A
+
+### Text 001 - The Space
+<!-- copy:s05a.t001 -->
+The Space
+<!-- /copy -->
+
+### Text 002 - A venue built for the workflows sponsors want creators to try.
+<!-- copy:s05a.t002 -->
+A venue built for the workflows sponsors want creators to try.
+<!-- /copy -->
+
+### Text 003 - Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue...
+<!-- copy:s05a.t003 -->
+Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue and production studio in downtown Brooklyn, built for virtual production, capture, live events, and post-production.
+<!-- /copy -->
+
+### Text 004 - Virtual Production Authority
+<!-- copy:s05a.t004 -->
+Virtual Production Authority
+<!-- /copy -->
+
+### Text 005 - Opened in 2020 as the first commercial virtual production studio in the...
+<!-- copy:s05a.t005 -->
+Opened in 2020 as the first commercial virtual production studio in the world, with the largest fixed-install virtual production stage on the East Coast.
+<!-- /copy -->
+
+### Text 006 - Capture Stack
+<!-- copy:s05a.t006 -->
+Capture Stack
+<!-- /copy -->
+
+### Text 007 - Motion capture and volumetric capture give sponsors a real production context...
+<!-- copy:s05a.t007 -->
+Motion capture and volumetric capture give sponsors a real production context for demos, source material, workflow breakdowns, and creator education.
+<!-- /copy -->
+
+### Text 008 - Event Scale
+<!-- copy:s05a.t008 -->
+Event Scale
+<!-- /copy -->
+
+### Text 009 - The room can move from stage programming to networking, demo surfaces,...
+<!-- copy:s05a.t009 -->
+The room can move from stage programming to networking, demo surfaces, livestream moments, and sponsor activations without feeling like a generic meetup.
+<!-- /copy -->
+
+### Text 010 - Media Credibility
+<!-- copy:s05a.t010 -->
+Media Credibility
+<!-- /copy -->
+
+### Text 011 - The venue has been featured publicly as a next-generation production environment...
+<!-- copy:s05a.t011 -->
+The venue has been featured publicly as a next-generation production environment, giving sponsors a physical proof point behind the community.
+<!-- /copy -->
+
+### Text 012 - Featured video: ZeroSpace on YouTube
+<!-- copy:s05a.t012 -->
+Featured video: [ZeroSpace on YouTube](https://www.youtube.com/watch?v=u7pu1cQBqtQ)
+<!-- /copy -->
+
+### Text 013 - ZeroSpace gives the event a production-grade backdrop, not just a room
+<!-- copy:s05a.t013 -->
+ZeroSpace gives the event a production-grade backdrop, not just a room
 <!-- /copy -->
 
 ## Slide 05
@@ -327,7 +394,7 @@ venue event capacity
 
 ### Text 019 - December 2024 - February 2026 aggregate platform metrics across ZeroSpac...
 <!-- copy:s06.t019 -->
-December 2024 - February 2026 aggregate platform metrics across ZeroSpace Labs programming. Creative AI NYC uses ComfyUI NYC as historical proof, not the ongoing event brand.
+December 2024 - April 2026 aggregate platform metrics across ComfyUI programming.
 <!-- /copy -->
 
 ## Slide 07
@@ -834,9 +901,9 @@ The room combines creative taste, technical fluency, and tool adoption behavior.
 This is the audience that evaluates new models, turns workflows into tutorials, influences peers, and brings tools into studios, agencies, startups, and independent projects.
 <!-- /copy -->
 
-### Text 005 - 27% Founders
+### Text 005 - 29% Founders
 <!-- copy:s08.t005 -->
-27% Founders
+29% Founders
 <!-- /copy -->
 
 ### Text 006 - Decision-makers who evaluate, adopt, and champion creative AI tools.
@@ -844,14 +911,14 @@ This is the audience that evaluates new models, turns workflows into tutorials, 
 Decision-makers who evaluate, adopt, and champion creative AI tools.
 <!-- /copy -->
 
-### Text 007 - 25% AI Designers
+### Text 007 - 25%
 <!-- copy:s08.t007 -->
-25% AI Designers
+23%
 <!-- /copy -->
 
-### Text 008 - Artists and designers who translate model capabilities into visible crea...
+### Text 008 - AI Designers
 <!-- copy:s08.t008 -->
-Artists and designers who translate model capabilities into visible creative work.
+AI Designers
 <!-- /copy -->
 
 ### Text 009 - 15% AI / Video Developers
@@ -864,14 +931,94 @@ Artists and designers who translate model capabilities into visible creative wor
 Technical creators who build workflows and troubleshoot model behavior.
 <!-- /copy -->
 
-### Text 011 - 47% New to ComfyUI
+### Text 011 - 55% New to ComfyUI
 <!-- copy:s08.t011 -->
-47% New to ComfyUI
+55% New to ComfyUI
 <!-- /copy -->
 
 ### Text 012 - Historical proof that the community functions as an onboarding funnel fo...
 <!-- copy:s08.t012 -->
 Historical proof that the community functions as an onboarding funnel for new workflows.
+<!-- /copy -->
+
+### Text 013 - 27%
+<!-- copy:s08.t013 -->
+29%
+<!-- /copy -->
+
+### Text 014 - Founders
+<!-- copy:s08.t014 -->
+Founders
+<!-- /copy -->
+
+### Text 017 - 15%
+<!-- copy:s08.t017 -->
+15%
+<!-- /copy -->
+
+### Text 018 - AI / Video Developers
+<!-- copy:s08.t018 -->
+AI / Video Developers
+<!-- /copy -->
+
+### Text 019 - 19%
+<!-- copy:s08.t019 -->
+19%
+<!-- /copy -->
+
+### Text 020 - Agency / Freelance / Other
+<!-- copy:s08.t020 -->
+Agency / Freelance / Other
+<!-- /copy -->
+
+### Text 021 - 7%
+<!-- copy:s08.t021 -->
+5%
+<!-- /copy -->
+
+### Text 022 - Students
+<!-- copy:s08.t022 -->
+Students
+<!-- /copy -->
+
+### Text 023 - 4%
+<!-- copy:s08.t023 -->
+4%
+<!-- /copy -->
+
+### Text 024 - Investors
+<!-- copy:s08.t024 -->
+Investors
+<!-- /copy -->
+
+### Text 025 - 3%
+<!-- copy:s08.t025 -->
+3%
+<!-- /copy -->
+
+### Text 026 - ComfyUI Core Devs
+<!-- copy:s08.t026 -->
+ComfyUI Core Devs
+<!-- /copy -->
+
+### Text 031 - 23% AI Designers
+<!-- copy:s08.t031 -->
+23% AI Designers
+<!-- /copy -->
+
+### Text 032 - Artists and designers who translate model capabilities into visible crea...
+<!-- copy:s08.t032 -->
+Artists and designers who translate model capabilities into visible creative work.
+<!-- /copy -->
+
+### Text 034 - 19% Agency / Freelance / Other
+<!-- copy:s08.t034 -->
+19% Agency / Freelance / Other
+<!-- /copy -->
+
+### Text 035 - Independent and studio-side creators who turn workflow demos into client...
+<!-- copy:s08.t035 -->
+Independent and studio-side creators who turn workflow demos into client, campaign, and production experiments.
 <!-- /copy -->
 
 ## Slide 09
@@ -1024,16 +1171,6 @@ Demo Surface
 Table, power, internet, and room placement for hands-on product conversations.
 <!-- /copy -->
 
-### Text 009 - LED Wall Integration
-<!-- copy:s11.t009 -->
-LED Wall Integration
-<!-- /copy -->
-
-### Text 010 - Branding, creative visuals, or demo content on ZeroSpace's 8K x 2K curve...
-<!-- copy:s11.t010 -->
-Branding, creative visuals, or demo content on ZeroSpace's 8K x 2K curved LED wall.
-<!-- /copy -->
-
 ### Text 011 - Creator Interaction
 <!-- copy:s11.t011 -->
 Creator Interaction
@@ -1052,6 +1189,16 @@ Short-Form Clips
 ### Text 014 - Social-ready clips from talks, demos, recaps, and sponsor moments.
 <!-- copy:s11.t014 -->
 Social-ready clips from talks, demos, recaps, and sponsor moments.
+<!-- /copy -->
+
+### Text 015 - Panel
+<!-- copy:s11.t015 -->
+Panel
+<!-- /copy -->
+
+### Text 016 - A moderated sponsor or partner panel that frames a timely workflow, market shift...
+<!-- copy:s11.t016 -->
+A moderated sponsor or partner panel that frames a timely workflow, market shift, or creator conversation.
 <!-- /copy -->
 
 ## Slide 12
@@ -1175,14 +1322,19 @@ The deck intentionally does not promise attendee contact sharing, lead lists, or
 
 ## Slide 14
 
-### Text 001 - Packages
+### Text 001 - Sponsorship Packages
 <!-- copy:s14.t001 -->
-Packages
+Sponsorship Packages
 <!-- /copy -->
 
-### Text 002 - Series-level partnerships.
+### Text 002 - Event sponsorship options.
 <!-- copy:s14.t002 -->
-Series-level partnerships.
+Event sponsorship options.
+<!-- /copy -->
+
+### Text 058 - Single Event Sponsorship
+<!-- copy:s14.t058 -->
+Single Event Sponsorship
 <!-- /copy -->
 
 ### Text 003 - Benefit
@@ -1205,99 +1357,99 @@ Gold
 Silver
 <!-- /copy -->
 
-### Text 007 - Annual
+### Text 007 - Event sponsorship
 <!-- copy:s14.t007 -->
-Annual
+Event sponsorship
 <!-- /copy -->
 
-### Text 008 - $80,000
+### Text 008 - $20,000
 <!-- copy:s14.t008 -->
-$80,000
-<!-- /copy -->
-
-### Text 009 - $40,000
-<!-- copy:s14.t009 -->
-$40,000
-<!-- /copy -->
-
-### Text 010 - $10,000
-<!-- copy:s14.t010 -->
-$10,000
-<!-- /copy -->
-
-### Text 011 - Monthly
-<!-- copy:s14.t011 -->
-Monthly
-<!-- /copy -->
-
-### Text 012 - $20,000
-<!-- copy:s14.t012 -->
 $20,000
 <!-- /copy -->
 
-### Text 013 - $10,000
-<!-- copy:s14.t013 -->
+### Text 009 - $10,000
+<!-- copy:s14.t009 -->
 $10,000
 <!-- /copy -->
 
-### Text 014 - $3,000
-<!-- copy:s14.t014 -->
+### Text 010 - $3,000
+<!-- copy:s14.t010 -->
 $3,000
 <!-- /copy -->
 
-### Text 015 - Logo on event flyers
+### Text 011 - Logo on event materials
+<!-- copy:s14.t011 -->
+Logo on event materials
+<!-- /copy -->
+
+### Text 012 - Yes
+<!-- copy:s14.t012 -->
+Yes
+<!-- /copy -->
+
+### Text 013 - Yes
+<!-- copy:s14.t013 -->
+Yes
+<!-- /copy -->
+
+### Text 014 - Yes
+<!-- copy:s14.t014 -->
+Yes
+<!-- /copy -->
+
+### Text 015 - Sponsor content slot
 <!-- copy:s14.t015 -->
-Logo on event flyers
+Sponsor content slot
 <!-- /copy -->
 
-### Text 016 - Yes
+### Text 016 - Full presentation (20 minutes)
 <!-- copy:s14.t016 -->
-Yes
+Full presentation (20 minutes)
 <!-- /copy -->
 
-### Text 017 - Yes
+### Text 017 - Full presentation (20 minutes)
 <!-- copy:s14.t017 -->
-Yes
+Full presentation (20 minutes)
 <!-- /copy -->
 
-### Text 018 - Yes
+### Text 018 - Stage shout-out
 <!-- copy:s14.t018 -->
-Yes
+Stage shout-out
 <!-- /copy -->
 
-### Text 019 - Shout-out at every event
+### Text 019 - Additional sponsor content
 <!-- copy:s14.t019 -->
-Shout-out at every event
+Additional sponsor content
 <!-- /copy -->
 
-### Text 020 - Yes
+### Text 020 - Sponsored panel or workshop
 <!-- copy:s14.t020 -->
-Yes
+Sponsored panel or workshop
 <!-- /copy -->
 
-### Text 021 - Yes
+### Text 021 - -
 <!-- copy:s14.t021 -->
-Yes
+-
 <!-- /copy -->
 
-### Text 022 - Yes
+### Text 022 - -
 <!-- copy:s14.t022 -->
+-
+<!-- /copy -->
+
+### Text 023 - Pre-event mail blast shout-out
+<!-- copy:s14.t023 -->
+Pre-event mail blast shout-out
+<!-- /copy -->
+
+### Text 024 - Yes
+<!-- copy:s14.t024 -->
 Yes
 <!-- /copy -->
 
-### Text 023 - Speaking / demo slot
-<!-- copy:s14.t023 -->
-Speaking / demo slot
-<!-- /copy -->
-
-### Text 024 - 1/month
-<!-- copy:s14.t024 -->
-1/month
-<!-- /copy -->
-
-### Text 025 - 1/month
+### Text 025 - Yes
 <!-- copy:s14.t025 -->
-1/month
+Yes
 <!-- /copy -->
 
 ### Text 026 - -
@@ -1305,9 +1457,9 @@ Speaking / demo slot
 -
 <!-- /copy -->
 
-### Text 027 - Edited presentation video
+### Text 027 - Post-event mail blast shout-out
 <!-- copy:s14.t027 -->
-Edited presentation video
+Post-event mail blast shout-out
 <!-- /copy -->
 
 ### Text 028 - Yes
@@ -1320,24 +1472,24 @@ Yes
 Yes
 <!-- /copy -->
 
-### Text 030 - -
+### Text 030 - Yes
 <!-- copy:s14.t030 -->
--
+Yes
 <!-- /copy -->
 
-### Text 031 - Short-form clips
+### Text 031 - Edited full-length presentation video (sample)
 <!-- copy:s14.t031 -->
-Short-form clips
+Edited full-length presentation video [(sample)](https://f.io/IJDUMJmU)
 <!-- /copy -->
 
-### Text 032 - 3/month
+### Text 032 - Yes
 <!-- copy:s14.t032 -->
-3/month
+Yes
 <!-- /copy -->
 
-### Text 033 - -
+### Text 033 - Yes
 <!-- copy:s14.t033 -->
--
+Yes
 <!-- /copy -->
 
 ### Text 034 - -
@@ -1345,19 +1497,19 @@ Short-form clips
 -
 <!-- /copy -->
 
-### Text 035 - Demo booth
+### Text 035 - Access to attendee emails*
 <!-- copy:s14.t035 -->
-Demo booth
+Access to attendee emails*
 <!-- /copy -->
 
-### Text 036 - Up to 4/year
+### Text 036 - Yes
 <!-- copy:s14.t036 -->
-Up to 4/year
+Yes
 <!-- /copy -->
 
-### Text 037 - Up to 2/year
+### Text 037 - -
 <!-- copy:s14.t037 -->
-Up to 2/year
+-
 <!-- /copy -->
 
 ### Text 038 - -
@@ -1365,9 +1517,9 @@ Up to 2/year
 -
 <!-- /copy -->
 
-### Text 039 - "Presented by" co-branding
+### Text 039 - Job board posting
 <!-- copy:s14.t039 -->
-"Presented by" co-branding
+Job board posting
 <!-- /copy -->
 
 ### Text 040 - Yes
@@ -1375,13 +1527,88 @@ Up to 2/year
 Yes
 <!-- /copy -->
 
-### Text 041 - -
+### Text 041 - Yes
 <!-- copy:s14.t041 -->
--
+Yes
 <!-- /copy -->
 
-### Text 042 - -
+### Text 042 - Yes
 <!-- copy:s14.t042 -->
+Yes
+<!-- /copy -->
+
+### Text 043 - Biannual Sponsorship Plan
+<!-- copy:s14.t043 -->
+Biannual Sponsorship Plan
+<!-- /copy -->
+
+### Text 044 - Six-month plan priced at 3x the single-event rate...
+<!-- copy:s14.t044 -->
+Biannual (six-month) plan priced at 3x the single-event rate, with the option to sponsor 4 monthly events.
+<!-- /copy -->
+
+### Text 045 - Benefit
+<!-- copy:s14.t045 -->
+Benefit
+<!-- /copy -->
+
+### Text 046 - Platinum
+<!-- copy:s14.t046 -->
+Platinum
+<!-- /copy -->
+
+### Text 047 - Gold
+<!-- copy:s14.t047 -->
+Gold
+<!-- /copy -->
+
+### Text 048 - Silver
+<!-- copy:s14.t048 -->
+Silver
+<!-- /copy -->
+
+### Text 049 - Six-month plan
+<!-- copy:s14.t049 -->
+Biannual plan
+<!-- /copy -->
+
+### Text 050 - $60,000
+<!-- copy:s14.t050 -->
+$60,000
+<!-- /copy -->
+
+### Text 051 - $30,000
+<!-- copy:s14.t051 -->
+$30,000
+<!-- /copy -->
+
+### Text 052 - $9,000
+<!-- copy:s14.t052 -->
+$9,000
+<!-- /copy -->
+
+### Text 057 - *Attendee email access applies only for attendees that explicitly opt-in...
+<!-- copy:s14.t057 -->
+*Attendee email access applies only for attendees that explicitly opt-in to sharing.
+<!-- /copy -->
+
+### Text 059 - Edited vertical reels (sample)
+<!-- copy:s14.t059 -->
+Edited vertical reels [(sample)](https://www.instagram.com/p/DQphSUWEkAs/)
+<!-- /copy -->
+
+### Text 060 - 2 included
+<!-- copy:s14.t060 -->
+2 included
+<!-- /copy -->
+
+### Text 061 - +$1K/ea
+<!-- copy:s14.t061 -->
++$1K/ea
+<!-- /copy -->
+
+### Text 062 - -
+<!-- copy:s14.t062 -->
 -
 <!-- /copy -->
 
@@ -1564,9 +1791,9 @@ ZeroSpace is also the production engine.
 Standing sets - cinematic workflow examples
 <!-- /copy -->
 
-### Text 005 - 60,000+ sq ft - production and event scale
+### Text 005 - 50,000+ sq ft - production and event scale
 <!-- copy:s16.t005 -->
-60,000+ sq ft - production and event scale
+50,000+ sq ft - production and event scale
 <!-- /copy -->
 
 ### Text 006 - Capture + greenscreen - AI-ready source material
@@ -1606,9 +1833,9 @@ ComfyUI NYC became the flagship origin proof for a broader creative AI audience 
 Vibe Shift was co-produced with Rhizome and New Museum's New Inc, with Anthropic as sponsor.
 <!-- /copy -->
 
-### Text 005 - ZeroSpace Labs has hosted creators from production, AI, VFX, creative co...
+### Text 005 - Hypercentric has hosted creators from production, AI, VFX, creative co...
 <!-- copy:s17.t005 -->
-ZeroSpace Labs has hosted creators from production, AI, VFX, creative coding, startups, and top universities.
+Hypercentric has hosted creators from production, AI, VFX, creative coding, startups, and top universities.
 <!-- /copy -->
 
 ## Slide 18
@@ -1698,7 +1925,7 @@ zerospace.co
 @zerospacelabs
 <!-- /copy -->
 
-### Text 018 - Creative AI NYC - ZeroSpace Labs
+### Text 018 - Creative AI NYC - Hypercentric
 <!-- copy:s18.t018 -->
-Creative AI NYC - ZeroSpace Labs
+Creative AI NYC - Hypercentric
 <!-- /copy -->

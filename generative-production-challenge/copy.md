@@ -517,7 +517,7 @@ Production Scale
 
 ### Proof 1 Copy
 <!-- copy:s09.proof1.copy -->
-60,000+ sq ft of studio infrastructure, standing sets, LED volume, capture, and event space.
+50,000+ sq ft of studio infrastructure, standing sets, LED volume, capture, and event space.
 <!-- /copy -->
 
 ### Proof 2 Title

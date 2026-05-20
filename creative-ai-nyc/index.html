@@ -355,6 +355,64 @@
     }
     .card p { font-size: 0.58em; }
 
+    .slide-audience .slide-content { padding-top: 2.15em; }
+    .slide-audience h2 {
+      font-size: 1.42em;
+      margin-bottom: 0;
+      max-width: 980px;
+    }
+    .slide-audience .lead {
+      font-size: 0.72em;
+      margin-bottom: 0.2em;
+      max-width: 1040px;
+    }
+    .audience-layout {
+      align-items: center;
+      display: grid;
+      flex: 1;
+      gap: 1.1em;
+      grid-template-columns: 2.15fr 1fr;
+      min-height: 0;
+    }
+    .pie-section {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .pie-section svg {
+      max-height: 67vh;
+      width: 100%;
+    }
+    .insights {
+      display: flex;
+      flex-direction: column;
+      gap: 0.52em;
+      justify-content: center;
+    }
+    .insight-card {
+      background: rgba(255,255,255,0.055);
+      border-left: 3px solid var(--lime);
+      padding: 0.58em 0.72em;
+    }
+    .insight-card:nth-child(2) { border-color: var(--cyan); }
+    .insight-card:nth-child(4) { border-color: var(--cyan); }
+    .insight-num {
+      color: var(--lime);
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 1.28em;
+      line-height: 1;
+      margin-bottom: 0.14em;
+    }
+    .insight-card:nth-child(2) .insight-num { color: var(--cyan); }
+    .insight-text {
+      color: var(--muted);
+      font-size: 0.47em;
+      line-height: 1.36;
+    }
+
     .workflow {
       display: grid;
       gap: 0.75em;
@@ -387,7 +445,7 @@
     .deliverable-grid {
       display: grid;
       gap: 0.8em;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
       flex: 1;
       margin-top: 0.8em;
@@ -438,9 +496,9 @@
     }
     .proof p { font-size: 0.54em; }
 
-    .tier-table {
+    .reveal .tier-table {
       border-collapse: collapse;
-      margin-top: 0.8em;
+      margin: 0.8em 0 0;
       table-layout: fixed;
       width: 100%;
     }
@@ -475,6 +533,57 @@
       font-family: var(--font-heading);
       font-size: 1.45em;
       line-height: 1;
+    }
+    .tier-table.package-table {
+      margin-top: 0.55em;
+    }
+    .tier-table.package-table th {
+      font-size: 0.5em;
+      padding: 0.52em 0.65em;
+    }
+    .tier-table.package-table td {
+      font-size: 0.45em;
+      padding: 0.43em 0.65em;
+    }
+    .tier-table.package-table .price {
+      font-size: 1.32em;
+    }
+    .tier-table.compact {
+      margin-top: 0.35em;
+    }
+    .tier-table.compact th {
+      font-size: 0.48em;
+      padding: 0.45em 0.65em;
+    }
+    .tier-table.compact td {
+      font-size: 0.44em;
+      padding: 0.42em 0.65em;
+    }
+    .biannual-panel {
+      border-top: 1px solid var(--line);
+      margin-top: 0.65em;
+      padding-top: 0.5em;
+    }
+    .single-event-panel {
+      margin-top: 0.05em;
+    }
+    .single-event-panel h3,
+    .biannual-panel h3 {
+      color: var(--cyan);
+      font-size: 0.64em;
+      margin-bottom: 0.18em;
+    }
+    .biannual-panel p {
+      color: var(--muted);
+      font-size: 0.43em;
+      margin: 0;
+    }
+    .copy-link {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+    .copy-link:hover {
+      text-decoration: underline;
     }
     .check { color: var(--lime); font-weight: 700; }
     .dash { color: #555555; }
@@ -655,7 +764,7 @@
           <div class="cover-meta">
             <span><!-- copy:s01.t005 -->Brooklyn, NY<!-- /copy --></span>
             <span><!-- copy:s01.t006 -->Talks + demos + workflow breakdowns<!-- /copy --></span>
-            <span><!-- copy:s01.t007 -->Presented by ZeroSpace Labs<!-- /copy --></span>
+            <span><!-- copy:s01.t007 -->Presented by Hypercentric<!-- /copy --></span>
           </div>
         </div>
       </section>
@@ -680,26 +789,26 @@
               <p class="body-copy"><!-- copy:s03.t004 -->ComfyUI NYC is the start. Creative AI NYC expands that energy into a broader event for hybrid production, where artists and technicians use the best available model, tool, or workflow for the shot in front of them.<!-- /copy --></p>
               <div class="metric-row">
                 <div class="metric">
-                  <div class="metric-num"><!-- copy:s03.t005 -->14<!-- /copy --></div>
-                  <div class="metric-label"><!-- copy:s03.t006 -->ComfyUI NYC events<!-- /copy --></div>
+                  <div class="metric-num"><!-- copy:s03.t005 -->18<!-- /copy --></div>
+                  <div class="metric-label"><!-- copy:s03.t006 -->creative AI events<!-- /copy --></div>
                 </div>
                 <div class="metric">
                   <div class="metric-num"><!-- copy:s03.t007 -->13x<!-- /copy --></div>
                   <div class="metric-label"><!-- copy:s03.t008 -->flagship event growth<!-- /copy --></div>
                 </div>
                 <div class="metric">
-                  <div class="metric-num"><!-- copy:s03.t009 -->2,977<!-- /copy --></div>
-                  <div class="metric-label"><!-- copy:s03.t010 -->approved attendees<!-- /copy --></div>
+                  <div class="metric-num"><!-- copy:s03.t009 -->4,000+<!-- /copy --></div>
+                  <div class="metric-label"><!-- copy:s03.t010 -->approved registrations<!-- /copy --></div>
                 </div>
                 <div class="metric">
-                  <div class="metric-num"><!-- copy:s03.t011 -->~24%<!-- /copy --></div>
+                  <div class="metric-num"><!-- copy:s03.t011 -->~34%<!-- /copy --></div>
                   <div class="metric-label"><!-- copy:s03.t012 -->return rate<!-- /copy --></div>
                 </div>
               </div>
             </div>
             <div class="media-grid">
               <img src="assets/bts_4.webp" alt="Creative AI community event">
-              <img src="assets/bts_2.webp" alt="Audience at ZeroSpace Labs">
+              <img src="assets/bts_2.webp" alt="Audience at Hypercentric">
               <img src="assets/bts_6.webp" alt="Speaker at AI event">
               <div style="overflow: hidden;"><img src="assets/bts_1.webp" alt="Creative AI audience" style="transform: rotate(-90deg) scale(1.25);"></div>
             </div>
@@ -734,6 +843,76 @@
                   <p><!-- copy:s04.t011 -->Production work depends on iteration, cleanup, relighting, upscaling, continuity fixes, and editorial judgment.<!-- /copy --></p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="split">
+            <div>
+              <p class="eyebrow"><!-- copy:s05a.t001 -->The Space<!-- /copy --></p>
+              <h2><!-- copy:s05a.t002 -->A venue built for the workflows sponsors want creators to try.<!-- /copy --></h2>
+              <hr class="accent-line cyan">
+              <p class="lead"><!-- copy:s05a.t003 -->Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue and production studio in downtown Brooklyn, built for virtual production, capture, live events, and post-production.<!-- /copy --></p>
+              <div class="card-grid two">
+                <div class="card">
+                  <h3><!-- copy:s05a.t004 -->Virtual Production Authority<!-- /copy --></h3>
+                  <p><!-- copy:s05a.t005 -->Opened in 2020 as the first commercial virtual production studio in the world, with the largest fixed-install virtual production stage on the East Coast.<!-- /copy --></p>
+                </div>
+                <div class="card">
+                  <h3><!-- copy:s05a.t006 -->Capture Stack<!-- /copy --></h3>
+                  <p><!-- copy:s05a.t007 -->Motion capture and volumetric capture give sponsors a real production context for demos, source material, workflow breakdowns, and creator education.<!-- /copy --></p>
+                </div>
+                <div class="card">
+                  <h3><!-- copy:s05a.t008 -->Event Scale<!-- /copy --></h3>
+                  <p><!-- copy:s05a.t009 -->The room can move from stage programming to networking, demo surfaces, livestream moments, and sponsor activations without feeling like a generic meetup.<!-- /copy --></p>
+                </div>
+                <div class="card">
+                  <h3><!-- copy:s05a.t010 -->Media Credibility<!-- /copy --></h3>
+                  <p><!-- copy:s05a.t011 -->The venue has been featured publicly as a next-generation production environment, giving sponsors a physical proof point behind the community.<!-- /copy --></p>
+                </div>
+              </div>
+              <p class="note"><!-- copy:s05a.t012 -->Featured video: <a class="copy-link" href="https://www.youtube.com/watch?v=u7pu1cQBqtQ" target="_blank" rel="noopener">ZeroSpace on YouTube</a><!-- /copy --></p>
+            </div>
+            <div class="full-image">
+              <img src="assets/zerospace-stage-zmx.jpg" alt="ZeroSpace virtual production stage">
+              <div class="image-caption"><!-- copy:s05a.t013 -->ZeroSpace gives the event a production-grade backdrop, not just a room<!-- /copy --></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <p class="eyebrow"><!-- copy:s16.t001 -->Venue + Production Proof<!-- /copy --></p>
+          <h2><!-- copy:s16.t002 -->ZeroSpace is also the production engine.<!-- /copy --></h2>
+          <hr class="accent-line lime">
+          <div class="venue-grid">
+            <div class="venue-card">
+              <img src="assets/facilities_image4.webp" alt="ZeroSpace LED wall">
+              <span><!-- copy:s16.t003 -->8K x 2K LED wall - immersive sponsor demos<!-- /copy --></span>
+            </div>
+            <div class="venue-card">
+              <img src="assets/labs2026_image25.webp" alt="ZeroSpace subway set">
+              <span><!-- copy:s16.t004 -->Standing sets - cinematic workflow examples<!-- /copy --></span>
+            </div>
+            <div class="venue-card">
+              <img src="assets/facilities_image22.webp" alt="ZeroSpace production space">
+              <span><!-- copy:s16.t005 -->50,000+ sq ft - production and event scale<!-- /copy --></span>
+            </div>
+            <div class="venue-card">
+              <img src="assets/facilities_image64.webp" alt="Motion capture and greenscreen">
+              <span><!-- copy:s16.t006 -->Capture + greenscreen - AI-ready source material<!-- /copy --></span>
+            </div>
+            <div class="venue-card">
+              <img src="assets/labs2026_image34.webp" alt="Film production at ZeroSpace">
+              <span><!-- copy:s16.t007 -->On-site production - camera, crew, and post support<!-- /copy --></span>
+            </div>
+            <div class="venue-card">
+              <img src="assets/zerospace-stage-zmx.jpg" alt="ZeroSpace event stage">
+              <span><!-- copy:s16.t008 -->Livestream + editing - content delivery built in<!-- /copy --></span>
             </div>
           </div>
         </div>
@@ -805,7 +984,7 @@
               <div class="label"><!-- copy:s06.t018 -->venue event capacity<!-- /copy --></div>
             </div>
           </div>
-          <p class="note"><!-- copy:s06.t019 -->December 2024 - February 2026 aggregate platform metrics across ZeroSpace Labs programming. Creative AI NYC uses ComfyUI NYC as historical proof, not the ongoing event brand.<!-- /copy --></p>
+          <p class="note"><!-- copy:s06.t019 -->December 2024 - April 2026 aggregate platform metrics across ComfyUI programming.<!-- /copy --></p>
         </div>
       </section>
 
@@ -833,32 +1012,80 @@
         </div>
       </section>
 
-      <section>
+      <section class="slide-audience">
         <div class="slide-content">
-          <div class="split">
-            <div>
-              <p class="eyebrow"><!-- copy:s08.t001 -->The Audience<!-- /copy --></p>
-              <h2><!-- copy:s08.t002 -->Creators, founders, artists, and AI operators.<!-- /copy --></h2>
-              <hr class="accent-line lime">
-              <p class="lead"><!-- copy:s08.t003 -->The room combines creative taste, technical fluency, and tool adoption behavior.<!-- /copy --></p>
-              <p class="body-copy"><!-- copy:s08.t004 -->This is the audience that evaluates new models, turns workflows into tutorials, influences peers, and brings tools into studios, agencies, startups, and independent projects.<!-- /copy --></p>
+          <p class="eyebrow"><!-- copy:s08.t001 -->The Audience<!-- /copy --></p>
+          <h2><!-- copy:s08.t002 -->Creators, founders, artists, and AI operators.<!-- /copy --></h2>
+          <hr class="accent-line lime">
+          <p class="lead"><!-- copy:s08.t003 -->The room combines creative taste, technical fluency, and tool adoption behavior.<!-- /copy --></p>
+          <p class="body-copy"><!-- copy:s08.t004 -->This is the audience that evaluates new models, turns workflows into tutorials, influences peers, and brings tools into studios, agencies, startups, and independent projects.<!-- /copy --></p>
+          <div class="audience-layout">
+            <div class="pie-section">
+              <svg viewBox="-50 -30 1100 620" xmlns="http://www.w3.org/2000/svg" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" aria-label="Audience mix pie chart">
+                <path d="M430,280 L430,80 A200,200 0 0,1 622.8,333.3 Z" fill="#00FFFF" stroke="#232323" stroke-width="1.5"/>
+                <path d="M430,280 L622.8,333.3 A200,200 0 0,1 398.4,477.5 Z" fill="#00CCCC" stroke="#232323" stroke-width="1.5"/>
+                <path d="M430,280 L398.4,477.5 A200,200 0 0,1 250.8,368.8 Z" fill="#009999" stroke="#232323" stroke-width="1.5"/>
+                <path d="M430,280 L250.8,368.8 A200,200 0 0,1 283.1,144.3 Z" fill="#D8FF32" stroke="#232323" stroke-width="1.5"/>
+                <path d="M430,280 L283.1,144.3 A200,200 0 0,1 332.8,105.2 Z" fill="#A8CC28" stroke="#232323" stroke-width="1.5"/>
+                <path d="M430,280 L332.8,105.2 A200,200 0 0,1 379.8,86.4 Z" fill="#78991E" stroke="#232323" stroke-width="1.5"/>
+                <path d="M430,280 L379.8,86.4 A200,200 0 0,1 430,80 Z" fill="#4D6614" stroke="#232323" stroke-width="1.5"/>
+
+                <polyline points="580,148 620,130 785,130" fill="none" stroke="#00FFFF" stroke-width="1" opacity="0.7"/>
+                <circle cx="580" cy="148" r="3" fill="#00FFFF"/>
+                <text x="790" y="126" font-family="Oswald, sans-serif" font-size="24" font-weight="700" fill="#fff"><!-- copy:s08.t013 -->29%<!-- /copy --></text>
+                <text x="790" y="147" font-family="Roboto Condensed, sans-serif" font-size="17" fill="#D0D0D0"><!-- copy:s08.t014 -->Founders<!-- /copy --></text>
+
+                <polyline points="553,438 600,458 785,458" fill="none" stroke="#00CCCC" stroke-width="1" opacity="0.7"/>
+                <circle cx="553" cy="438" r="3" fill="#00CCCC"/>
+                <text x="790" y="454" font-family="Oswald, sans-serif" font-size="24" font-weight="700" fill="#fff"><!-- copy:s08.t007 -->23%<!-- /copy --></text>
+                <text x="790" y="475" font-family="Roboto Condensed, sans-serif" font-size="17" fill="#D0D0D0"><!-- copy:s08.t008 -->AI Designers<!-- /copy --></text>
+
+                <polyline points="318,446 270,490 175,490" fill="none" stroke="#009999" stroke-width="1" opacity="0.7"/>
+                <circle cx="318" cy="446" r="3" fill="#009999"/>
+                <text x="170" y="486" font-family="Oswald, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="end"><!-- copy:s08.t017 -->15%<!-- /copy --></text>
+                <text x="170" y="507" font-family="Roboto Condensed, sans-serif" font-size="17" fill="#D0D0D0" text-anchor="end"><!-- copy:s08.t018 -->AI / Video Developers<!-- /copy --></text>
+
+                <polyline points="231,261 195,320 175,320" fill="none" stroke="#D8FF32" stroke-width="1" opacity="0.7"/>
+                <circle cx="231" cy="261" r="3" fill="#D8FF32"/>
+                <text x="170" y="316" font-family="Oswald, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="end"><!-- copy:s08.t019 -->19%<!-- /copy --></text>
+                <text x="170" y="337" font-family="Roboto Condensed, sans-serif" font-size="17" fill="#D0D0D0" text-anchor="end"><!-- copy:s08.t020 -->Agency / Freelance / Other<!-- /copy --></text>
+
+                <polyline points="307,122 250,165 175,165" fill="none" stroke="#A8CC28" stroke-width="1" opacity="0.7"/>
+                <circle cx="307" cy="122" r="3" fill="#A8CC28"/>
+                <text x="170" y="161" font-family="Oswald, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="end"><!-- copy:s08.t021 -->5%<!-- /copy --></text>
+                <text x="170" y="182" font-family="Roboto Condensed, sans-serif" font-size="17" fill="#D0D0D0" text-anchor="end"><!-- copy:s08.t022 -->Students<!-- /copy --></text>
+
+                <polyline points="368,90 310,80 175,80" fill="none" stroke="#78991E" stroke-width="1" opacity="0.7"/>
+                <circle cx="368" cy="90" r="3" fill="#78991E"/>
+                <text x="170" y="76" font-family="Oswald, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="end"><!-- copy:s08.t023 -->4%<!-- /copy --></text>
+                <text x="170" y="97" font-family="Roboto Condensed, sans-serif" font-size="17" fill="#D0D0D0" text-anchor="end"><!-- copy:s08.t024 -->Investors<!-- /copy --></text>
+
+                <polyline points="411,81 360,0 175,0" fill="none" stroke="#4D6614" stroke-width="1" opacity="0.7"/>
+                <circle cx="411" cy="81" r="3" fill="#4D6614"/>
+                <text x="170" y="-4" font-family="Oswald, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="end"><!-- copy:s08.t025 -->3%<!-- /copy --></text>
+                <text x="170" y="17" font-family="Roboto Condensed, sans-serif" font-size="17" fill="#D0D0D0" text-anchor="end"><!-- copy:s08.t026 -->ComfyUI Core Devs<!-- /copy --></text>
+              </svg>
             </div>
-            <div class="card-grid two">
-              <div class="card">
-                <h3><!-- copy:s08.t005 -->27% Founders<!-- /copy --></h3>
-                <p><!-- copy:s08.t006 -->Decision-makers who evaluate, adopt, and champion creative AI tools.<!-- /copy --></p>
+            <div class="insights">
+              <div class="insight-card">
+                <span class="insight-num"><!-- copy:s08.t011 -->55% New to ComfyUI<!-- /copy --></span>
+                <div class="insight-text"><!-- copy:s08.t012 -->Historical proof that the community functions as an onboarding funnel for new workflows.<!-- /copy --></div>
               </div>
-              <div class="card">
-                <h3><!-- copy:s08.t007 -->25% AI Designers<!-- /copy --></h3>
-                <p><!-- copy:s08.t008 -->Artists and designers who translate model capabilities into visible creative work.<!-- /copy --></p>
+              <div class="insight-card">
+                <span class="insight-num"><!-- copy:s08.t009 -->15% AI / Video Developers<!-- /copy --></span>
+                <div class="insight-text"><!-- copy:s08.t010 -->Technical creators who build workflows and troubleshoot model behavior.<!-- /copy --></div>
               </div>
-              <div class="card">
-                <h3><!-- copy:s08.t009 -->15% AI / Video Developers<!-- /copy --></h3>
-                <p><!-- copy:s08.t010 -->Technical creators who build workflows and troubleshoot model behavior.<!-- /copy --></p>
+              <div class="insight-card">
+                <span class="insight-num"><!-- copy:s08.t031 -->23% AI Designers<!-- /copy --></span>
+                <div class="insight-text"><!-- copy:s08.t032 -->Artists and designers who translate model capabilities into visible creative work.<!-- /copy --></div>
               </div>
-              <div class="card">
-                <h3><!-- copy:s08.t011 -->47% New to ComfyUI<!-- /copy --></h3>
-                <p><!-- copy:s08.t012 -->Historical proof that the community functions as an onboarding funnel for new workflows.<!-- /copy --></p>
+              <div class="insight-card">
+                <span class="insight-num"><!-- copy:s08.t034 -->19% Agency / Freelance / Other<!-- /copy --></span>
+                <div class="insight-text"><!-- copy:s08.t035 -->Independent and studio-side creators who turn workflow demos into client, campaign, and production experiments.<!-- /copy --></div>
+              </div>
+              <div class="insight-card">
+                <span class="insight-num"><!-- copy:s08.t005 -->29% Founders<!-- /copy --></span>
+                <div class="insight-text"><!-- copy:s08.t006 -->Decision-makers who evaluate, adopt, and champion creative AI tools.<!-- /copy --></div>
               </div>
             </div>
           </div>
@@ -892,7 +1119,7 @@
         </div>
       </section>
 
-      <section>
+      <section data-visibility="hidden">
         <div class="slide-content">
           <p class="eyebrow"><!-- copy:s10.t001 -->Workflow Thesis<!-- /copy --></p>
           <h2><!-- copy:s10.t002 -->The future is hybrid, legible, and iterative.<!-- /copy --></h2>
@@ -946,13 +1173,6 @@
               </div>
             </div>
             <div class="deliverable">
-              <div class="media"><img src="assets/facilities_image4.webp" alt="LED wall"></div>
-              <div class="overlay">
-                <h3><!-- copy:s11.t009 -->LED Wall Integration<!-- /copy --></h3>
-                <p><!-- copy:s11.t010 -->Branding, creative visuals, or demo content on ZeroSpace's 8K x 2K curved LED wall.<!-- /copy --></p>
-              </div>
-            </div>
-            <div class="deliverable">
               <div class="media"><img src="bts-pics/DSCF1524.webp" alt="Creator interaction"></div>
               <div class="overlay">
                 <h3><!-- copy:s11.t011 -->Creator Interaction<!-- /copy --></h3>
@@ -964,6 +1184,13 @@
               <div class="overlay">
                 <h3><!-- copy:s11.t013 -->Short-Form Clips<!-- /copy --></h3>
                 <p><!-- copy:s11.t014 -->Social-ready clips from talks, demos, recaps, and sponsor moments.<!-- /copy --></p>
+              </div>
+            </div>
+            <div class="deliverable">
+              <div class="media"><img src="assets/comfyui-panel-jan-2026.jpg" alt="ComfyUI sponsor panel"></div>
+              <div class="overlay">
+                <h3><!-- copy:s11.t015 -->Panel<!-- /copy --></h3>
+                <p><!-- copy:s11.t016 -->A moderated sponsor or partner panel that frames a timely workflow, market shift, or creator conversation.<!-- /copy --></p>
               </div>
             </div>
           </div>
@@ -1001,7 +1228,7 @@
         </div>
       </section>
 
-      <section>
+      <section data-visibility="hidden">
         <div class="slide-content slide-title">
           <p class="eyebrow"><!-- copy:s13.t001 -->Reporting + Roadmap<!-- /copy --></p>
           <h2><!-- copy:s13.t002 -->Clear current reporting, clear future capability.<!-- /copy --></h2>
@@ -1030,10 +1257,13 @@
 
       <section>
         <div class="slide-content">
-          <p class="eyebrow"><!-- copy:s14.t001 -->Packages<!-- /copy --></p>
-          <h2><!-- copy:s14.t002 -->Series-level partnerships.<!-- /copy --></h2>
+          <p class="eyebrow"><!-- copy:s14.t001 -->Sponsorship Packages<!-- /copy --></p>
+          <h2><!-- copy:s14.t002 -->Event sponsorship options.<!-- /copy --></h2>
           <hr class="accent-line lime">
-          <table class="tier-table">
+          <div class="single-event-panel">
+            <h3><!-- copy:s14.t058 -->Single Event Sponsorship<!-- /copy --></h3>
+          </div>
+          <table class="tier-table package-table">
             <thead>
               <tr>
                 <th><!-- copy:s14.t003 -->Benefit<!-- /copy --></th>
@@ -1044,65 +1274,94 @@
             </thead>
             <tbody>
               <tr>
-                <td><!-- copy:s14.t007 -->Annual<!-- /copy --></td>
-                <td><span class="price"><!-- copy:s14.t008 -->$80,000<!-- /copy --></span></td>
-                <td><span class="price"><!-- copy:s14.t009 -->$40,000<!-- /copy --></span></td>
-                <td><span class="price"><!-- copy:s14.t010 -->$10,000<!-- /copy --></span></td>
+                <td><!-- copy:s14.t007 -->Event sponsorship<!-- /copy --></td>
+                <td><span class="price"><!-- copy:s14.t008 -->$20,000<!-- /copy --></span></td>
+                <td><span class="price"><!-- copy:s14.t009 -->$10,000<!-- /copy --></span></td>
+                <td><span class="price"><!-- copy:s14.t010 -->$3,000<!-- /copy --></span></td>
               </tr>
               <tr>
-                <td><!-- copy:s14.t011 -->Monthly<!-- /copy --></td>
-                <td><span class="price"><!-- copy:s14.t012 -->$20,000<!-- /copy --></span></td>
-                <td><span class="price"><!-- copy:s14.t013 -->$10,000<!-- /copy --></span></td>
-                <td><span class="price"><!-- copy:s14.t014 -->$3,000<!-- /copy --></span></td>
+                <td><!-- copy:s14.t011 -->Logo on event materials<!-- /copy --></td>
+                <td><span class="check"><!-- copy:s14.t012 -->Yes<!-- /copy --></span></td>
+                <td><span class="check"><!-- copy:s14.t013 -->Yes<!-- /copy --></span></td>
+                <td><span class="check"><!-- copy:s14.t014 -->Yes<!-- /copy --></span></td>
               </tr>
               <tr>
-                <td><!-- copy:s14.t015 -->Logo on event flyers<!-- /copy --></td>
-                <td><span class="check"><!-- copy:s14.t016 -->Yes<!-- /copy --></span></td>
-                <td><span class="check"><!-- copy:s14.t017 -->Yes<!-- /copy --></span></td>
-                <td><span class="check"><!-- copy:s14.t018 -->Yes<!-- /copy --></span></td>
+                <td><!-- copy:s14.t039 -->Job board posting<!-- /copy --></td>
+                <td><span class="check"><!-- copy:s14.t040 -->Yes<!-- /copy --></span></td>
+                <td><span class="check"><!-- copy:s14.t041 -->Yes<!-- /copy --></span></td>
+                <td><span class="check"><!-- copy:s14.t042 -->Yes<!-- /copy --></span></td>
               </tr>
               <tr>
-                <td><!-- copy:s14.t019 -->Shout-out at every event<!-- /copy --></td>
-                <td><span class="check"><!-- copy:s14.t020 -->Yes<!-- /copy --></span></td>
-                <td><span class="check"><!-- copy:s14.t021 -->Yes<!-- /copy --></span></td>
-                <td><span class="check"><!-- copy:s14.t022 -->Yes<!-- /copy --></span></td>
+                <td><!-- copy:s14.t015 -->Sponsor content slot<!-- /copy --></td>
+                <td><!-- copy:s14.t016 -->Full presentation (20 minutes)<!-- /copy --></td>
+                <td><!-- copy:s14.t017 -->Full presentation (20 minutes)<!-- /copy --></td>
+                <td><!-- copy:s14.t018 -->Stage shout-out<!-- /copy --></td>
               </tr>
               <tr>
-                <td><!-- copy:s14.t023 -->Speaking / demo slot<!-- /copy --></td>
-                <td><!-- copy:s14.t024 -->1/month<!-- /copy --></td>
-                <td><!-- copy:s14.t025 -->1/month<!-- /copy --></td>
-                <td><span class="dash"><!-- copy:s14.t026 -->-<!-- /copy --></span></td>
+                <td><!-- copy:s14.t019 -->Additional sponsor content<!-- /copy --></td>
+                <td><!-- copy:s14.t020 -->Sponsored panel or workshop<!-- /copy --></td>
+                <td><span class="dash"><!-- copy:s14.t021 -->-<!-- /copy --></span></td>
+                <td><span class="dash"><!-- copy:s14.t022 -->-<!-- /copy --></span></td>
               </tr>
               <tr>
-                <td><!-- copy:s14.t027 -->Edited presentation video<!-- /copy --></td>
-                <td><span class="check"><!-- copy:s14.t028 -->Yes<!-- /copy --></span></td>
-                <td><span class="check"><!-- copy:s14.t029 -->Yes<!-- /copy --></span></td>
-                <td><span class="dash"><!-- copy:s14.t030 -->-<!-- /copy --></span></td>
-              </tr>
-              <tr>
-                <td><!-- copy:s14.t031 -->Short-form clips<!-- /copy --></td>
-                <td><!-- copy:s14.t032 -->3/month<!-- /copy --></td>
-                <td><span class="dash"><!-- copy:s14.t033 -->-<!-- /copy --></span></td>
+                <td><!-- copy:s14.t031 -->Edited full-length presentation video <a class="copy-link" href="https://f.io/IJDUMJmU" target="_blank" rel="noopener">(sample)</a><!-- /copy --></td>
+                <td><span class="check"><!-- copy:s14.t032 -->Yes<!-- /copy --></span></td>
+                <td><span class="check"><!-- copy:s14.t033 -->Yes<!-- /copy --></span></td>
                 <td><span class="dash"><!-- copy:s14.t034 -->-<!-- /copy --></span></td>
               </tr>
               <tr>
-                <td><!-- copy:s14.t035 -->Demo booth<!-- /copy --></td>
-                <td><!-- copy:s14.t036 -->Up to 4/year<!-- /copy --></td>
-                <td><!-- copy:s14.t037 -->Up to 2/year<!-- /copy --></td>
-                <td><span class="dash"><!-- copy:s14.t038 -->-<!-- /copy --></span></td>
+                <td><!-- copy:s14.t059 -->Edited vertical reels <a class="copy-link" href="https://www.instagram.com/p/DQphSUWEkAs/" target="_blank" rel="noopener">(sample)</a><!-- /copy --></td>
+                <td><!-- copy:s14.t060 -->2 included<!-- /copy --></td>
+                <td><!-- copy:s14.t061 -->+$1K/ea<!-- /copy --></td>
+                <td><span class="dash"><!-- copy:s14.t062 -->-<!-- /copy --></span></td>
               </tr>
               <tr>
-                <td><!-- copy:s14.t039 -->&quot;Presented by&quot; co-branding<!-- /copy --></td>
-                <td><span class="check"><!-- copy:s14.t040 -->Yes<!-- /copy --></span></td>
-                <td><span class="dash"><!-- copy:s14.t041 -->-<!-- /copy --></span></td>
-                <td><span class="dash"><!-- copy:s14.t042 -->-<!-- /copy --></span></td>
+                <td><!-- copy:s14.t023 -->Pre-event mail blast shout-out<!-- /copy --></td>
+                <td><span class="check"><!-- copy:s14.t024 -->Yes<!-- /copy --></span></td>
+                <td><span class="check"><!-- copy:s14.t025 -->Yes<!-- /copy --></span></td>
+                <td><span class="dash"><!-- copy:s14.t026 -->-<!-- /copy --></span></td>
+              </tr>
+              <tr>
+                <td><!-- copy:s14.t027 -->Post-event mail blast shout-out<!-- /copy --></td>
+                <td><span class="check"><!-- copy:s14.t028 -->Yes<!-- /copy --></span></td>
+                <td><span class="check"><!-- copy:s14.t029 -->Yes<!-- /copy --></span></td>
+                <td><span class="check"><!-- copy:s14.t030 -->Yes<!-- /copy --></span></td>
+              </tr>
+              <tr>
+                <td><!-- copy:s14.t035 -->Access to attendee emails*<!-- /copy --></td>
+                <td><span class="check"><!-- copy:s14.t036 -->Yes<!-- /copy --></span></td>
+                <td><span class="dash"><!-- copy:s14.t037 -->-<!-- /copy --></span></td>
+                <td><span class="dash"><!-- copy:s14.t038 -->-<!-- /copy --></span></td>
               </tr>
             </tbody>
           </table>
+          <p class="note"><!-- copy:s14.t057 -->*Attendee email access applies only for attendees that explicitly opt-in to sharing.<!-- /copy --></p>
+          <div class="biannual-panel">
+            <h3><!-- copy:s14.t043 -->Biannual Sponsorship Plan<!-- /copy --></h3>
+            <p><!-- copy:s14.t044 -->Biannual (six-month) plan priced at 3x the single-event rate, with the option to sponsor 4 monthly events.<!-- /copy --></p>
+            <table class="tier-table compact">
+              <thead>
+                <tr>
+                  <th><!-- copy:s14.t045 -->Benefit<!-- /copy --></th>
+                  <th><!-- copy:s14.t046 -->Platinum<!-- /copy --></th>
+                  <th><!-- copy:s14.t047 -->Gold<!-- /copy --></th>
+                  <th><!-- copy:s14.t048 -->Silver<!-- /copy --></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><!-- copy:s14.t049 -->Biannual plan<!-- /copy --></td>
+                  <td><span class="price"><!-- copy:s14.t050 -->$60,000<!-- /copy --></span></td>
+                  <td><span class="price"><!-- copy:s14.t051 -->$30,000<!-- /copy --></span></td>
+                  <td><span class="price"><!-- copy:s14.t052 -->$9,000<!-- /copy --></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section data-visibility="hidden">
         <div class="slide-content">
           <p class="eyebrow"><!-- copy:s15.t001 -->Activation Add-Ons<!-- /copy --></p>
           <h2><!-- copy:s15.t002 -->Add-ons for sponsor packages.<!-- /copy --></h2>
@@ -1122,40 +1381,6 @@
             </div>
           </div>
           <p class="note"><!-- copy:s15.t034 -->Add-ons layer onto the base sponsorship tier. Silver includes base presence; presentation slots start at Gold; title sponsorship comes with Platinum.<!-- /copy --></p>
-        </div>
-      </section>
-
-      <section>
-        <div class="slide-content">
-          <p class="eyebrow"><!-- copy:s16.t001 -->Venue + Production Proof<!-- /copy --></p>
-          <h2><!-- copy:s16.t002 -->ZeroSpace is also the production engine.<!-- /copy --></h2>
-          <hr class="accent-line lime">
-          <div class="venue-grid">
-            <div class="venue-card">
-              <img src="assets/facilities_image4.webp" alt="ZeroSpace LED wall">
-              <span><!-- copy:s16.t003 -->8K x 2K LED wall - immersive sponsor demos<!-- /copy --></span>
-            </div>
-            <div class="venue-card">
-              <img src="assets/labs2026_image25.webp" alt="ZeroSpace subway set">
-              <span><!-- copy:s16.t004 -->Standing sets - cinematic workflow examples<!-- /copy --></span>
-            </div>
-            <div class="venue-card">
-              <img src="assets/facilities_image22.webp" alt="ZeroSpace production space">
-              <span><!-- copy:s16.t005 -->60,000+ sq ft - production and event scale<!-- /copy --></span>
-            </div>
-            <div class="venue-card">
-              <img src="assets/facilities_image64.webp" alt="Motion capture and greenscreen">
-              <span><!-- copy:s16.t006 -->Capture + greenscreen - AI-ready source material<!-- /copy --></span>
-            </div>
-            <div class="venue-card">
-              <img src="assets/labs2026_image34.webp" alt="Film production at ZeroSpace">
-              <span><!-- copy:s16.t007 -->On-site production - camera, crew, and post support<!-- /copy --></span>
-            </div>
-            <div class="venue-card">
-              <img src="assets/zerospace-stage-zmx.jpg" alt="ZeroSpace event stage">
-              <span><!-- copy:s16.t008 -->Livestream + editing - content delivery built in<!-- /copy --></span>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -1183,7 +1408,7 @@
           <ul class="recognition-list">
             <li><!-- copy:s17.t003 -->ComfyUI NYC became the flagship origin proof for a broader creative AI audience in New York.<!-- /copy --></li>
             <li><!-- copy:s17.t004 -->Vibe Shift was co-produced with Rhizome and New Museum's New Inc, with Anthropic as sponsor.<!-- /copy --></li>
-            <li><!-- copy:s17.t005 -->ZeroSpace Labs has hosted creators from production, AI, VFX, creative coding, startups, and top universities.<!-- /copy --></li>
+            <li><!-- copy:s17.t005 -->Hypercentric has hosted creators from production, AI, VFX, creative coding, startups, and top universities.<!-- /copy --></li>
           </ul>
         </div>
       </section>
@@ -1219,7 +1444,7 @@
               <p><strong><!-- copy:s18.t012 -->Xuelong Mu<!-- /copy --></strong><br><!-- copy:s18.t013 -->Technical Director<!-- /copy --><br><!-- copy:s18.t014 -->xuelong.mu@zerospace.co<!-- /copy --><br><br><!-- copy:s18.t015 -->zerospace.co<!-- /copy --><br><!-- copy:s18.t016 -->@zerospace<!-- /copy --><br><!-- copy:s18.t017 -->@zerospacelabs<!-- /copy --></p>
             </div>
           </div>
-          <div class="bottom-brand"><!-- copy:s18.t018 -->Creative AI NYC - ZeroSpace Labs<!-- /copy --></div>
+          <div class="bottom-brand"><!-- copy:s18.t018 -->Creative AI NYC - Hypercentric<!-- /copy --></div>
         </div>
       </section>
 

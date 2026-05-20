@@ -3,15 +3,15 @@
 
 Source deck: `creative-ai-nyc/index.html`
 
-This document is the source-of-truth copy outline for the Creative AI NYC sponsorship deck. The public deck positions Creative AI NYC as a broader monthly creative AI event from ZeroSpace Labs.
+This document is the source-of-truth copy outline for the Creative AI NYC sponsorship deck. The public deck positions Creative AI NYC as a broader monthly creative AI event from Hypercentric.
 
 ---
 
 ## Executive Summary
 
-Creative AI NYC is the evolution of the ZeroSpace Labs community event platform into a broader monthly event for hybrid creative AI workflows.
+Creative AI NYC is the evolution of the Hypercentric community event platform into a broader monthly event for hybrid creative AI workflows.
 
-ComfyUI NYC is treated as the origin story and credibility proof, not the ongoing event brand. The deck uses ComfyUI NYC growth and audience data to show that ZeroSpace Labs has already assembled a trusted in-person community for technical creators, AI artists, founders, and production operators.
+ComfyUI NYC is treated as the origin story and credibility proof, not the ongoing event brand. The deck uses ComfyUI NYC growth and audience data to show that Hypercentric has already assembled a trusted in-person community for technical creators, AI artists, founders, and production operators.
 
 Sponsor thesis:
 
@@ -94,7 +94,47 @@ Purpose:
 
 ---
 
-## SLIDE 5: THE EVENT
+## SLIDE 5: THE SPACE
+
+**A venue built for the workflows sponsors want creators to try.**
+
+Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue and production studio in downtown Brooklyn, built for virtual production, capture, live events, and post-production.
+
+Venue proof:
+
+- 50,000+ square foot event venue in downtown Brooklyn.
+- Opened in 2020 as the first commercial virtual production studio in the world.
+- Largest fixed-install virtual production stage on the East Coast.
+- Motion capture and volumetric capture.
+- Featured video: https://www.youtube.com/watch?v=u7pu1cQBqtQ
+
+Purpose:
+
+- Make the space itself part of the sponsor value proposition.
+- Show that sponsors are not just buying room presence; they are activating inside a production-grade venue.
+
+---
+
+## SLIDE 5B: VENUE + PRODUCTION PROOF
+
+**ZeroSpace is also the production engine.**
+
+Venue assets:
+
+- 8K x 2K LED wall.
+- Standing sets.
+- 50,000+ sq ft production and event space.
+- Capture + greenscreen.
+- On-site production support.
+- Livestream + editing.
+
+Purpose:
+
+- Reinforce that the event can produce sponsor media, not just host attendance.
+
+---
+
+## SLIDE 5C: THE EVENT
 
 **A monthly room for creative AI workflows.**
 
@@ -133,7 +173,7 @@ Aggregate platform proof:
 
 Deck note:
 
-December 2024-February 2026 aggregate platform metrics across ZeroSpace Labs programming. Creative AI NYC uses ComfyUI NYC as historical proof, not the ongoing event brand.
+December 2024-February 2026 aggregate platform metrics across Hypercentric programming. Creative AI NYC uses ComfyUI NYC as historical proof, not the ongoing event brand.
 
 Purpose:
 
@@ -143,7 +183,7 @@ Purpose:
 
 ## SLIDE 7: WHO'S IN THE ROOM
 
-Audience company and institution proof is reused from the ZeroSpace Labs sponsorship deck:
+Audience company and institution proof is reused from the Hypercentric sponsorship deck:
 
 - Enterprise & Tech.
 - Film, VFX & Production.
@@ -161,16 +201,28 @@ Purpose:
 
 **Creators, founders, artists, and AI operators.**
 
-Key audience proof:
+Pie chart audience mix:
 
 - 27% founders.
 - 25% AI designers.
 - 15% AI / video developers.
-- 47% new to ComfyUI, used as historical proof that the community can onboard creators into new workflows.
+- 19% agency / freelance / other.
+- 7% students.
+- 4% investors.
+- 3% ComfyUI core devs.
+
+Context cards retained on the slide:
+
+- Historical proof: 47% new to ComfyUI, used as historical proof that the community can onboard creators into new workflows.
+- Technical creators: 15% AI / video developers build workflows and troubleshoot model behavior.
+- AI designers: 25% artists and designers translate model capabilities into visible creative work.
+- Agency / freelance: 19% independent and studio-side creators turn workflow demos into client, campaign, and production experiments.
+- Decision-makers: 27% founders evaluate, adopt, and champion creative AI tools.
 
 Purpose:
 
 - Show both creative and buyer/influencer relevance.
+- Make the audience composition easier to scan by using the original sponsorship deck's pie-chart pattern.
 
 ---
 
@@ -222,6 +274,7 @@ Current deliverables:
 - LED wall integration.
 - Creator interaction.
 - Short-form clips.
+- Panel.
 
 Purpose:
 
@@ -280,30 +333,44 @@ Roadmap:
 Required guardrail:
 
 - The deck must not promise attendee contact sharing, lead lists, or opt-ins as active inventory.
+- If attendee emails are included in a package, the claim must remain explicitly opt-in and contingent on consent collection being active for that event.
 
 ---
 
 ## SLIDE 14: PACKAGES
 
-**Series-level partnerships.**
+**Event sponsorship options.**
 
-Pricing follows the current ZeroSpace Labs ladder:
+Single Event Sponsorship:
 
 | Benefit | Platinum | Gold | Silver |
 |---|---:|---:|---:|
-| Annual | $80,000 | $40,000 | $10,000 |
-| Monthly | $20,000 | $10,000 | $3,000 |
-| Logo on event flyers | Yes | Yes | Yes |
-| Shout-out at every event | Yes | Yes | Yes |
-| Speaking / demo slot | 1/month | 1/month | - |
-| Edited presentation video | Yes | Yes | - |
-| Short-form clips | 3/month | - | - |
-| Demo booth | Up to 4/year | Up to 2/year | - |
-| "Presented by" co-branding | Yes | - | - |
+| Event sponsorship | $20,000 | $10,000 | $3,000 |
+| Logo on event materials | Yes | Yes | Yes |
+| Job board posting | Yes | Yes | Yes |
+| Sponsor content slot | Full presentation (20 minutes) | Full presentation (20 minutes) | Stage shout-out |
+| Additional sponsor content | Sponsored panel or workshop | - | - |
+| Edited full-length presentation video [(sample)](https://f.io/IJDUMJmU) | Yes | Yes | - |
+| Edited vertical reels [(sample)](https://www.instagram.com/p/DQphSUWEkAs/) | 2 included | +$1K/ea | - |
+| Pre-event mail blast shout-out | Yes | Yes | - |
+| Post-event mail blast shout-out | Yes | Yes | Yes |
+| Access to attendee emails* | Yes | - | - |
+
+*Attendee email access applies only for attendees that explicitly opt-in to sharing.
+
+Biannual sponsorship plan:
+
+- Biannual (six-month) plan priced at 3x the single-event rate, with the option to sponsor 4 monthly events.
+
+| Benefit | Platinum | Gold | Silver |
+|---|---:|---:|---:|
+| Biannual plan | $60,000 | $30,000 | $9,000 |
 
 Purpose:
 
-- Reuse existing package structure while adapting language to Creative AI NYC.
+- Show the per-event cost clearly.
+- Keep the six-month option separate from the main chart.
+- Avoid overpromising email access beyond explicit opt-in consent.
 
 ---
 
@@ -333,36 +400,17 @@ Purpose:
 
 ---
 
-## SLIDE 16: VENUE + PRODUCTION PROOF
-
-**ZeroSpace is also the production engine.**
-
-Venue assets:
-
-- 8K x 2K LED wall.
-- Standing sets.
-- 60,000+ sq ft production and event space.
-- Capture + greenscreen.
-- On-site production support.
-- Livestream + editing.
-
-Purpose:
-
-- Reinforce that the event can produce sponsor media, not just host attendance.
-
----
-
 ## SLIDE 17: PARTNERS + RECOGNITION
 
 **Creative AI NYC builds from proven sponsor trust.**
 
-Existing partner proof includes logos already used in the ZeroSpace Labs sponsorship deck.
+Existing partner proof includes logos already used in the Hypercentric sponsorship deck.
 
 Recognition copy:
 
 - ComfyUI NYC became the flagship origin proof for a broader creative AI audience in New York.
 - Vibe Shift was co-produced with Rhizome and New Museum's New Inc, with Anthropic as sponsor.
-- ZeroSpace Labs has hosted creators from production, AI, VFX, creative coding, startups, and top universities.
+- Hypercentric has hosted creators from production, AI, VFX, creative coding, startups, and top universities.
 
 Purpose:
 

@@ -206,9 +206,9 @@ December 2024 – February 2026 · ComfyUI NYC + DATLAB NYC + Gen AI Film Jam + 
 The Venue
 <!-- /copy -->
 
-### Text 002 - ZeroSpace — Brooklyn, NY · 60,000+ sq ft next-generation production stud...
+### Text 002 - ZeroSpace — Brooklyn, NY · 50,000+ sq ft next-generation production stud...
 <!-- copy:s04.t002 -->
-ZeroSpace — Brooklyn, NY · 60,000+ sq ft next-generation production studio
+ZeroSpace — Brooklyn, NY · 50,000+ sq ft next-generation production studio
 <!-- /copy -->
 
 ### Text 003 - LED Volume & XR Stage
@@ -246,9 +246,9 @@ Motion Capture
 Live Events
 <!-- /copy -->
 
-### Text 010 - — 60,000 sq ft for audiences of 400+
+### Text 010 - — 50,000 sq ft for audiences of 400+
 <!-- copy:s04.t010 -->
-— 60,000 sq ft for audiences of 400+
+— 50,000 sq ft for audiences of 400+
 <!-- /copy -->
 
 ### Text 011 - Film Production
