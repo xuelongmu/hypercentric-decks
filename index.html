@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hypercentric Decks</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111111;
+      --fg: #f6f6f6;
+      --muted: #b7b7b7;
+      --cyan: #16f4ff;
+      --lime: #d7ff18;
+      --line: rgba(255, 255, 255, 0.18);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+    }
+    main {
+      margin: 0 auto;
+      max-width: 960px;
+      padding: 72px 32px;
+    }
+    h1 {
+      font-size: clamp(42px, 8vw, 88px);
+      letter-spacing: 0;
+      line-height: 0.95;
+      margin: 0 0 20px;
+      text-transform: uppercase;
+    }
+    p {
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.45;
+      margin: 0 0 48px;
+      max-width: 680px;
+    }
+    nav {
+      border-top: 1px solid var(--line);
+    }
+    a {
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      color: var(--fg);
+      display: flex;
+      font-size: 24px;
+      justify-content: space-between;
+      line-height: 1.2;
+      padding: 24px 0;
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--cyan);
+    }
+    a span {
+      color: var(--muted);
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    a:first-child span {
+      color: var(--lime);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hypercentric Decks</h1>
+    <p>Static sponsorship and event decks.</p>
+    <nav aria-label="Available decks">
+      <a href="/creative-ai-nyc/">Creative AI NYC <span>Current</span></a>
+      <a href="/sponsorship-deck/">ZeroSpace Labs Sponsorship <span>Deck</span></a>
+      <a href="/generative-production-challenge/">Generative Production Challenge <span>Deck</span></a>
+    </nav>
+  </main>
+</body>
+</html>

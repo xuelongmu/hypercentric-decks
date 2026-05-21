@@ -1,0 +1,16 @@
+.git/
+.wrangler/
+node_modules/
+tmp/
+docs/
+scripts/
+
+AGENTS.md
+README.md
+wrangler.jsonc
+.gitignore
+.assetsignore
+
+**/copy.md
+creative-ai-nyc/anonymized_attendees.csv
+creative-ai-nyc/qa/
