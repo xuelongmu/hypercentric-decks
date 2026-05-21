@@ -35,3 +35,8 @@ coverage/
 out/
 exports/
 tmp/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
