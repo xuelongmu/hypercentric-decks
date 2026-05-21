@@ -98,15 +98,16 @@ Purpose:
 
 **A venue built for the workflows sponsors want creators to try.**
 
-Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue and production studio in downtown Brooklyn, built for virtual production, capture, live events, and post-production.
+Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue and production studio in downtown Brooklyn, built for virtual production, performance capture, and live events.
 
 Venue proof:
 
 - 50,000+ square foot event venue in downtown Brooklyn.
 - Opened in 2020 as the first commercial virtual production studio in the world.
-- Largest fixed-install virtual production stage on the East Coast.
-- Motion capture and volumetric capture.
-- Featured video: https://www.youtube.com/watch?v=u7pu1cQBqtQ
+- Largest fixed-install virtual production stage on the East Coast, with a 60-foot-wide, 8000x2000 hero LED wall.
+- Motion capture, volumetric capture, virtual production, and greenscreen technology.
+- Event scale for stage programming, hands-on demos, workshops, interactive installations, networking, and rich conversation.
+- Featured in an episode of Huge If True with Cleo Abram and Marques Brownlee (MKBHD): https://www.youtube.com/watch?v=u7pu1cQBqtQ
 
 Purpose:
 

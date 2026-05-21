@@ -190,7 +190,7 @@ A production-grade venue for sponsor demos, capture, and content.
 
 ### Text 003 - Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue...
 <!-- copy:s05a.t003 -->
-Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue and production studio in downtown Brooklyn, built for virtual production, capture, live events, and post-production.
+Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue and production studio in downtown Brooklyn, built for virtual production, performance capture, and live events.
 <!-- /copy -->
 
 ### Text 004 - Virtual Production Stage
@@ -200,17 +200,17 @@ Virtual Production Stage
 
 ### Text 005 - The largest fixed-install virtual production stage on the East Coast gives sponsors...
 <!-- copy:s05a.t005 -->
-The largest fixed-install virtual production stage on the East Coast gives sponsors an immersive demo surface.
+The largest fixed-install virtual production stage on the East Coast gives presenters a unique, immersive demo surface. Our hero LED wall is 60 feet wide and 8000x2000 pixel resolution.
 <!-- /copy -->
 
 ### Text 006 - Capture-Ready Environment
 <!-- copy:s05a.t006 -->
-Capture-Ready Environment
+Advanced Capture Tools
 <!-- /copy -->
 
 ### Text 007 - Motion capture, volumetric capture, greenscreen, and production support create AI...
 <!-- copy:s05a.t007 -->
-Motion capture, volumetric capture, greenscreen, and production support create AI-ready source material.
+Motion capture, volumetric capture, virtual production, and greenscreen technology inspires the audience and creates AI-ready demo assets.
 <!-- /copy -->
 
 ### Text 008 - Event + Demo Scale
@@ -220,7 +220,7 @@ Event + Demo Scale
 
 ### Text 009 - The room moves from stage programming to networking, sponsor surfaces, livestream...
 <!-- copy:s05a.t009 -->
-The room moves from stage programming to networking, sponsor surfaces, livestream moments, and hands-on demos.
+The space moves from stage programming to hands-on demos, workshops, interactive installations, networking, and rich conversation.
 <!-- /copy -->
 
 ### Text 010 - Media Credibility
@@ -230,7 +230,7 @@ Media Credibility
 
 ### Text 011 - Featured in an episode of Huge If True with Cleo Abram and Marques...
 <!-- copy:s05a.t011 -->
-Featured in an episode of [Huge If True with Cleo Abram and Marques Brownlee (MKBHD)](https://www.youtube.com/watch?v=u7pu1cQBqtQ).
+Featured in an episode of [Huge If True with Cleo Abram and Marques Brownlee (MKBHD)](https://www.youtube.com/watch?v=u7pu1cQBqtQ), bringing the production tech stack to a mainstream audience.
 <!-- /copy -->
 
 ### Text 013 - ZeroSpace gives the event a production-grade backdrop, not just a room
