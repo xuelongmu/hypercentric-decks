@@ -183,9 +183,9 @@ Production work depends on iteration, cleanup, relighting, upscaling, continuity
 The Space
 <!-- /copy -->
 
-### Text 002 - A venue built for the workflows sponsors want creators to try.
+### Text 002 - A production-grade venue for sponsor demos, capture, and content.
 <!-- copy:s05a.t002 -->
-A venue built for the workflows sponsors want creators to try.
+A production-grade venue for sponsor demos, capture, and content.
 <!-- /copy -->
 
 ### Text 003 - Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue...
@@ -193,34 +193,34 @@ A venue built for the workflows sponsors want creators to try.
 Creative AI NYC happens inside ZeroSpace: a 50,000+ sq ft event venue and production studio in downtown Brooklyn, built for virtual production, capture, live events, and post-production.
 <!-- /copy -->
 
-### Text 004 - Virtual Production Authority
+### Text 004 - Virtual Production Stage
 <!-- copy:s05a.t004 -->
-Virtual Production Authority
+Virtual Production Stage
 <!-- /copy -->
 
-### Text 005 - Opened in 2020 as the first commercial virtual production studio in the...
+### Text 005 - The largest fixed-install virtual production stage on the East Coast gives sponsors...
 <!-- copy:s05a.t005 -->
-Opened in 2020 as the first commercial virtual production studio in the world, with the largest fixed-install virtual production stage on the East Coast.
+The largest fixed-install virtual production stage on the East Coast gives sponsors an immersive demo surface.
 <!-- /copy -->
 
-### Text 006 - Capture Stack
+### Text 006 - Capture-Ready Environment
 <!-- copy:s05a.t006 -->
-Capture Stack
+Capture-Ready Environment
 <!-- /copy -->
 
-### Text 007 - Motion capture and volumetric capture give sponsors a real production context...
+### Text 007 - Motion capture, volumetric capture, greenscreen, and production support create AI...
 <!-- copy:s05a.t007 -->
-Motion capture and volumetric capture give sponsors a real production context for demos, source material, workflow breakdowns, and creator education.
+Motion capture, volumetric capture, greenscreen, and production support create AI-ready source material.
 <!-- /copy -->
 
-### Text 008 - Event Scale
+### Text 008 - Event + Demo Scale
 <!-- copy:s05a.t008 -->
-Event Scale
+Event + Demo Scale
 <!-- /copy -->
 
-### Text 009 - The room can move from stage programming to networking, demo surfaces,...
+### Text 009 - The room moves from stage programming to networking, sponsor surfaces, livestream...
 <!-- copy:s05a.t009 -->
-The room can move from stage programming to networking, demo surfaces, livestream moments, and sponsor activations without feeling like a generic meetup.
+The room moves from stage programming to networking, sponsor surfaces, livestream moments, and hands-on demos.
 <!-- /copy -->
 
 ### Text 010 - Media Credibility
@@ -228,14 +228,9 @@ The room can move from stage programming to networking, demo surfaces, livestrea
 Media Credibility
 <!-- /copy -->
 
-### Text 011 - The venue has been featured publicly as a next-generation production environment...
+### Text 011 - Featured in a video by Marques Brownlee and Cleo Abram...
 <!-- copy:s05a.t011 -->
-The venue has been featured publicly as a next-generation production environment, giving sponsors a physical proof point behind the community.
-<!-- /copy -->
-
-### Text 012 - Featured video: ZeroSpace on YouTube
-<!-- copy:s05a.t012 -->
-Featured video: [ZeroSpace on YouTube](https://www.youtube.com/watch?v=u7pu1cQBqtQ)
+Featured in a video by [Marques Brownlee and Cleo Abram](https://www.youtube.com/watch?v=u7pu1cQBqtQ), bringing the production stack to a mainstream tech audience.
 <!-- /copy -->
 
 ### Text 013 - ZeroSpace gives the event a production-grade backdrop, not just a room
@@ -282,12 +277,12 @@ Sponsors and creators demonstrate models, workflows, interfaces, and pipelines i
 
 ### Text 008 - Partner Labs
 <!-- copy:s05.t008 -->
-Partner Labs
+Partner Workshops
 <!-- /copy -->
 
 ### Text 009 - Optional workshop-style segments let sponsors teach a specific model, fe...
 <!-- copy:s05.t009 -->
-Optional workshop-style segments let sponsors teach a specific model, feature, technique, or production workflow.
+Hands-on workshops let sponsors teach a specific model, feature, technique, or production workflow.
 <!-- /copy -->
 
 ### Text 010 - Community Access
@@ -1767,48 +1762,6 @@ Let's Talk
 ### Text 034 - Add-on note
 <!-- copy:s15.t034 -->
 Add-ons layer onto the base sponsorship tier. Silver includes base presence; presentation slots start at Gold; title sponsorship comes with Platinum.
-<!-- /copy -->
-
-## Slide 16
-
-### Text 001 - Venue + Production Proof
-<!-- copy:s16.t001 -->
-Venue + Production Proof
-<!-- /copy -->
-
-### Text 002 - ZeroSpace is also the production engine.
-<!-- copy:s16.t002 -->
-ZeroSpace is also the production engine.
-<!-- /copy -->
-
-### Text 003 - 8K x 2K LED wall - immersive sponsor demos
-<!-- copy:s16.t003 -->
-8K x 2K LED wall - immersive sponsor demos
-<!-- /copy -->
-
-### Text 004 - Standing sets - cinematic workflow examples
-<!-- copy:s16.t004 -->
-Standing sets - cinematic workflow examples
-<!-- /copy -->
-
-### Text 005 - 50,000+ sq ft - production and event scale
-<!-- copy:s16.t005 -->
-50,000+ sq ft - production and event scale
-<!-- /copy -->
-
-### Text 006 - Capture + greenscreen - AI-ready source material
-<!-- copy:s16.t006 -->
-Capture + greenscreen - AI-ready source material
-<!-- /copy -->
-
-### Text 007 - On-site production - camera, crew, and post support
-<!-- copy:s16.t007 -->
-On-site production - camera, crew, and post support
-<!-- /copy -->
-
-### Text 008 - Livestream + editing - content delivery built in
-<!-- copy:s16.t008 -->
-Livestream + editing - content delivery built in
 <!-- /copy -->
 
 ## Slide 17
