@@ -4,6 +4,7 @@ node_modules/
 tmp/
 docs/
 scripts/
+sponsorship-deck/
 
 AGENTS.md
 README.md
