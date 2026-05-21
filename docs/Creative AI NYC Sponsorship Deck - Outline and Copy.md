@@ -162,18 +162,16 @@ Aggregate platform proof:
 
 | Metric | Current Deck |
 |---|---:|
-| Event registrations | 5,000+ |
-| Approved attendees | 4,200+ |
-| Events produced | 21 |
-| Mailing list members | 9,300+ |
-| Unique companies | 1,300+ |
-| Social followers | 200K+ |
-| Return attendee rate | ~50% |
-| Venue event capacity | 400+ |
+| Event registrations | 4,000+ |
+| Approved attendees | 2,300+ |
+| Events produced | 30+ |
+| Mailing list members | 7,300+ |
+| Return attendee rate | ~34% |
+| Venue event capacity | 1000+ |
 
 Deck note:
 
-December 2024-February 2026 aggregate platform metrics across Hypercentric programming. Creative AI NYC uses ComfyUI NYC as historical proof, not the ongoing event brand.
+December 2024-April 2026 aggregate metrics.
 
 Purpose:
 
@@ -218,6 +216,13 @@ Context cards retained on the slide:
 - AI designers: 25% artists and designers translate model capabilities into visible creative work.
 - Agency / freelance: 19% independent and studio-side creators turn workflow demos into client, campaign, and production experiments.
 - Decision-makers: 27% founders evaluate, adopt, and champion creative AI tools.
+
+Bottom company proof row:
+
+- Enterprise & Tech: Google, Adobe, Meta, NBCUniversal, Netflix, PepsiCo, Nasdaq, Capital One.
+- AI & Creative Tools: Stability.ai, Lightricks, Bria.ai, ElevenLabs, Comfy.org, Livepeer, Freepik, Genvid Technologies.
+- Film, VFX & Production: A24 Films, Industrial Color, The Artery, Big Sky Edit, Mongrel FX, 1stAveMachine, Shadowworks.
+- Universities: NYU, Columbia, SVA, Pratt, Cornell, MIT, Stanford, Berkeley, New School.
 
 Purpose:
 
@@ -290,9 +295,8 @@ Purpose:
 Placeholders:
 
 - `[YouTube views]`
-- `[average recording views]`
 - `[social recap reach]`
-- `[clip performance]`
+- `Top-performing reels have reached 90K+ views, up to 10% engagement, and 2-3% share/save rates, 2-3x higher than industry standard.`
 
 Purpose:
 
@@ -420,23 +424,13 @@ Purpose:
 
 ## SLIDE 18: CTA
 
-**Help define the next phase of creative AI workflows.**
-
-Sponsor objectives:
-
-- Adoption.
-- Authority.
-- Content.
-- Feedback.
+**Define the next phase of creative AI workflows.**
 
 Contact:
 
-Xuelong Mu  
-Technical Director  
-xuelong.mu@zerospace.co  
-zerospace.co  
-@zerospace  
-@zerospacelabs
+Let's Chat
+Xuelong Mu
+xuelong@hypercentriclabs.com
 
 Purpose:
 

@@ -55,26 +55,64 @@ function isSafeLinkUrl(value) {
   }
 }
 
+function findClosingParen(value, startIndex) {
+  for (let index = startIndex; index < value.length; index += 1) {
+    if (value[index] === ')') return index;
+  }
+  return -1;
+}
+
 function renderInline(value) {
-  const linkPattern = /\[([^\]\n]+)\]\(([^)\s]+)\)/g;
   let rendered = '';
-  let lastIndex = 0;
+  let index = 0;
 
-  for (const match of value.matchAll(linkPattern)) {
-    const [raw, label, href] = match;
-    rendered += escapeHtml(value.slice(lastIndex, match.index));
-
-    if (isSafeLinkUrl(href)) {
-      const target = href.startsWith('mailto:') ? '' : ' target="_blank" rel="noopener"';
-      rendered += `<a class="copy-link" href="${escapeHtml(href)}"${target}>${escapeHtml(label)}</a>`;
-    } else {
-      rendered += escapeHtml(raw);
+  while (index < value.length) {
+    if (value.startsWith('**', index)) {
+      const endIndex = value.indexOf('**', index + 2);
+      if (endIndex > index + 2) {
+        rendered += `<strong>${renderInline(value.slice(index + 2, endIndex))}</strong>`;
+        index = endIndex + 2;
+        continue;
+      }
     }
 
-    lastIndex = match.index + raw.length;
+    if (value[index] === '*') {
+      const endIndex = value.indexOf('*', index + 1);
+      if (endIndex > index + 1) {
+        rendered += `<em>${renderInline(value.slice(index + 1, endIndex))}</em>`;
+        index = endIndex + 1;
+        continue;
+      }
+    }
+
+    if (value[index] === '[') {
+      const labelEnd = value.indexOf('](', index + 1);
+      if (labelEnd > index + 1) {
+        const hrefEnd = findClosingParen(value, labelEnd + 2);
+        if (hrefEnd > labelEnd + 2) {
+          const label = value.slice(index + 1, labelEnd);
+          const href = value.slice(labelEnd + 2, hrefEnd);
+          if (isSafeLinkUrl(href)) {
+            const target = href.startsWith('mailto:') ? '' : ' target="_blank" rel="noopener"';
+            rendered += `<a class="copy-link" href="${escapeHtml(href)}"${target}>${renderInline(label)}</a>`;
+          } else {
+            rendered += escapeHtml(value.slice(index, hrefEnd + 1));
+          }
+          index = hrefEnd + 1;
+          continue;
+        }
+      }
+    }
+
+    const nextSpecial = ['**', '*', '[']
+      .map((token) => value.indexOf(token, index + 1))
+      .filter((candidate) => candidate !== -1)
+      .sort((left, right) => left - right)[0];
+    const endIndex = nextSpecial ?? value.length;
+    rendered += escapeHtml(value.slice(index, endIndex));
+    index = endIndex;
   }
 
-  rendered += escapeHtml(value.slice(lastIndex));
   return rendered;
 }
 

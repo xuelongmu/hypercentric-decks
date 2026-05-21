@@ -25,7 +25,7 @@ Narrative arc:
 
 Major updates from the older outline:
 
-- Aggregate stats increased from 3,500+ registrations / 3,100+ approved attendees / 15 events to 5,000+ registrations / 4,200+ approved attendees / 21 events.
+- Aggregate stats increased from 3,500+ registrations / 3,100+ approved attendees / 15 events to 5,000+ registrations / 4,200+ approved attendees / 30+ events.
 - The measured reporting window changed from May 2025-February 2026 to December 2024-February 2026.
 - The Venue moved earlier, before "Who's in the Room" and "The Audience," making the physical production studio a primary proof point.
 - ComfyUI NYC changed from 9 events and counting to 14 events and counting, with 13x growth from 33 approved in December 2024 to 425 in January 2026.
@@ -97,10 +97,8 @@ Scope: ComfyUI NYC + DATLAB NYC + Gen AI Film Jam + Vibe Coding
 | Event registrations | 5,000+ |
 | Approved attendees | 4,200+ |
 | Mailing list members | 9,300+ |
-| Events produced | 21 |
+| Events produced | 30+ |
 | Average approved per event | 200+ |
-| Social media followers | 200K+ |
-| Unique companies | 1,300+ |
 | Return attendee rate | ~50% |
 
 Purpose:
@@ -395,7 +393,7 @@ Reference update:
 
 | Package | Price | Description |
 |---|---:|---|
-| Base: logo + shout-out | $2,000 | Logo on event flyer, verbal shout-out during the event, and social media tag on recap posts across 200K+ followers. |
+| Base: logo + shout-out | $2,000 | Logo on event flyer, verbal shout-out during the event, and social media tag on recap posts across IG, LinkedIn, Discord, X. |
 | + Speaking slot (20 min, livestreamed) | +$5,000 | Present your product, demo features, and tell your story to a live + streaming audience. Multi-camera YouTube livestream included. |
 | + Edited presentation recording | +$2,000 | Multi-angle edited recording of your talk, yours to use across channels and marketing. |
 | + Short-form clips (1 / 3) | +$1K / +$2K | Reel-format clips from your presentation for social media cross-promotion. |

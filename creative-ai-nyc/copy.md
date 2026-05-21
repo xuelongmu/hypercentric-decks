@@ -228,9 +228,9 @@ The room moves from stage programming to networking, sponsor surfaces, livestrea
 Media Credibility
 <!-- /copy -->
 
-### Text 011 - Featured in a video by Marques Brownlee and Cleo Abram...
+### Text 011 - Featured in an episode of Huge If True with Cleo Abram and Marques...
 <!-- copy:s05a.t011 -->
-Featured in a video by [Marques Brownlee and Cleo Abram](https://www.youtube.com/watch?v=u7pu1cQBqtQ), bringing the production stack to a mainstream tech audience.
+Featured in an episode of [Huge If True with Cleo Abram and Marques Brownlee (MKBHD)](https://www.youtube.com/watch?v=u7pu1cQBqtQ).
 <!-- /copy -->
 
 ### Text 013 - ZeroSpace gives the event a production-grade backdrop, not just a room
@@ -307,9 +307,9 @@ Community Authority
 The audience is already assembled.
 <!-- /copy -->
 
-### Text 003 - 5,000+
+### Text 003 - 4,000+
 <!-- copy:s06.t003 -->
-5,000+
+4,000+
 <!-- /copy -->
 
 ### Text 004 - event registrations
@@ -317,9 +317,9 @@ The audience is already assembled.
 event registrations
 <!-- /copy -->
 
-### Text 005 - 4,200+
+### Text 005 - 2,300+
 <!-- copy:s06.t005 -->
-4,200+
+2,300+
 <!-- /copy -->
 
 ### Text 006 - approved attendees
@@ -327,9 +327,9 @@ event registrations
 approved attendees
 <!-- /copy -->
 
-### Text 007 - 21
+### Text 007 - 30+
 <!-- copy:s06.t007 -->
-21
+30+
 <!-- /copy -->
 
 ### Text 008 - events produced
@@ -337,9 +337,9 @@ approved attendees
 events produced
 <!-- /copy -->
 
-### Text 009 - 9,300+
+### Text 009 - 7,300+
 <!-- copy:s06.t009 -->
-9,300+
+7,300+
 <!-- /copy -->
 
 ### Text 010 - mailing list members
@@ -347,29 +347,9 @@ events produced
 mailing list members
 <!-- /copy -->
 
-### Text 011 - 1,300+
-<!-- copy:s06.t011 -->
-1,300+
-<!-- /copy -->
-
-### Text 012 - unique companies
-<!-- copy:s06.t012 -->
-unique companies
-<!-- /copy -->
-
-### Text 013 - 200K+
-<!-- copy:s06.t013 -->
-200K+
-<!-- /copy -->
-
-### Text 014 - social followers
-<!-- copy:s06.t014 -->
-social followers
-<!-- /copy -->
-
-### Text 015 - ~50%
+### Text 015 - ~34%
 <!-- copy:s06.t015 -->
-~50%
+~34%
 <!-- /copy -->
 
 ### Text 016 - return attendee rate
@@ -377,9 +357,9 @@ social followers
 return attendee rate
 <!-- /copy -->
 
-### Text 017 - 400+
+### Text 017 - 1000+
 <!-- copy:s06.t017 -->
-400+
+1000+
 <!-- /copy -->
 
 ### Text 018 - venue event capacity
@@ -387,9 +367,9 @@ return attendee rate
 venue event capacity
 <!-- /copy -->
 
-### Text 019 - December 2024 - February 2026 aggregate platform metrics across ZeroSpac...
+### Text 019 - December 2024 - April 2026 aggregate metrics across ComfyUI NYC, GenART...
 <!-- copy:s06.t019 -->
-December 2024 - April 2026 aggregate platform metrics across ComfyUI programming.
+December 2024 - April 2026 aggregate metrics.
 <!-- /copy -->
 
 ## Slide 07
@@ -614,16 +594,6 @@ Mongrel FX
 Kinzi Films
 <!-- /copy -->
 
-### Text 045 - ·
-<!-- copy:s07.t045 -->
-·
-<!-- /copy -->
-
-### Text 046 - Genvid Technologies
-<!-- copy:s07.t046 -->
-Genvid Technologies
-<!-- /copy -->
-
 ### Text 047 - AI & Creative Tools
 <!-- copy:s07.t047 -->
 AI & Creative Tools
@@ -681,7 +651,7 @@ Manus AI
 
 ### Text 058 - Comfy.org
 <!-- copy:s07.t058 -->
-Comfy.org
+Comfy Org
 <!-- /copy -->
 
 ### Text 059 - ·
@@ -691,7 +661,7 @@ Comfy.org
 
 ### Text 060 - Livepeer
 <!-- copy:s07.t060 -->
-Livepeer
+Daydream
 <!-- /copy -->
 
 ### Text 061 - ·
@@ -709,9 +679,9 @@ Freepik
 ·
 <!-- /copy -->
 
-### Text 064 - PlaybookXR
+### Text 064 - Genvid Technologies
 <!-- copy:s07.t064 -->
-PlaybookXR
+Genvid Technologies
 <!-- /copy -->
 
 ### Text 065 - Top Universities
@@ -1016,6 +986,46 @@ Artists and designers who translate model capabilities into visible creative wor
 Independent and studio-side creators who turn workflow demos into client, campaign, and production experiments.
 <!-- /copy -->
 
+### Text 036 - Enterprise & Tech
+<!-- copy:s08.t036 -->
+Enterprise & Tech
+<!-- /copy -->
+
+### Text 037 - Google · Adobe · Meta · NBCUniversal · Netflix · PepsiCo · Nasdaq...
+<!-- copy:s08.t037 -->
+Google · Adobe · Meta · ByteDance · NBCUniversal · Netflix · PepsiCo · Nasdaq · McKinsey · BCG  · American Express · Capital One
+<!-- /copy -->
+
+### Text 038 - AI & Creative Tools
+<!-- copy:s08.t038 -->
+AI & Creative Tools
+<!-- /copy -->
+
+### Text 039 - Stability.ai · Lightricks · Bria.ai · ElevenLabs · Comfy.org...
+<!-- copy:s08.t039 -->
+Stability.ai · Lightricks · Bria.ai · ElevenLabs · Comfy.org · Livepeer · Freepik · Genvid Technologies
+<!-- /copy -->
+
+### Text 040 - Film, VFX & Production
+<!-- copy:s08.t040 -->
+Film, VFX & Production
+<!-- /copy -->
+
+### Text 041 - A24 Films · Industrial Color · The Artery · Big Sky Edit · Mongrel...
+<!-- copy:s08.t041 -->
+A24 Films · CBS · Wrigley Media Group · Industrial Color · The Artery · Big Sky Edit · Mongrel FX · 1stAveMachine · Shadowworks
+<!-- /copy -->
+
+### Text 042 - Academic Pipeline
+<!-- copy:s08.t042 -->
+Universities
+<!-- /copy -->
+
+### Text 043 - NYU · Columbia · SVA · Pratt · Cornell · MIT · Stanford · Berkeley · New...
+<!-- copy:s08.t043 -->
+NYU · Columbia · Cornell · MIT · Stanford · Harvard · UC Berkeley · Brown · SVA · Pratt · New School · Georgetown · Carnegie Mellon · UCLA
+<!-- /copy -->
+
 ## Slide 09
 
 ### Text 001 - Sponsor Fit
@@ -1210,7 +1220,7 @@ The event does not end when the room clears.
 
 ### Text 003 - Each sponsor activation can become a recorded talk, recap asset, short-f...
 <!-- copy:s12.t003 -->
-Each sponsor activation can become a recorded talk, recap asset, short-form clip, and social proof point. [Final metrics will be added before outreach.]
+Each sponsor activation can become a recorded talk, recap asset, short-form clip, and social proof point.
 <!-- /copy -->
 
 ### Text 004 - YouTube Recordings
@@ -1218,19 +1228,9 @@ Each sponsor activation can become a recorded talk, recap asset, short-form clip
 YouTube Recordings
 <!-- /copy -->
 
-### Text 005 - [YouTube views] across published event recordings and sponsor talks.
+### Text 005 - Event recordings and sponsor talks published on our YouTube channel.
 <!-- copy:s12.t005 -->
-[YouTube views] across published event recordings and sponsor talks.
-<!-- /copy -->
-
-### Text 006 - Average Recording Views
-<!-- copy:s12.t006 -->
-Average Recording Views
-<!-- /copy -->
-
-### Text 007 - [average recording views] per full-length presentation or livestream arc...
-<!-- copy:s12.t007 -->
-[average recording views] per full-length presentation or livestream archive.
+Event recordings and sponsor talks published on our [YouTube channel](https://www.youtube.com/watch?v=ALEh5yC97Y4&list=PLZmNlcQggHw_qoqbZhwUxg4ZOuWNtfRXs).
 <!-- /copy -->
 
 ### Text 008 - Social Recap Reach
@@ -1238,9 +1238,9 @@ Average Recording Views
 Social Recap Reach
 <!-- /copy -->
 
-### Text 009 - [social recap reach] across recap posts, collaborator tags, and partner ...
+### Text 009 - 200K+ social followers across IG, LinkedIn, Discord, X.
 <!-- copy:s12.t009 -->
-[social recap reach] across recap posts, collaborator tags, and partner amplification.
+200K+ social followers across IG, LinkedIn, Discord, X.
 <!-- /copy -->
 
 ### Text 010 - Clip Performance
@@ -1248,9 +1248,9 @@ Social Recap Reach
 Clip Performance
 <!-- /copy -->
 
-### Text 011 - [clip performance] for short-form sponsor, speaker, and demo moments.
+### Text 011 - Top-performing reels have reached 90K+ views, up to 10% engagement...
 <!-- copy:s12.t011 -->
-[clip performance] for short-form sponsor, speaker, and demo moments.
+Top-performing reels have reached 90K+ views, up to 10% engagement, and 2-3% share/save rates, 2-3x higher than industry standard.
 <!-- /copy -->
 
 ### Text 012 - Published media extends sponsor presence beyond the live audience
@@ -1409,7 +1409,7 @@ Full presentation (20 minutes)
 
 ### Text 018 - Stage shout-out
 <!-- copy:s14.t018 -->
-Stage shout-out
+Stage shout-out (2 minutes)
 <!-- /copy -->
 
 ### Text 019 - Additional sponsor content
@@ -1434,7 +1434,7 @@ Sponsored panel or workshop
 
 ### Text 023 - Pre-event mail blast shout-out
 <!-- copy:s14.t023 -->
-Pre-event mail blast shout-out
+Pre-event email blast shout-out
 <!-- /copy -->
 
 ### Text 024 - Yes
@@ -1454,7 +1454,7 @@ Yes
 
 ### Text 027 - Post-event mail blast shout-out
 <!-- copy:s14.t027 -->
-Post-event mail blast shout-out
+Post-event email blast shout-out
 <!-- /copy -->
 
 ### Text 028 - Yes
@@ -1584,7 +1584,7 @@ $9,000
 
 ### Text 057 - *Attendee email access applies only for attendees that explicitly opt-in...
 <!-- copy:s14.t057 -->
-*Attendee email access applies only for attendees that explicitly opt-in to sharing.
+*Only for attendees that opt-in to sharing.
 <!-- /copy -->
 
 ### Text 059 - Edited vertical reels (sample)
@@ -1778,74 +1778,29 @@ Creative AI NYC builds from proven sponsor trust.
 
 ### Text 003 - ComfyUI NYC became the flagship origin proof for a broader creative AI a...
 <!-- copy:s17.t003 -->
-ComfyUI NYC became the flagship origin proof for a broader creative AI audience in New York.
+ComfyUI NYC has become the largest recurring ComfyUI event in the world, and a nexus for the East Coast creative AI community. Attendees and speakers travel here from all over the US.
 <!-- /copy -->
 
 ### Text 004 - Vibe Shift was co-produced with Rhizome and New Museum's New Inc, with A...
 <!-- copy:s17.t004 -->
-Vibe Shift was co-produced with Rhizome and New Museum's New Inc, with Anthropic as sponsor.
+Lightricks announced their widely anticipated LTX-2 video model at a ComfyUI NYC event, and Bria showcased their Fibo and Fibo Edit image models.
 <!-- /copy -->
 
 ### Text 005 - Hypercentric has hosted creators from production, AI, VFX, creative co...
 <!-- copy:s17.t005 -->
-Hypercentric has hosted creators from production, AI, VFX, creative coding, startups, and top universities.
+Anthropic sponsored Vibe Shift, a vibe coding creative technology community event co-produced with Rhizome, New Museum's New Inc, and ZeroSpace.
 <!-- /copy -->
 
 ## Slide 18
-
-### Text 001 - The Ask
-<!-- copy:s18.t001 -->
-The Ask
-<!-- /copy -->
 
 ### Text 002 - Help define the next phase of creative AI workflows.
 <!-- copy:s18.t002 -->
 Define the next phase of creative AI workflows.
 <!-- /copy -->
 
-### Text 003 - Adoption
-<!-- copy:s18.t003 -->
-Adoption
-<!-- /copy -->
-
-### Text 004 - Put your model or tool in front of creators actively assembling hybrid w...
-<!-- copy:s18.t004 -->
-Put your model or tool in front of creators actively assembling hybrid workflows.
-<!-- /copy -->
-
-### Text 005 - Authority
-<!-- copy:s18.t005 -->
-Authority
-<!-- /copy -->
-
-### Text 006 - Show up as the company helping creators understand what is possible now.
-<!-- copy:s18.t006 -->
-Show up as the company helping creators understand what is possible now.
-<!-- /copy -->
-
-### Text 007 - Content
-<!-- copy:s18.t007 -->
-Content
-<!-- /copy -->
-
-### Text 008 - Leave with talks, clips, recaps, and demos that continue working after t...
-<!-- copy:s18.t008 -->
-Leave with talks, clips, recaps, and demos that continue working after the event.
-<!-- /copy -->
-
-### Text 009 - Feedback
-<!-- copy:s18.t009 -->
-Feedback
-<!-- /copy -->
-
-### Text 010 - Hear how technical creators evaluate your product inside real creative c...
-<!-- copy:s18.t010 -->
-Hear how technical creators evaluate your product inside real creative constraints.
-<!-- /copy -->
-
-### Text 011 - Start the conversation
+### Text 011 - Let's Chat
 <!-- copy:s18.t011 -->
-Start the conversation
+Let's Collaborate
 <!-- /copy -->
 
 ### Text 012 - Xuelong Mu
@@ -1853,29 +1808,9 @@ Start the conversation
 Xuelong Mu
 <!-- /copy -->
 
-### Text 013 - Technical Director
-<!-- copy:s18.t013 -->
-Technical Director
-<!-- /copy -->
-
-### Text 014 - xuelong.mu@zerospace.co
+### Text 014 - xuelong@hypercentriclabs.com
 <!-- copy:s18.t014 -->
-xuelong.mu@zerospace.co
-<!-- /copy -->
-
-### Text 015 - zerospace.co
-<!-- copy:s18.t015 -->
-zerospace.co
-<!-- /copy -->
-
-### Text 016 - @zerospace
-<!-- copy:s18.t016 -->
-@zerospace
-<!-- /copy -->
-
-### Text 017 - @zerospacelabs
-<!-- copy:s18.t017 -->
-@zerospacelabs
+xuelong@hypercentriclabs.com
 <!-- /copy -->
 
 ### Text 018 - Creative AI NYC - Hypercentric

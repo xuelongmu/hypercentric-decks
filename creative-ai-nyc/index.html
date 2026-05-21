@@ -243,6 +243,13 @@
       overflow: hidden;
       position: relative;
     }
+    .full-image.contain-media {
+      background: #000000;
+    }
+    .full-image.contain-media img,
+    .full-image.contain-media video {
+      object-fit: contain;
+    }
     .full-image.image-stack {
       display: grid;
       gap: 8px;
@@ -303,7 +310,7 @@
     .stat-grid {
       display: grid;
       gap: 0.8em;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       margin-top: 1em;
     }
     .stat-card {
@@ -373,14 +380,14 @@
     }
     .card p { font-size: 0.58em; }
 
-    .slide-audience .slide-content { padding-top: 2.15em; }
+    .slide-audience .slide-content { padding-top: 1.55em; }
     .slide-audience h2 {
-      font-size: 1.42em;
+      font-size: 1.24em;
       margin-bottom: 0;
       max-width: 980px;
     }
     .slide-audience .lead {
-      font-size: 0.72em;
+      font-size: 0.64em;
       margin-bottom: 0.2em;
       max-width: 1040px;
     }
@@ -400,7 +407,7 @@
       overflow: hidden;
     }
     .pie-section svg {
-      max-height: 67vh;
+      max-height: 49vh;
       width: 100%;
     }
     .insights {
@@ -412,7 +419,7 @@
     .insight-card {
       background: rgba(255,255,255,0.055);
       border-left: 3px solid var(--lime);
-      padding: 0.58em 0.72em;
+      padding: 0.42em 0.58em;
     }
     .insight-card:nth-child(2) { border-color: var(--cyan); }
     .insight-card:nth-child(4) { border-color: var(--cyan); }
@@ -420,15 +427,34 @@
       color: var(--lime);
       display: block;
       font-family: var(--font-heading);
-      font-size: 1.28em;
+      font-size: 1.05em;
       line-height: 1;
       margin-bottom: 0.14em;
     }
     .insight-card:nth-child(2) .insight-num { color: var(--cyan); }
     .insight-text {
       color: var(--muted);
-      font-size: 0.47em;
-      line-height: 1.36;
+      font-size: 0.42em;
+      line-height: 1.28;
+    }
+    .audience-proof {
+      border-top: 1px solid rgba(255,255,255,0.16);
+      display: grid;
+      gap: 0.56em;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 0.56em;
+      padding-top: 0.52em;
+    }
+    .audience-proof .logo-section {
+      margin-bottom: 0;
+    }
+    .audience-proof .logo-section-label {
+      font-size: 0.46em;
+      margin-bottom: 0.22em;
+    }
+    .audience-proof .logo-section-names {
+      font-size: 0.48em;
+      line-height: 1.35;
     }
 
     .workflow {
@@ -463,7 +489,7 @@
     .deliverable-grid {
       display: grid;
       gap: 0.8em;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
       flex: 1;
       margin-top: 0.8em;
@@ -513,6 +539,24 @@
       margin-bottom: 0.55em;
     }
     .proof p { font-size: 0.54em; }
+    .media-proof-video {
+      aspect-ratio: 16 / 9;
+      background: transparent;
+      height: auto;
+      margin: 1em auto 0;
+      width: min(100%, 1120px);
+    }
+    .media-proof-video video {
+      object-fit: cover;
+    }
+    .media-proof-video .image-caption {
+      background: transparent;
+      display: block;
+      left: 0.9em;
+      padding: 0;
+      right: auto;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
+    }
 
     .reveal .tier-table {
       border-collapse: collapse;
@@ -556,26 +600,32 @@
       margin-top: 0.55em;
     }
     .tier-table.package-table th {
-      font-size: 0.5em;
+      font-size: 0.52em;
       padding: 0.52em 0.65em;
     }
     .tier-table.package-table td {
-      font-size: 0.45em;
+      font-size: 0.58em;
       padding: 0.43em 0.65em;
     }
     .tier-table.package-table .price {
-      font-size: 1.32em;
+      font-size: 1.24em;
+    }
+    .tier-table.package-table tr.attendee-email-row td {
+      font-size: 0.58em;
     }
     .tier-table.compact {
       margin-top: 0.35em;
     }
     .tier-table.compact th {
-      font-size: 0.48em;
-      padding: 0.45em 0.65em;
+      font-size: 0.52em;
+      padding: 0.52em 0.65em;
     }
     .tier-table.compact td {
-      font-size: 0.44em;
-      padding: 0.42em 0.65em;
+      font-size: 0.58em;
+      padding: 0.43em 0.65em;
+    }
+    .tier-table.compact .price {
+      font-size: 1.24em;
     }
     .biannual-panel {
       border-top: 1px solid var(--line);
@@ -588,13 +638,17 @@
     .single-event-panel h3,
     .biannual-panel h3 {
       color: var(--cyan);
-      font-size: 0.64em;
+      font-size: 0.72em;
       margin-bottom: 0.18em;
     }
     .biannual-panel p {
       color: var(--muted);
-      font-size: 0.43em;
+      font-size: 0.52em;
       margin: 0;
+    }
+    .email-disclaimer {
+      font-size: 0.377em;
+      margin-top: 0.45em;
     }
     .copy-link {
       color: var(--cyan);
@@ -701,16 +755,17 @@
       object-fit: contain;
       width: 100%;
     }
-    .recognition-list {
+    .reveal .recognition-list {
       display: grid;
-      gap: 0.42em;
+      gap: 0.58em;
       list-style: none;
-      margin: 1.25em 0 0;
+      margin: 1.8em 0 0;
       padding: 0;
     }
-    .recognition-list li {
+    .reveal .recognition-list li {
       border-left: 3px solid var(--lime);
       font-size: 0.62em;
+      line-height: 1.48;
       padding-left: 0.7em;
     }
 
@@ -894,7 +949,7 @@
                 </div>
                 <div class="card">
                   <h3><!-- copy:s05a.t010 -->Media Credibility<!-- /copy --></h3>
-                  <p><!-- copy:s05a.t011 -->Featured in a video by <a class="copy-link" href="https://www.youtube.com/watch?v=u7pu1cQBqtQ" target="_blank" rel="noopener">Marques Brownlee and Cleo Abram</a>, bringing the production stack to a mainstream tech audience.<!-- /copy --></p>
+                  <p><!-- copy:s05a.t011 -->Featured in an episode of <a class="copy-link" href="https://www.youtube.com/watch?v=u7pu1cQBqtQ" target="_blank" rel="noopener">Huge If True with Cleo Abram and Marques Brownlee (MKBHD)</a>.<!-- /copy --></p>
                 </div>
               </div>
             </div>
@@ -940,43 +995,35 @@
           <hr class="accent-line lime">
           <div class="stat-grid">
             <div class="stat-card">
-              <div class="num"><!-- copy:s06.t003 -->5,000+<!-- /copy --></div>
+              <div class="num"><!-- copy:s06.t003 -->4,000+<!-- /copy --></div>
               <div class="label"><!-- copy:s06.t004 -->event registrations<!-- /copy --></div>
             </div>
             <div class="stat-card">
-              <div class="num"><!-- copy:s06.t005 -->4,200+<!-- /copy --></div>
+              <div class="num"><!-- copy:s06.t005 -->2,300+<!-- /copy --></div>
               <div class="label"><!-- copy:s06.t006 -->approved attendees<!-- /copy --></div>
             </div>
             <div class="stat-card">
-              <div class="num"><!-- copy:s06.t007 -->21<!-- /copy --></div>
+              <div class="num"><!-- copy:s06.t007 -->30+<!-- /copy --></div>
               <div class="label"><!-- copy:s06.t008 -->events produced<!-- /copy --></div>
             </div>
             <div class="stat-card">
-              <div class="num"><!-- copy:s06.t009 -->9,300+<!-- /copy --></div>
+              <div class="num"><!-- copy:s06.t009 -->7,300+<!-- /copy --></div>
               <div class="label"><!-- copy:s06.t010 -->mailing list members<!-- /copy --></div>
             </div>
             <div class="stat-card">
-              <div class="num"><!-- copy:s06.t011 -->1,300+<!-- /copy --></div>
-              <div class="label"><!-- copy:s06.t012 -->unique companies<!-- /copy --></div>
-            </div>
-            <div class="stat-card">
-              <div class="num"><!-- copy:s06.t013 -->200K+<!-- /copy --></div>
-              <div class="label"><!-- copy:s06.t014 -->social followers<!-- /copy --></div>
-            </div>
-            <div class="stat-card">
-              <div class="num"><!-- copy:s06.t015 -->~50%<!-- /copy --></div>
+              <div class="num"><!-- copy:s06.t015 -->~34%<!-- /copy --></div>
               <div class="label"><!-- copy:s06.t016 -->return attendee rate<!-- /copy --></div>
             </div>
             <div class="stat-card">
-              <div class="num"><!-- copy:s06.t017 -->400+<!-- /copy --></div>
+              <div class="num"><!-- copy:s06.t017 -->1000+<!-- /copy --></div>
               <div class="label"><!-- copy:s06.t018 -->venue event capacity<!-- /copy --></div>
             </div>
           </div>
-          <p class="note"><!-- copy:s06.t019 -->December 2024 - April 2026 aggregate platform metrics across ComfyUI programming.<!-- /copy --></p>
+          <p class="note"><!-- copy:s06.t019 -->December 2024 - April 2026 aggregate metrics.<!-- /copy --></p>
         </div>
       </section>
 
-      <section>
+      <section data-visibility="hidden">
         <div class="slide-content slide-title">
           <p class="eyebrow"><!-- copy:s07.t001 -->Who's in the Room<!-- /copy --></p>
           <h2><!-- copy:s07.t002 -->A creator community with technical and commercial reach.<!-- /copy --></h2>
@@ -987,11 +1034,11 @@
           </div>
           <div class="logo-section">
             <div class="logo-section-label"><!-- copy:s07.t029 -->Film, VFX &amp; Production<!-- /copy --></div>
-            <div class="logo-section-names"><!-- copy:s07.t030 -->A24 Films<!-- /copy --> <span><!-- copy:s07.t031 -->·<!-- /copy --></span> <!-- copy:s07.t032 -->CBS<!-- /copy --> <span><!-- copy:s07.t033 -->·<!-- /copy --></span> <!-- copy:s07.t034 -->Wrigley Media Group<!-- /copy --> <span><!-- copy:s07.t035 -->·<!-- /copy --></span> <!-- copy:s07.t036 -->Industrial Color<!-- /copy --> <span><!-- copy:s07.t037 -->·<!-- /copy --></span> <!-- copy:s07.t038 -->The Artery<!-- /copy --> <span><!-- copy:s07.t039 -->·<!-- /copy --></span> <!-- copy:s07.t040 -->Big Sky Edit<!-- /copy --> <span><!-- copy:s07.t041 -->·<!-- /copy --></span> <!-- copy:s07.t042 -->Mongrel FX<!-- /copy --> <span><!-- copy:s07.t043 -->·<!-- /copy --></span> <!-- copy:s07.t044 -->Kinzi Films<!-- /copy --> <span><!-- copy:s07.t045 -->·<!-- /copy --></span> <!-- copy:s07.t046 -->Genvid Technologies<!-- /copy --></div>
+            <div class="logo-section-names"><!-- copy:s07.t030 -->A24 Films<!-- /copy --> <span><!-- copy:s07.t031 -->·<!-- /copy --></span> <!-- copy:s07.t032 -->CBS<!-- /copy --> <span><!-- copy:s07.t033 -->·<!-- /copy --></span> <!-- copy:s07.t034 -->Wrigley Media Group<!-- /copy --> <span><!-- copy:s07.t035 -->·<!-- /copy --></span> <!-- copy:s07.t036 -->Industrial Color<!-- /copy --> <span><!-- copy:s07.t037 -->·<!-- /copy --></span> <!-- copy:s07.t038 -->The Artery<!-- /copy --> <span><!-- copy:s07.t039 -->·<!-- /copy --></span> <!-- copy:s07.t040 -->Big Sky Edit<!-- /copy --> <span><!-- copy:s07.t041 -->·<!-- /copy --></span> <!-- copy:s07.t042 -->Mongrel FX<!-- /copy --> <span><!-- copy:s07.t043 -->·<!-- /copy --></span> <!-- copy:s07.t044 -->Kinzi Films<!-- /copy --></div>
           </div>
           <div class="logo-section">
             <div class="logo-section-label"><!-- copy:s07.t047 -->AI &amp; Creative Tools<!-- /copy --></div>
-            <div class="logo-section-names"><!-- copy:s07.t048 -->Stability.ai<!-- /copy --> <span><!-- copy:s07.t049 -->·<!-- /copy --></span> <!-- copy:s07.t050 -->Lightricks<!-- /copy --> <span><!-- copy:s07.t051 -->·<!-- /copy --></span> <!-- copy:s07.t052 -->Bria.ai<!-- /copy --> <span><!-- copy:s07.t053 -->·<!-- /copy --></span> <!-- copy:s07.t054 -->ElevenLabs<!-- /copy --> <span><!-- copy:s07.t055 -->·<!-- /copy --></span> <!-- copy:s07.t056 -->Manus AI<!-- /copy --> <span><!-- copy:s07.t057 -->·<!-- /copy --></span> <!-- copy:s07.t058 -->Comfy.org<!-- /copy --> <span><!-- copy:s07.t059 -->·<!-- /copy --></span> <!-- copy:s07.t060 -->Livepeer<!-- /copy --> <span><!-- copy:s07.t061 -->·<!-- /copy --></span> <!-- copy:s07.t062 -->Freepik<!-- /copy --> <span><!-- copy:s07.t063 -->·<!-- /copy --></span> <!-- copy:s07.t064 -->PlaybookXR<!-- /copy --></div>
+            <div class="logo-section-names"><!-- copy:s07.t048 -->Stability.ai<!-- /copy --> <span><!-- copy:s07.t049 -->·<!-- /copy --></span> <!-- copy:s07.t050 -->Lightricks<!-- /copy --> <span><!-- copy:s07.t051 -->·<!-- /copy --></span> <!-- copy:s07.t052 -->Bria.ai<!-- /copy --> <span><!-- copy:s07.t053 -->·<!-- /copy --></span> <!-- copy:s07.t054 -->ElevenLabs<!-- /copy --> <span><!-- copy:s07.t055 -->·<!-- /copy --></span> <!-- copy:s07.t056 -->Manus AI<!-- /copy --> <span><!-- copy:s07.t057 -->·<!-- /copy --></span> <!-- copy:s07.t058 -->Comfy Org<!-- /copy --> <span><!-- copy:s07.t059 -->·<!-- /copy --></span> <!-- copy:s07.t060 -->Daydream<!-- /copy --> <span><!-- copy:s07.t061 -->·<!-- /copy --></span> <!-- copy:s07.t062 -->Freepik<!-- /copy --> <span><!-- copy:s07.t063 -->·<!-- /copy --></span> <!-- copy:s07.t064 -->Genvid Technologies<!-- /copy --></div>
           </div>
           <div class="logo-section">
             <div class="logo-section-label"><!-- copy:s07.t065 -->Top Universities<!-- /copy --></div>
@@ -1077,6 +1124,24 @@
               </div>
             </div>
           </div>
+          <div class="audience-proof">
+            <div class="logo-section">
+              <div class="logo-section-label"><!-- copy:s08.t036 -->Enterprise &amp; Tech<!-- /copy --></div>
+              <div class="logo-section-names"><!-- copy:s08.t037 -->Google · Adobe · Meta · ByteDance · NBCUniversal · Netflix · PepsiCo · Nasdaq · McKinsey · BCG  · American Express · Capital One<!-- /copy --></div>
+            </div>
+            <div class="logo-section">
+              <div class="logo-section-label"><!-- copy:s08.t038 -->AI &amp; Creative Tools<!-- /copy --></div>
+              <div class="logo-section-names"><!-- copy:s08.t039 -->Stability.ai · Lightricks · Bria.ai · ElevenLabs · Comfy.org · Livepeer · Freepik · Genvid Technologies<!-- /copy --></div>
+            </div>
+            <div class="logo-section">
+              <div class="logo-section-label"><!-- copy:s08.t040 -->Film, VFX &amp; Production<!-- /copy --></div>
+              <div class="logo-section-names"><!-- copy:s08.t041 -->A24 Films · CBS · Wrigley Media Group · Industrial Color · The Artery · Big Sky Edit · Mongrel FX · 1stAveMachine · Shadowworks<!-- /copy --></div>
+            </div>
+            <div class="logo-section">
+              <div class="logo-section-label"><!-- copy:s08.t042 -->Universities<!-- /copy --></div>
+              <div class="logo-section-names"><!-- copy:s08.t043 -->NYU · Columbia · Cornell · MIT · Stanford · Harvard · UC Berkeley · Brown · SVA · Pratt · New School · Georgetown · Carnegie Mellon · UCLA<!-- /copy --></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1147,17 +1212,17 @@
               </div>
             </div>
             <div class="deliverable">
-              <div class="media"><video src="bts-video/2601_Lightricks_Presentation_V1.mp4" autoplay muted loop playsinline></video></div>
-              <div class="overlay">
-                <h3><!-- copy:s11.t005 -->Edited Video<!-- /copy --></h3>
-                <p><!-- copy:s11.t006 -->Multi-angle recording of your session, edited for reuse across sales, product, and community channels.<!-- /copy --></p>
-              </div>
-            </div>
-            <div class="deliverable">
               <div class="media"><img src="bts-pics/IMG_2155.webp" alt="Demo booth"></div>
               <div class="overlay">
                 <h3><!-- copy:s11.t007 -->Demo Surface<!-- /copy --></h3>
                 <p><!-- copy:s11.t008 -->Table, power, internet, and room placement for hands-on product conversations.<!-- /copy --></p>
+              </div>
+            </div>
+            <div class="deliverable">
+              <div class="media"><img src="assets/comfyui-panel-jan-2026.jpg" alt="ComfyUI sponsor panel"></div>
+              <div class="overlay">
+                <h3><!-- copy:s11.t015 -->Panel<!-- /copy --></h3>
+                <p><!-- copy:s11.t016 -->A moderated sponsor or partner panel that frames a timely workflow, market shift, or creator conversation.<!-- /copy --></p>
               </div>
             </div>
             <div class="deliverable">
@@ -1168,17 +1233,17 @@
               </div>
             </div>
             <div class="deliverable">
+              <div class="media"><video src="bts-video/2601_Lightricks_Presentation_V1.mp4" autoplay muted loop playsinline></video></div>
+              <div class="overlay">
+                <h3><!-- copy:s11.t005 -->Edited Video<!-- /copy --></h3>
+                <p><!-- copy:s11.t006 -->Multi-angle recording of your session, edited for reuse across sales, product, and community channels.<!-- /copy --></p>
+              </div>
+            </div>
+            <div class="deliverable">
               <div class="media"><video src="bts-video/2601_Bria_Reel1_V1.mp4" autoplay muted loop playsinline></video></div>
               <div class="overlay">
                 <h3><!-- copy:s11.t013 -->Short-Form Clips<!-- /copy --></h3>
                 <p><!-- copy:s11.t014 -->Social-ready clips from talks, demos, recaps, and sponsor moments.<!-- /copy --></p>
-              </div>
-            </div>
-            <div class="deliverable">
-              <div class="media"><img src="assets/comfyui-panel-jan-2026.jpg" alt="ComfyUI sponsor panel"></div>
-              <div class="overlay">
-                <h3><!-- copy:s11.t015 -->Panel<!-- /copy --></h3>
-                <p><!-- copy:s11.t016 -->A moderated sponsor or partner panel that frames a timely workflow, market shift, or creator conversation.<!-- /copy --></p>
               </div>
             </div>
           </div>
@@ -1190,26 +1255,22 @@
           <p class="eyebrow"><!-- copy:s12.t001 -->Media Proof<!-- /copy --></p>
           <h2><!-- copy:s12.t002 -->The event does not end when the room clears.<!-- /copy --></h2>
           <hr class="accent-line lime">
-          <p class="lead"><!-- copy:s12.t003 -->Each sponsor activation can become a recorded talk, recap asset, short-form clip, and social proof point. [Final metrics will be added before outreach.]<!-- /copy --></p>
+          <p class="lead"><!-- copy:s12.t003 -->Each sponsor activation can become a recorded talk, recap asset, short-form clip, and social proof point.<!-- /copy --></p>
           <div class="proof-grid">
             <div class="proof">
               <h3><!-- copy:s12.t004 -->YouTube Recordings<!-- /copy --></h3>
-              <p><!-- copy:s12.t005 -->[YouTube views] across published event recordings and sponsor talks.<!-- /copy --></p>
-            </div>
-            <div class="proof">
-              <h3><!-- copy:s12.t006 -->Average Recording Views<!-- /copy --></h3>
-              <p><!-- copy:s12.t007 -->[average recording views] per full-length presentation or livestream archive.<!-- /copy --></p>
+              <p><!-- copy:s12.t005 -->Event recordings and sponsor talks published on our <a class="copy-link" href="https://www.youtube.com/watch?v=ALEh5yC97Y4&amp;list=PLZmNlcQggHw_qoqbZhwUxg4ZOuWNtfRXs" target="_blank" rel="noopener">YouTube channel</a>.<!-- /copy --></p>
             </div>
             <div class="proof">
               <h3><!-- copy:s12.t008 -->Social Recap Reach<!-- /copy --></h3>
-              <p><!-- copy:s12.t009 -->[social recap reach] across recap posts, collaborator tags, and partner amplification.<!-- /copy --></p>
+              <p><!-- copy:s12.t009 -->200K+ social followers across IG, LinkedIn, Discord, X.<!-- /copy --></p>
             </div>
             <div class="proof">
               <h3><!-- copy:s12.t010 -->Clip Performance<!-- /copy --></h3>
-              <p><!-- copy:s12.t011 -->[clip performance] for short-form sponsor, speaker, and demo moments.<!-- /copy --></p>
+              <p><!-- copy:s12.t011 -->Top-performing reels have reached 90K+ views, up to 10% engagement, and 2-3% share/save rates, 2-3x higher than industry standard.<!-- /copy --></p>
             </div>
           </div>
-          <div class="full-image" style="height: 330px; margin-top: 1.25em;">
+          <div class="full-image media-proof-video">
             <video src="bts-video/Rhizome_VibeShift_Full_16x9_V5_540p.mp4" autoplay muted loop playsinline></video>
             <div class="image-caption"><!-- copy:s12.t012 -->Published media extends sponsor presence beyond the live audience<!-- /copy --></div>
           </div>
@@ -1283,7 +1344,7 @@
                 <td><!-- copy:s14.t015 -->Sponsor content slot<!-- /copy --></td>
                 <td><!-- copy:s14.t016 -->Full presentation (20 minutes)<!-- /copy --></td>
                 <td><!-- copy:s14.t017 -->Full presentation (20 minutes)<!-- /copy --></td>
-                <td><!-- copy:s14.t018 -->Stage shout-out<!-- /copy --></td>
+                <td><!-- copy:s14.t018 -->Stage shout-out (2 minutes)<!-- /copy --></td>
               </tr>
               <tr>
                 <td><!-- copy:s14.t019 -->Additional sponsor content<!-- /copy --></td>
@@ -1304,18 +1365,18 @@
                 <td><span class="dash"><!-- copy:s14.t062 -->-<!-- /copy --></span></td>
               </tr>
               <tr>
-                <td><!-- copy:s14.t023 -->Pre-event mail blast shout-out<!-- /copy --></td>
+                <td><!-- copy:s14.t023 -->Pre-event email blast shout-out<!-- /copy --></td>
                 <td><span class="check"><!-- copy:s14.t024 -->Yes<!-- /copy --></span></td>
                 <td><span class="check"><!-- copy:s14.t025 -->Yes<!-- /copy --></span></td>
                 <td><span class="dash"><!-- copy:s14.t026 -->-<!-- /copy --></span></td>
               </tr>
               <tr>
-                <td><!-- copy:s14.t027 -->Post-event mail blast shout-out<!-- /copy --></td>
+                <td><!-- copy:s14.t027 -->Post-event email blast shout-out<!-- /copy --></td>
                 <td><span class="check"><!-- copy:s14.t028 -->Yes<!-- /copy --></span></td>
                 <td><span class="check"><!-- copy:s14.t029 -->Yes<!-- /copy --></span></td>
                 <td><span class="check"><!-- copy:s14.t030 -->Yes<!-- /copy --></span></td>
               </tr>
-              <tr>
+              <tr class="attendee-email-row">
                 <td><!-- copy:s14.t035 -->Access to attendee emails*<!-- /copy --></td>
                 <td><span class="check"><!-- copy:s14.t036 -->Yes<!-- /copy --></span></td>
                 <td><span class="dash"><!-- copy:s14.t037 -->-<!-- /copy --></span></td>
@@ -1323,7 +1384,7 @@
               </tr>
             </tbody>
           </table>
-          <p class="note"><!-- copy:s14.t057 -->*Attendee email access applies only for attendees that explicitly opt-in to sharing.<!-- /copy --></p>
+          <p class="note email-disclaimer"><!-- copy:s14.t057 -->*Only for attendees that opt-in to sharing.<!-- /copy --></p>
           <div class="biannual-panel">
             <h3><!-- copy:s14.t043 -->Biannual Sponsorship Plan<!-- /copy --></h3>
             <p><!-- copy:s14.t044 -->Biannual (six-month) plan priced at 3x the single-event rate, with the option to sponsor 4 monthly events.<!-- /copy --></p>
@@ -1394,9 +1455,9 @@
             <img src="logos/onx.png" alt="ONX Studio">
           </div>
           <ul class="recognition-list">
-            <li><!-- copy:s17.t003 -->ComfyUI NYC became the flagship origin proof for a broader creative AI audience in New York.<!-- /copy --></li>
-            <li><!-- copy:s17.t004 -->Vibe Shift was co-produced with Rhizome and New Museum's New Inc, with Anthropic as sponsor.<!-- /copy --></li>
-            <li><!-- copy:s17.t005 -->Hypercentric has hosted creators from production, AI, VFX, creative coding, startups, and top universities.<!-- /copy --></li>
+            <li><!-- copy:s17.t003 -->ComfyUI NYC has become the largest recurring ComfyUI event in the world, and a nexus for the East Coast creative AI community. Attendees and speakers travel here from all over the US.<!-- /copy --></li>
+            <li><!-- copy:s17.t004 -->Lightricks announced their widely anticipated LTX-2 video model at a ComfyUI NYC event, and Bria showcased their Fibo and Fibo Edit image models.<!-- /copy --></li>
+            <li><!-- copy:s17.t005 -->Anthropic sponsored Vibe Shift, a vibe coding creative technology community event co-produced with Rhizome, New Museum's New Inc, and ZeroSpace.<!-- /copy --></li>
           </ul>
         </div>
       </section>
@@ -1406,30 +1467,11 @@
         <div class="slide-content">
           <div class="ask-layout">
             <div>
-              <p class="eyebrow"><!-- copy:s18.t001 -->The Ask<!-- /copy --></p>
               <h1 style="font-size: 2.35em;"><!-- copy:s18.t002 -->Define the next phase of creative AI workflows.<!-- /copy --></h1>
-              <div class="ask-list">
-                <div class="ask-item">
-                  <span><!-- copy:s18.t003 -->Adoption<!-- /copy --></span>
-                  <p><!-- copy:s18.t004 -->Put your model or tool in front of creators actively assembling hybrid workflows.<!-- /copy --></p>
-                </div>
-                <div class="ask-item">
-                  <span><!-- copy:s18.t005 -->Authority<!-- /copy --></span>
-                  <p><!-- copy:s18.t006 -->Show up as the company helping creators understand what is possible now.<!-- /copy --></p>
-                </div>
-                <div class="ask-item">
-                  <span><!-- copy:s18.t007 -->Content<!-- /copy --></span>
-                  <p><!-- copy:s18.t008 -->Leave with talks, clips, recaps, and demos that continue working after the event.<!-- /copy --></p>
-                </div>
-                <div class="ask-item">
-                  <span><!-- copy:s18.t009 -->Feedback<!-- /copy --></span>
-                  <p><!-- copy:s18.t010 -->Hear how technical creators evaluate your product inside real creative constraints.<!-- /copy --></p>
-                </div>
-              </div>
             </div>
             <div class="contact-card">
-              <h3><!-- copy:s18.t011 -->Start the conversation<!-- /copy --></h3>
-              <p><strong><!-- copy:s18.t012 -->Xuelong Mu<!-- /copy --></strong><br><!-- copy:s18.t013 -->Technical Director<!-- /copy --><br><!-- copy:s18.t014 -->xuelong.mu@zerospace.co<!-- /copy --><br><br><!-- copy:s18.t015 -->zerospace.co<!-- /copy --><br><!-- copy:s18.t016 -->@zerospace<!-- /copy --><br><!-- copy:s18.t017 -->@zerospacelabs<!-- /copy --></p>
+              <h3><!-- copy:s18.t011 -->Let's Collaborate<!-- /copy --></h3>
+              <p><strong><!-- copy:s18.t012 -->Xuelong Mu<!-- /copy --></strong><br><!-- copy:s18.t014 -->xuelong@hypercentriclabs.com<!-- /copy --></p>
             </div>
           </div>
           <div class="bottom-brand"><!-- copy:s18.t018 -->Creative AI NYC - Hypercentric<!-- /copy --></div>
