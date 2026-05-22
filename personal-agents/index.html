@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Agents Need an Operating System</title>
+  <title>An Operating System for a Creative Technology Studio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +50,6 @@
     .cover { justify-content: center; padding-left: 4em; }
     .cover .subtitle { color: var(--white); font-family: var(--font-light); font-size: .95em; font-weight: 400; margin-top: .45em; max-width: 920px; }
     .cover-meta { bottom: 2.2em; color: var(--muted); display: flex; font-family: var(--font-condensed); font-size: .68em; gap: 2em; letter-spacing: .08em; position: absolute; text-transform: uppercase; }
-    .timecode { border: 1px solid var(--line); color: var(--quiet); font-family: var(--font-brand); font-size: .46em; letter-spacing: .1em; padding: .5em .7em; position: absolute; right: 3.1em; top: 2.1em; text-transform: uppercase; }
     .split { align-items: center; display: grid; gap: 2.2em; grid-template-columns: .9fr 1.1fr; height: 100%; }
     .two-col { display: grid; gap: .8em; grid-template-columns: repeat(2, 1fr); margin-top: 1.2em; }
     .three-col { display: grid; gap: .8em; grid-template-columns: repeat(3, 1fr); margin-top: 1.1em; }
@@ -62,14 +61,14 @@
     .quote { font-family: var(--font-heading); font-size: 2.05em; line-height: 1.1; text-transform: uppercase; }
     .quote-small { color: var(--muted); font-size: .72em; margin: 1em auto 0; max-width: 960px; }
     .diagram { position: relative; min-height: 620px; }
-    .node { background: var(--panel); border: 2px solid var(--line); border-radius: 8px; box-shadow: 0 18px 45px rgba(0,0,0,.3); padding: .72em .82em; position: absolute; text-align: center; width: 245px; }
+    .node { background: var(--panel); border: 2px solid var(--line); border-radius: 8px; box-shadow: 0 18px 45px rgba(0,0,0,.3); padding: .72em .82em; position: absolute; text-align: center; width: 245px; z-index: 2; }
     .node.center { background: #050505; border-color: var(--cyan); left: calc(50% - 155px); top: 245px; width: 310px; }
     .node .label { color: var(--white); display: block; font-family: var(--font-heading); font-size: .82em; text-transform: uppercase; }
     .node .sub { color: var(--quiet); display: block; font-size: .52em; font-weight: 300; margin-top: .25em; }
     .n1 { left: 0; top: 22px; } .n2 { right: 0; top: 22px; } .n3 { left: 0; bottom: 36px; } .n4 { right: 0; bottom: 36px; } .n5 { left: calc(50% - 122px); top: 0; }
-    .line { background: var(--line); height: 2px; position: absolute; transform-origin: left center; }
+    .line { background: var(--line); height: 2px; position: absolute; transform-origin: left center; z-index: 0; }
     .l1 { left: 245px; top: 116px; transform: rotate(31deg); width: 350px; } .l2 { left: 675px; top: 116px; transform: rotate(149deg); width: 350px; }
-    .l3 { left: 245px; top: 520px; transform: rotate(-31deg); width: 350px; } .l4 { left: 675px; top: 520px; transform: rotate(211deg); width: 350px; }
+    .l3 { left: 525px; top: 460px; transform: rotate(145deg); width: 335px; } .l4 { left: 610px; top: 460px; transform: rotate(35deg); width: 135px; }
     .l5 { left: calc(50% - 1px); top: 106px; transform: rotate(90deg); width: 145px; }
     .flow { align-items: stretch; display: grid; gap: .45em; grid-template-columns: repeat(5, 1fr); margin-top: 1.4em; }
     .flow-step { background: var(--panel); border: 1px solid var(--line); min-height: 176px; padding: .85em; position: relative; }
@@ -91,7 +90,7 @@
     .closing h2 { font-size: 2.4em; max-width: 1260px; }
     .closing .lead { margin-top: .8em; }
     .notes { display: none; }
-    @media print { .demo-tag, .timecode { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+    @media print { .demo-tag { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
   </style>
 </head>
 <body>
@@ -101,29 +100,26 @@
       <section>
         <div class="slide-content cover">
           <div class="brand-lockup"><div class="brand-symbol"></div><div class="brand-text">ZeroGen Agent</div></div>
-          <h1>Personal Agents Need an Operating System</h1>
-          <p class="subtitle">What we built: a Hermes-based AI operator across Slack, GitHub, Linear, Notion, meetings, and the terminal.</p>
-          <div class="cover-meta"><span>10 minutes</span><span>demo-led</span><span>philosophy + architecture</span></div>
+          <h1>An Operating System for a Creative Technology Studio</h1>
+          <p class="subtitle">A Hermes-based AI operator across Slack, GitHub, Linear, Notion, meetings, and the terminal.</p>
+          <div class="cover-meta"><span>demo-led</span><span>philosophy + architecture</span><span>creative technology operations</span></div>
         </div>
-        <aside class="notes">0:00-0:45. Open with: this is an agent operating-system talk: where agents live, how they act, and how they stay safe.</aside>
+        <aside class="notes">Open with: this is an agent operating-system talk: where agents live, how they act, and how they stay safe.</aside>
       </section>
 
       <section>
         <div class="slide-content">
-          <div class="timecode">0:45</div>
           <div class="big-quote">
             <div class="quote-panel">
-              <div class="quote">Tool access is table stakes.<br>Coherent operating context is the unlock.</div>
-              <p class="quote-small">A useful personal agent needs source-of-truth rules, permissions, durable context, and a way to learn from repeated work.</p>
+              <div class="quote">Business agents need source-of-truth rules, permissions, durable context, and a way to learn from repeated work.</div>
             </div>
           </div>
         </div>
-        <aside class="notes">0:45-1:35. Compress the thesis: capability is easy to demo; coherence is the real system design problem.</aside>
+        <aside class="notes">Compress the thesis: capability is easy to demo; coherence is the real system design problem.</aside>
       </section>
 
       <section>
         <div class="slide-content">
-          <div class="timecode">1:35</div>
           <div class="split">
             <div>
               <h2>From chatbot to operational teammate.</h2>
@@ -144,12 +140,11 @@
             </div>
           </div>
         </div>
-        <aside class="notes">1:35-2:35. One sentence each: agent reads, acts, and writes back to the right substrate.</aside>
+        <aside class="notes">One sentence each: agent reads, acts, and writes back to the right substrate.</aside>
       </section>
 
       <section>
         <div class="slide-content">
-          <div class="timecode">2:35</div>
           <h2>Make the world legible to agents.</h2>
           <div class="accent lime"></div>
           <div class="three-col">
@@ -157,14 +152,12 @@
             <div class="card"><h3>2. Promote context</h3><p>Move important facts out of chat and into durable systems.</p></div>
             <div class="card"><h3>3. Bound autonomy</h3><p>Let the agent act where safe; require approval at mutation boundaries.</p></div>
           </div>
-          <p class="lead" style="margin-top:1.25em; max-width:1120px;">We make the workspace legible enough for humans and agents to collaborate reliably.</p>
         </div>
-        <aside class="notes">2:35-3:35. This is the most philosophical slide. Keep it to three principles.</aside>
+        <aside class="notes">This is the most philosophical slide. Keep it to three principles.</aside>
       </section>
 
       <section>
         <div class="slide-content">
-          <div class="timecode">3:35</div>
           <h2 class="context-title">Every surface gets one job.</h2>
           <div class="accent cyan"></div>
           <table class="table">
@@ -178,12 +171,11 @@
             </tbody>
           </table>
         </div>
-        <aside class="notes">3:35-4:35. The key line: chat captures intent; GitHub carries project canon; memory carries stable preferences.</aside>
+        <aside class="notes">The key line: chat captures intent; GitHub carries project canon; memory carries stable preferences.</aside>
       </section>
 
       <section>
         <div class="slide-content">
-          <div class="timecode">4:35</div>
           <h2>Capture messy intent, then route it.</h2>
           <div class="accent lime"></div>
           <div class="flow">
@@ -195,12 +187,11 @@
           </div>
           <div class="demo-tag">Tab out: Granola notes → Slack request</div>
         </div>
-        <aside class="notes">4:35-5:25. Show raw notes or current Slack thread. Emphasize capture as raw material before promotion.</aside>
+        <aside class="notes">Show raw notes or current Slack thread. Emphasize capture as raw material before promotion.</aside>
       </section>
 
       <section>
         <div class="slide-content">
-          <div class="timecode">5:25</div>
           <h2>GitHub is where durable agent context hardens.</h2>
           <div class="accent cyan"></div>
           <div class="two-col">
@@ -214,12 +205,11 @@
           </div>
           <div class="demo-tag">Tab out: GitHub repo / PR diff</div>
         </div>
-        <aside class="notes">5:25-6:25. Show the actual repo. Keep explanation to source of truth + PR approval.</aside>
+        <aside class="notes">Show the actual repo. Keep explanation to source of truth + PR approval.</aside>
       </section>
 
       <section>
         <div class="slide-content">
-          <div class="timecode">6:25</div>
           <h2>Linear and Notion each have a clear job.</h2>
           <div class="accent lime"></div>
           <div class="two-col">
@@ -229,26 +219,23 @@
           <p class="lead" style="margin-top:1.2em; max-width:1050px;">The agent routes each question to the surface designed to answer it.</p>
           <div class="demo-tag">Tab out: Linear project → Notion teamspace</div>
         </div>
-        <aside class="notes">6:25-7:25. Avoid repeating the table; just demonstrate the contrast.</aside>
+        <aside class="notes">Avoid repeating the table; just demonstrate the contrast.</aside>
       </section>
 
       <section>
         <div class="slide-content">
-          <div class="timecode">7:25</div>
           <h2>Autonomy is scoped by what can go wrong.</h2>
           <div class="accent pink"></div>
           <div class="two-col">
             <div class="card"><h3>Agent can do</h3><p>Read context, draft docs, summarize, propose changes, create artifacts, open PRs.</p></div>
             <div class="card"><h3>Human approves</h3><p>Merge PRs, change product canon, mutate priorities, delete durable context, make irreversible external changes.</p></div>
           </div>
-          <p class="lead" style="margin-top:1.3em; max-width:1040px;">The useful question: “autonomous over what, with which approval boundary?”</p>
         </div>
-        <aside class="notes">7:25-8:25. This is the trust slide. Tie to why demos are safe to run live.</aside>
+        <aside class="notes">This is the trust slide. Tie to why demos are safe to run live.</aside>
       </section>
 
       <section>
         <div class="slide-content closing">
-          <div class="timecode">8:25</div>
           <h2>The agent is only as good as the world you give it to operate in.</h2>
           <div class="accent cyan"></div>
           <p class="lead">Build environments where agents know where truth lives, what they can change, when to ask, and how to improve the next run.</p>
@@ -258,7 +245,7 @@
             <div class="card"><h3>Next</h3><p>Agent swarms for specs, QA, and review.</p></div>
           </div>
         </div>
-        <aside class="notes">8:25-10:00. Close with future loop. Leave time for questions or a final demo glance.</aside>
+        <aside class="notes">Close with future loop. Leave time for questions or a final demo glance.</aside>
       </section>
 
     </div>

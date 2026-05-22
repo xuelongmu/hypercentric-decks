@@ -1,47 +1,47 @@
-# Personal Agents Need an Operating System
+# An Operating System for a Creative Technology Studio
 
-10-minute talk deck for a personal AI agents meetup.
+Talk deck for a personal AI agents meetup.
 
-## Slide timing and talk track
+## Slide talk track
 
-1. **Title — 0:00-0:45**
+1. **Title**
    - “This is an agent operating-system talk: where agents live, how they act, and how they stay safe.”
 
-2. **Thesis — 0:45-1:35**
-   - “Tool access is table stakes. Coherent operating context is the unlock.”
+2. **Thesis**
+   - “Business agents need source-of-truth rules, permissions, durable context, and a way to learn from repeated work.”
 
-3. **What we built — 1:35-2:35**
+3. **What we built**
    - Hermes / ZeroGen Agent as operator across Slack, GitHub, Linear, Notion, meetings, and terminal.
 
-4. **Philosophy — 2:35-3:35**
+4. **Philosophy**
    - Ground first.
    - Promote context.
    - Bound autonomy.
 
-5. **Context stack — 3:35-4:35**
+5. **Context stack**
    - GitHub = durable truth.
    - Linear = execution state.
    - Notion = human workspace.
    - Slack / Granola = capture.
    - Memory + skills = personalization and reusable procedure.
 
-6. **Demo 1 — 4:35-5:25**
+6. **Demo 1**
    - Tab out to **Granola notes** and/or **Slack request**.
    - Point: capture is raw material before promotion.
 
-7. **Demo 2 — 5:25-6:25**
+7. **Demo 2**
    - Tab out to **GitHub zerogen-os repo / PR diff**.
    - Point: durable context hardens through markdown, diffs, and PR review.
 
-8. **Demo 3 — 6:25-7:25**
+8. **Demo 3**
    - Tab out to **Linear project**, then **Notion teamspace**.
    - Point: different tools have different jobs; the agent routes work accordingly.
 
-9. **Guardrails — 7:25-8:25**
+9. **Guardrails**
    - Agent can read, draft, summarize, propose, open PRs.
    - Humans approve merges, canon changes, priority/status mutations, deletion, irreversible changes.
 
-10. **Takeaway — 8:25-10:00**
+10. **Takeaway**
    - “The agent is only as good as the world you give it to operate in.”
    - Future: meeting-to-execution pipeline, context librarian, drift detection, agent swarms.
 
