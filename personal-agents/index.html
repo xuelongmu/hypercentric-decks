@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Agents Need an Operating System</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    @font-face { font-family: 'OCR A Std'; src: url('font/OCR A Std Regular.ttf') format('truetype'); }
+    :root {
+      --font-brand: 'OCR A Std', monospace;
+      --font-heading: 'Oswald', sans-serif;
+      --font-body: 'Roboto', sans-serif;
+      --font-condensed: 'Roboto Condensed', sans-serif;
+      --font-light: 'Lato', sans-serif;
+      --bg: #111;
+      --panel: #1e1e1e;
+      --panel-soft: #282828;
+      --line: rgba(255,255,255,0.15);
+      --cyan: #00ffff;
+      --lime: #d8ff32;
+      --pink: #ff4fd8;
+      --white: #fff;
+      --muted: #c9c9c9;
+      --quiet: #8a8a8a;
+    }
+    .reveal-viewport { background: var(--bg); }
+    .reveal { color: var(--white); font-family: var(--font-body); font-size: 28px; font-weight: 700; }
+    .reveal .slides section { background: radial-gradient(circle at 78% 18%, rgba(0,255,255,0.11), transparent 26%), radial-gradient(circle at 16% 78%, rgba(216,255,50,0.08), transparent 26%), var(--bg); box-sizing: border-box; height: 100%; padding: 0; text-align: left; width: 100%; }
+    .slide-content { box-sizing: border-box; display: flex; flex-direction: column; height: 100%; padding: 2.45em 3.1em; position: relative; }
+    h1,h2,h3 { color: var(--white); font-family: var(--font-heading); font-weight: 600; letter-spacing: .02em; line-height: 1.02; margin: 0; text-transform: uppercase; }
+    h1 { font-size: 3.25em; max-width: 1080px; }
+    h2 { font-size: 1.92em; max-width: 1120px; }
+    h3 { font-size: .92em; }
+    p,li,td,th { color: var(--muted); font-family: var(--font-body); font-weight: 300; line-height: 1.38; margin: 0; }
+    strong { color: var(--white); font-weight: 700; }
+    .eyebrow { color: var(--cyan); font-family: var(--font-brand); font-size: .56em; letter-spacing: .16em; margin-bottom: .85em; text-transform: uppercase; }
+    .accent { background: var(--lime); height: 3px; margin: .65em 0 1.0em; width: 92px; }
+    .accent.cyan { background: var(--cyan); }
+    .accent.pink { background: var(--pink); }
+    .lead { color: var(--white); font-family: var(--font-light); font-size: 1.03em; font-weight: 400; max-width: 900px; }
+    .body { font-size: .72em; max-width: 920px; }
+    .muted { color: var(--quiet) !important; }
+    .brand-lockup { align-items: center; display: flex; gap: .75em; left: 3.1em; position: absolute; top: 2.0em; }
+    .brand-symbol { background: url('assets/ZeroSpace_Labs_Symbol_Transparent.webp') center/contain no-repeat; height: 54px; width: 54px; }
+    .brand-text { color: var(--white); font-family: var(--font-brand); font-size: .52em; letter-spacing: .16em; text-transform: uppercase; }
+    .cover { justify-content: center; padding-left: 4em; }
+    .cover .subtitle { color: var(--white); font-family: var(--font-light); font-size: .95em; font-weight: 400; margin-top: .45em; max-width: 920px; }
+    .cover-meta { bottom: 2.2em; color: var(--muted); display: flex; font-family: var(--font-condensed); font-size: .68em; gap: 2em; letter-spacing: .08em; position: absolute; text-transform: uppercase; }
+    .timecode { border: 1px solid var(--line); color: var(--quiet); font-family: var(--font-brand); font-size: .46em; letter-spacing: .1em; padding: .5em .7em; position: absolute; right: 3.1em; top: 2.1em; text-transform: uppercase; }
+    .split { align-items: center; display: grid; gap: 2.2em; grid-template-columns: .9fr 1.1fr; height: 100%; }
+    .two-col { display: grid; gap: .8em; grid-template-columns: repeat(2, 1fr); margin-top: 1.2em; }
+    .three-col { display: grid; gap: .8em; grid-template-columns: repeat(3, 1fr); margin-top: 1.1em; }
+    .card { background: rgba(30,30,30,.88); border: 1px solid var(--line); box-shadow: 0 18px 52px rgba(0,0,0,.35); padding: .95em; }
+    .card h3 { color: var(--cyan); margin-bottom: .42em; }
+    .card p { font-size: .64em; }
+    .big-quote { align-items: center; display: flex; height: 100%; justify-content: center; text-align: center; }
+    .quote-panel { background: rgba(0,0,0,.62); border: 1px solid var(--line); max-width: 1260px; padding: 1.3em 1.55em; }
+    .quote { font-family: var(--font-heading); font-size: 2.05em; line-height: 1.1; text-transform: uppercase; }
+    .quote-small { color: var(--muted); font-size: .72em; margin: 1em auto 0; max-width: 960px; }
+    .diagram { position: relative; min-height: 620px; }
+    .node { background: var(--panel); border: 2px solid var(--line); border-radius: 8px; box-shadow: 0 18px 45px rgba(0,0,0,.3); padding: .72em .82em; position: absolute; text-align: center; width: 245px; }
+    .node.center { background: #050505; border-color: var(--cyan); left: calc(50% - 155px); top: 245px; width: 310px; }
+    .node .label { color: var(--white); display: block; font-family: var(--font-heading); font-size: .82em; text-transform: uppercase; }
+    .node .sub { color: var(--quiet); display: block; font-size: .52em; font-weight: 300; margin-top: .25em; }
+    .n1 { left: 0; top: 22px; } .n2 { right: 0; top: 22px; } .n3 { left: 0; bottom: 36px; } .n4 { right: 0; bottom: 36px; } .n5 { left: calc(50% - 122px); top: 0; }
+    .line { background: var(--line); height: 2px; position: absolute; transform-origin: left center; }
+    .l1 { left: 245px; top: 116px; transform: rotate(31deg); width: 350px; } .l2 { left: 675px; top: 116px; transform: rotate(149deg); width: 350px; }
+    .l3 { left: 245px; top: 520px; transform: rotate(-31deg); width: 350px; } .l4 { left: 675px; top: 520px; transform: rotate(211deg); width: 350px; }
+    .l5 { left: calc(50% - 1px); top: 106px; transform: rotate(90deg); width: 145px; }
+    .flow { align-items: stretch; display: grid; gap: .45em; grid-template-columns: repeat(5, 1fr); margin-top: 1.4em; }
+    .flow-step { background: var(--panel); border: 1px solid var(--line); min-height: 176px; padding: .85em; position: relative; }
+    .flow-step::before { color: var(--lime); content: attr(data-step); font-family: var(--font-brand); font-size: .48em; letter-spacing: .1em; position: absolute; right: .85em; top: .85em; }
+    .flow-step h3 { color: var(--white); margin-bottom: .75em; padding-right: 2.2em; }
+    .flow-step p { font-size: .58em; }
+    .demo-tag { align-items: center; background: rgba(216,255,50,.12); border: 1px solid rgba(216,255,50,.55); bottom: 2.2em; color: var(--lime); display: inline-flex; font-family: var(--font-brand); font-size: .5em; gap: .6em; left: 3.1em; letter-spacing: .08em; padding: .75em .9em; position: absolute; text-transform: uppercase; }
+    .demo-tag::before { content: '↗'; font-size: 1.3em; }
+    .table { border-collapse: collapse; margin-top: 1.05em; width: 100%; }
+    .table th { color: var(--cyan); font-family: var(--font-brand); font-size: .5em; letter-spacing: .12em; padding: .85em; text-transform: uppercase; }
+    .table td { border-top: 1px solid var(--line); font-size: .68em; padding: .88em; vertical-align: top; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: .55em; margin-top: 1.1em; }
+    .pill { border: 1px solid var(--line); color: var(--white); font-family: var(--font-condensed); font-size: .62em; letter-spacing: .08em; padding: .48em .75em; text-transform: uppercase; }
+    .stack { display: flex; flex-direction: column; gap: .62em; margin-top: 1.05em; }
+    .stack-row { align-items: center; background: var(--panel); border: 1px solid var(--line); display: grid; gap: .9em; grid-template-columns: 220px 1fr; padding: .74em .9em; }
+    .stack-row .role { color: var(--lime); font-family: var(--font-heading); font-size: .82em; text-transform: uppercase; }
+    .stack-row p { font-size: .62em; }
+    .closing { justify-content: center; }
+    .closing h2 { font-size: 2.4em; max-width: 1260px; }
+    .closing .lead { margin-top: .8em; }
+    .notes { display: none; }
+    @media print { .demo-tag, .timecode { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <div class="slide-content cover">
+          <div class="brand-lockup"><div class="brand-symbol"></div><div class="brand-text">ZeroGen Agent</div></div>
+          <p class="eyebrow">Personal AI Agents Meetup</p>
+          <h1>Personal Agents Need an Operating System</h1>
+          <p class="subtitle">What we built: a Hermes-based AI operator across Slack, GitHub, Linear, Notion, meetings, and the terminal.</p>
+          <div class="cover-meta"><span>10 minutes</span><span>demo-led</span><span>philosophy + architecture</span></div>
+        </div>
+        <aside class="notes">0:00-0:45. Open with: this is not a chatbot talk; this is about where agents live and how they safely act.</aside>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="timecode">0:45</div>
+          <div class="big-quote">
+            <div class="quote-panel">
+              <div class="quote">The hard part is not giving agents tools.<br>The hard part is giving them a place to stand.</div>
+              <p class="quote-small">A useful personal agent needs source-of-truth rules, permissions, durable context, and a way to learn from repeated work.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="notes">0:45-1:35. Compress the thesis: capability is easy to demo; coherence is the real system design problem.</aside>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="timecode">1:35</div>
+          <div class="split">
+            <div>
+              <p class="eyebrow">What we built</p>
+              <h2>From chatbot to operational teammate.</h2>
+              <div class="accent cyan"></div>
+              <p class="lead">ZeroGen Agent turns messy intent into grounded action across real tools.</p>
+              <div class="pill-row">
+                <span class="pill">inspect repos</span><span class="pill">edit docs</span><span class="pill">open PRs</span><span class="pill">manage project context</span><span class="pill">summarize meetings</span><span class="pill">reuse skills</span>
+              </div>
+            </div>
+            <div class="diagram">
+              <div class="line l1"></div><div class="line l2"></div><div class="line l3"></div><div class="line l4"></div><div class="line l5"></div>
+              <div class="node n1"><span class="label">Slack</span><span class="sub">intent + commands</span></div>
+              <div class="node n2"><span class="label">GitHub</span><span class="sub">durable truth + diffs</span></div>
+              <div class="node n3"><span class="label">Linear</span><span class="sub">execution state</span></div>
+              <div class="node n4"><span class="label">Notion</span><span class="sub">human workspace</span></div>
+              <div class="node n5"><span class="label">Meetings</span><span class="sub">ambient capture</span></div>
+              <div class="node center"><span class="label">Hermes / ZeroGen Agent</span><span class="sub">reasoning + tools + memory + skills</span></div>
+            </div>
+          </div>
+        </div>
+        <aside class="notes">1:35-2:35. One sentence each: agent reads, acts, and writes back to the right substrate.</aside>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="timecode">2:35</div>
+          <p class="eyebrow">Design philosophy</p>
+          <h2>Make the world legible to agents.</h2>
+          <div class="accent lime"></div>
+          <div class="three-col">
+            <div class="card"><h3>1. Ground first</h3><p>Inspect files, PRs, project state, and transcripts before answering.</p></div>
+            <div class="card"><h3>2. Promote context</h3><p>Move important facts out of chat and into durable systems.</p></div>
+            <div class="card"><h3>3. Bound autonomy</h3><p>Let the agent act where safe; require approval at mutation boundaries.</p></div>
+          </div>
+          <p class="lead" style="margin-top:1.25em; max-width:1120px;">We do not just adapt the agent to the workspace. We adapt the workspace so humans and agents can collaborate reliably.</p>
+        </div>
+        <aside class="notes">2:35-3:35. This is the most philosophical slide. Keep it to three principles.</aside>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="timecode">3:35</div>
+          <p class="eyebrow">The context stack</p>
+          <h2>Every surface gets one job.</h2>
+          <div class="accent cyan"></div>
+          <table class="table">
+            <thead><tr><th>Surface</th><th>Role</th><th>Why it matters</th></tr></thead>
+            <tbody>
+              <tr><td><strong>GitHub</strong></td><td>Canonical operating context</td><td>Versioned, diffable, reviewable, agent-readable.</td></tr>
+              <tr><td><strong>Linear</strong></td><td>Execution state</td><td>Issues, priorities, projects, ownership.</td></tr>
+              <tr><td><strong>Notion</strong></td><td>Human workspace</td><td>Visual browsing, lightweight pages, collaboration.</td></tr>
+              <tr><td><strong>Slack / Granola</strong></td><td>Capture</td><td>Fast intent, discussion, meetings, raw notes.</td></tr>
+              <tr><td><strong>Memory + Skills</strong></td><td>Personalization + reusable procedure</td><td>Preferences go in memory; workflows become skills.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="notes">3:35-4:35. The key line: chat is not memory; memory is not project canon.</aside>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="timecode">4:35</div>
+          <p class="eyebrow">Demo moment 1</p>
+          <h2>Capture messy intent, then route it.</h2>
+          <div class="accent lime"></div>
+          <div class="flow">
+            <div class="flow-step" data-step="01"><h3>Granola</h3><p>Meeting notes and transcript capture the messy conversation.</p></div>
+            <div class="flow-step" data-step="02"><h3>Slack</h3><p>Human intent becomes a command or request to the agent.</p></div>
+            <div class="flow-step" data-step="03"><h3>Agent</h3><p>Grounds itself in prior context before acting.</p></div>
+            <div class="flow-step" data-step="04"><h3>Promote</h3><p>Decisions, tasks, and docs move to the right surface.</p></div>
+            <div class="flow-step" data-step="05"><h3>Verify</h3><p>Agent reports what changed with links or diffs.</p></div>
+          </div>
+          <div class="demo-tag">Tab out: Granola notes → Slack request</div>
+        </div>
+        <aside class="notes">4:35-5:25. Show raw notes or current Slack thread. Emphasize capture is not canon.</aside>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="timecode">5:25</div>
+          <p class="eyebrow">Demo moment 2</p>
+          <h2>GitHub is where durable agent context hardens.</h2>
+          <div class="accent cyan"></div>
+          <div class="two-col">
+            <div class="card"><h3>Why GitHub?</h3><p>Markdown is inspectable. Diffs are reviewable. PRs create a human approval checkpoint.</p></div>
+            <div class="card"><h3>What to show</h3><p><strong>zerogen-os</strong>: AGENTS.md, source-of-truth rules, simplified docs, PR history.</p></div>
+          </div>
+          <div class="stack">
+            <div class="stack-row"><div class="role">Raw idea</div><p>“We should simplify how agents use Linear and Notion.”</p></div>
+            <div class="stack-row"><div class="role">Agent work</div><p>Inspects files, proposes structure, edits docs, opens or updates a PR.</p></div>
+            <div class="stack-row"><div class="role">Durable truth</div><p>Reviewed markdown becomes the operating manual future agents read.</p></div>
+          </div>
+          <div class="demo-tag">Tab out: GitHub repo / PR diff</div>
+        </div>
+        <aside class="notes">5:25-6:25. Show the actual repo. Keep explanation to source of truth + PR approval.</aside>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="timecode">6:25</div>
+          <p class="eyebrow">Demo moment 3</p>
+          <h2>Linear and Notion are useful because they are not the same thing.</h2>
+          <div class="accent lime"></div>
+          <div class="two-col">
+            <div class="card"><h3>Linear = execution</h3><p>Show ZeroGen Agent, ZeroGen OS, projects, issues, owners, priorities.</p></div>
+            <div class="card"><h3>Notion = workspace</h3><p>Show the human-facing ZeroGen pages: meetings, areas, lightweight overview.</p></div>
+          </div>
+          <p class="lead" style="margin-top:1.2em; max-width:1050px;">The agent does not treat every app as truth. It knows which surface answers which question.</p>
+          <div class="demo-tag">Tab out: Linear project → Notion teamspace</div>
+        </div>
+        <aside class="notes">6:25-7:25. Avoid repeating the table; just demonstrate the contrast.</aside>
+      </section>
+
+      <section>
+        <div class="slide-content">
+          <div class="timecode">7:25</div>
+          <p class="eyebrow">Guardrails</p>
+          <h2>Autonomy is scoped by what can go wrong.</h2>
+          <div class="accent pink"></div>
+          <div class="two-col">
+            <div class="card"><h3>Agent can do</h3><p>Read context, draft docs, summarize, propose changes, create artifacts, open PRs.</p></div>
+            <div class="card"><h3>Human approves</h3><p>Merge PRs, change product canon, mutate priorities, delete durable context, make irreversible external changes.</p></div>
+          </div>
+          <p class="lead" style="margin-top:1.3em; max-width:1040px;">The question is not “should agents be autonomous?” It is “autonomous over what?”</p>
+        </div>
+        <aside class="notes">7:25-8:25. This is the trust slide. Tie to why demos are safe to run live.</aside>
+      </section>
+
+      <section>
+        <div class="slide-content closing">
+          <div class="timecode">8:25</div>
+          <p class="eyebrow">Takeaway</p>
+          <h2>The agent is only as good as the world you give it to operate in.</h2>
+          <div class="accent cyan"></div>
+          <p class="lead">Don’t just build smarter agents. Build environments where agents know where truth lives, what they can change, when to ask, and how to improve the next run.</p>
+          <div class="three-col">
+            <div class="card"><h3>Next</h3><p>Meeting → decisions → issues → docs.</p></div>
+            <div class="card"><h3>Next</h3><p>Context librarian and drift detection.</p></div>
+            <div class="card"><h3>Next</h3><p>Agent swarms for specs, QA, and review.</p></div>
+          </div>
+        </div>
+        <aside class="notes">8:25-10:00. Close with future loop. Leave time for questions or a final demo glance.</aside>
+      </section>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script>
+    Reveal.initialize({ hash: true, width: 1920, height: 1080, margin: 0, controls: true, progress: true, center: false, plugins: [ RevealNotes ] });
+  </script>
+</body>
+</html>
