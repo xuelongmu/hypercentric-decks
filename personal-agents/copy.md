@@ -5,10 +5,10 @@
 ## Slide timing and talk track
 
 1. **Title — 0:00-0:45**
-   - “This is not a chatbot talk. This is about where agents live and how they safely act.”
+   - “This is an agent operating-system talk: where agents live, how they act, and how they stay safe.”
 
 2. **Thesis — 0:45-1:35**
-   - “The hard part is not giving agents tools. The hard part is giving them a place to stand.”
+   - “Tool access is table stakes. Coherent operating context is the unlock.”
 
 3. **What we built — 1:35-2:35**
    - Hermes / ZeroGen Agent as operator across Slack, GitHub, Linear, Notion, meetings, and terminal.
@@ -27,7 +27,7 @@
 
 6. **Demo 1 — 4:35-5:25**
    - Tab out to **Granola notes** and/or **Slack request**.
-   - Point: capture is raw material, not canon.
+   - Point: capture is raw material before promotion.
 
 7. **Demo 2 — 5:25-6:25**
    - Tab out to **GitHub zerogen-os repo / PR diff**.
@@ -35,7 +35,7 @@
 
 8. **Demo 3 — 6:25-7:25**
    - Tab out to **Linear project**, then **Notion teamspace**.
-   - Point: different tools have different jobs; agent knows which is which.
+   - Point: different tools have different jobs; the agent routes work accordingly.
 
 9. **Guardrails — 7:25-8:25**
    - Agent can read, draft, summarize, propose, open PRs.

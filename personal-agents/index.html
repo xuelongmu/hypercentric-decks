@@ -34,10 +34,10 @@
     h1,h2,h3 { color: var(--white); font-family: var(--font-heading); font-weight: 600; letter-spacing: .02em; line-height: 1.02; margin: 0; text-transform: uppercase; }
     h1 { font-size: 3.25em; max-width: 1080px; }
     h2 { font-size: 1.92em; max-width: 1120px; }
+    h2.context-title { font-size: 2.45em; max-width: 1280px; }
     h3 { font-size: .92em; }
     p,li,td,th { color: var(--muted); font-family: var(--font-body); font-weight: 300; line-height: 1.38; margin: 0; }
     strong { color: var(--white); font-weight: 700; }
-    .eyebrow { color: var(--cyan); font-family: var(--font-brand); font-size: .56em; letter-spacing: .16em; margin-bottom: .85em; text-transform: uppercase; }
     .accent { background: var(--lime); height: 3px; margin: .65em 0 1.0em; width: 92px; }
     .accent.cyan { background: var(--cyan); }
     .accent.pink { background: var(--pink); }
@@ -79,8 +79,8 @@
     .demo-tag { align-items: center; background: rgba(216,255,50,.12); border: 1px solid rgba(216,255,50,.55); bottom: 2.2em; color: var(--lime); display: inline-flex; font-family: var(--font-brand); font-size: .5em; gap: .6em; left: 3.1em; letter-spacing: .08em; padding: .75em .9em; position: absolute; text-transform: uppercase; }
     .demo-tag::before { content: '↗'; font-size: 1.3em; }
     .table { border-collapse: collapse; margin-top: 1.05em; width: 100%; }
-    .table th { color: var(--cyan); font-family: var(--font-brand); font-size: .5em; letter-spacing: .12em; padding: .85em; text-transform: uppercase; }
-    .table td { border-top: 1px solid var(--line); font-size: .68em; padding: .88em; vertical-align: top; }
+    .table th { color: var(--cyan); font-family: var(--font-brand); font-size: .56em; letter-spacing: .12em; padding: .85em; text-transform: uppercase; }
+    .table td { border-top: 1px solid var(--line); font-size: .78em; padding: .86em; vertical-align: top; }
     .pill-row { display: flex; flex-wrap: wrap; gap: .55em; margin-top: 1.1em; }
     .pill { border: 1px solid var(--line); color: var(--white); font-family: var(--font-condensed); font-size: .62em; letter-spacing: .08em; padding: .48em .75em; text-transform: uppercase; }
     .stack { display: flex; flex-direction: column; gap: .62em; margin-top: 1.05em; }
@@ -101,12 +101,11 @@
       <section>
         <div class="slide-content cover">
           <div class="brand-lockup"><div class="brand-symbol"></div><div class="brand-text">ZeroGen Agent</div></div>
-          <p class="eyebrow">Personal AI Agents Meetup</p>
           <h1>Personal Agents Need an Operating System</h1>
           <p class="subtitle">What we built: a Hermes-based AI operator across Slack, GitHub, Linear, Notion, meetings, and the terminal.</p>
           <div class="cover-meta"><span>10 minutes</span><span>demo-led</span><span>philosophy + architecture</span></div>
         </div>
-        <aside class="notes">0:00-0:45. Open with: this is not a chatbot talk; this is about where agents live and how they safely act.</aside>
+        <aside class="notes">0:00-0:45. Open with: this is an agent operating-system talk: where agents live, how they act, and how they stay safe.</aside>
       </section>
 
       <section>
@@ -114,7 +113,7 @@
           <div class="timecode">0:45</div>
           <div class="big-quote">
             <div class="quote-panel">
-              <div class="quote">The hard part is not giving agents tools.<br>The hard part is giving them a place to stand.</div>
+              <div class="quote">Tool access is table stakes.<br>Coherent operating context is the unlock.</div>
               <p class="quote-small">A useful personal agent needs source-of-truth rules, permissions, durable context, and a way to learn from repeated work.</p>
             </div>
           </div>
@@ -127,7 +126,6 @@
           <div class="timecode">1:35</div>
           <div class="split">
             <div>
-              <p class="eyebrow">What we built</p>
               <h2>From chatbot to operational teammate.</h2>
               <div class="accent cyan"></div>
               <p class="lead">ZeroGen Agent turns messy intent into grounded action across real tools.</p>
@@ -152,7 +150,6 @@
       <section>
         <div class="slide-content">
           <div class="timecode">2:35</div>
-          <p class="eyebrow">Design philosophy</p>
           <h2>Make the world legible to agents.</h2>
           <div class="accent lime"></div>
           <div class="three-col">
@@ -160,7 +157,7 @@
             <div class="card"><h3>2. Promote context</h3><p>Move important facts out of chat and into durable systems.</p></div>
             <div class="card"><h3>3. Bound autonomy</h3><p>Let the agent act where safe; require approval at mutation boundaries.</p></div>
           </div>
-          <p class="lead" style="margin-top:1.25em; max-width:1120px;">We do not just adapt the agent to the workspace. We adapt the workspace so humans and agents can collaborate reliably.</p>
+          <p class="lead" style="margin-top:1.25em; max-width:1120px;">We make the workspace legible enough for humans and agents to collaborate reliably.</p>
         </div>
         <aside class="notes">2:35-3:35. This is the most philosophical slide. Keep it to three principles.</aside>
       </section>
@@ -168,8 +165,7 @@
       <section>
         <div class="slide-content">
           <div class="timecode">3:35</div>
-          <p class="eyebrow">The context stack</p>
-          <h2>Every surface gets one job.</h2>
+          <h2 class="context-title">Every surface gets one job.</h2>
           <div class="accent cyan"></div>
           <table class="table">
             <thead><tr><th>Surface</th><th>Role</th><th>Why it matters</th></tr></thead>
@@ -182,13 +178,12 @@
             </tbody>
           </table>
         </div>
-        <aside class="notes">3:35-4:35. The key line: chat is not memory; memory is not project canon.</aside>
+        <aside class="notes">3:35-4:35. The key line: chat captures intent; GitHub carries project canon; memory carries stable preferences.</aside>
       </section>
 
       <section>
         <div class="slide-content">
           <div class="timecode">4:35</div>
-          <p class="eyebrow">Demo moment 1</p>
           <h2>Capture messy intent, then route it.</h2>
           <div class="accent lime"></div>
           <div class="flow">
@@ -200,13 +195,12 @@
           </div>
           <div class="demo-tag">Tab out: Granola notes → Slack request</div>
         </div>
-        <aside class="notes">4:35-5:25. Show raw notes or current Slack thread. Emphasize capture is not canon.</aside>
+        <aside class="notes">4:35-5:25. Show raw notes or current Slack thread. Emphasize capture as raw material before promotion.</aside>
       </section>
 
       <section>
         <div class="slide-content">
           <div class="timecode">5:25</div>
-          <p class="eyebrow">Demo moment 2</p>
           <h2>GitHub is where durable agent context hardens.</h2>
           <div class="accent cyan"></div>
           <div class="two-col">
@@ -226,14 +220,13 @@
       <section>
         <div class="slide-content">
           <div class="timecode">6:25</div>
-          <p class="eyebrow">Demo moment 3</p>
-          <h2>Linear and Notion are useful because they are not the same thing.</h2>
+          <h2>Linear and Notion each have a clear job.</h2>
           <div class="accent lime"></div>
           <div class="two-col">
             <div class="card"><h3>Linear = execution</h3><p>Show ZeroGen Agent, ZeroGen OS, projects, issues, owners, priorities.</p></div>
             <div class="card"><h3>Notion = workspace</h3><p>Show the human-facing ZeroGen pages: meetings, areas, lightweight overview.</p></div>
           </div>
-          <p class="lead" style="margin-top:1.2em; max-width:1050px;">The agent does not treat every app as truth. It knows which surface answers which question.</p>
+          <p class="lead" style="margin-top:1.2em; max-width:1050px;">The agent routes each question to the surface designed to answer it.</p>
           <div class="demo-tag">Tab out: Linear project → Notion teamspace</div>
         </div>
         <aside class="notes">6:25-7:25. Avoid repeating the table; just demonstrate the contrast.</aside>
@@ -242,14 +235,13 @@
       <section>
         <div class="slide-content">
           <div class="timecode">7:25</div>
-          <p class="eyebrow">Guardrails</p>
           <h2>Autonomy is scoped by what can go wrong.</h2>
           <div class="accent pink"></div>
           <div class="two-col">
             <div class="card"><h3>Agent can do</h3><p>Read context, draft docs, summarize, propose changes, create artifacts, open PRs.</p></div>
             <div class="card"><h3>Human approves</h3><p>Merge PRs, change product canon, mutate priorities, delete durable context, make irreversible external changes.</p></div>
           </div>
-          <p class="lead" style="margin-top:1.3em; max-width:1040px;">The question is not “should agents be autonomous?” It is “autonomous over what?”</p>
+          <p class="lead" style="margin-top:1.3em; max-width:1040px;">The useful question: “autonomous over what, with which approval boundary?”</p>
         </div>
         <aside class="notes">7:25-8:25. This is the trust slide. Tie to why demos are safe to run live.</aside>
       </section>
@@ -257,10 +249,9 @@
       <section>
         <div class="slide-content closing">
           <div class="timecode">8:25</div>
-          <p class="eyebrow">Takeaway</p>
           <h2>The agent is only as good as the world you give it to operate in.</h2>
           <div class="accent cyan"></div>
-          <p class="lead">Don’t just build smarter agents. Build environments where agents know where truth lives, what they can change, when to ask, and how to improve the next run.</p>
+          <p class="lead">Build environments where agents know where truth lives, what they can change, when to ask, and how to improve the next run.</p>
           <div class="three-col">
             <div class="card"><h3>Next</h3><p>Meeting → decisions → issues → docs.</p></div>
             <div class="card"><h3>Next</h3><p>Context librarian and drift detection.</p></div>
