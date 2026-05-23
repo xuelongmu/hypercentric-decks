@@ -86,6 +86,8 @@
     .stack-row { align-items: center; background: var(--panel); border: 1px solid var(--line); display: grid; gap: .9em; grid-template-columns: 220px 1fr; padding: .74em .9em; }
     .stack-row .role { color: var(--lime); font-family: var(--font-heading); font-size: .82em; text-transform: uppercase; }
     .stack-row p { font-size: .62em; }
+    .idea-list { margin: 0; padding-left: 1.05em; }
+    .idea-list li { font-size: .58em; line-height: 1.26; margin: .12em 0; }
     .closing { justify-content: center; }
     .closing h2 { font-size: 2.4em; max-width: 1260px; }
     .closing .lead { margin-top: .8em; }
@@ -199,7 +201,7 @@
             <div class="card"><h3>What to show</h3><p><strong>zerogen-os</strong>: AGENTS.md, source-of-truth rules, simplified docs, PR history.</p></div>
           </div>
           <div class="stack">
-            <div class="stack-row"><div class="role">Raw idea</div><p>“We should simplify how agents use Linear and Notion.”</p></div>
+            <div class="stack-row"><div class="role">Raw idea</div><ul class="idea-list"><li>A librarian agent that prunes outdated context.</li><li>A Google Drive integration with explicit rules for what lives there and how it is used.</li><li>A strategy shift for a generative media platform: advertising and marketing toward film and TV.</li></ul></div>
             <div class="stack-row"><div class="role">Agent work</div><p>Inspects files, proposes structure, edits docs, opens or updates a PR.</p></div>
             <div class="stack-row"><div class="role">Durable truth</div><p>Reviewed markdown becomes the operating manual future agents read.</p></div>
           </div>

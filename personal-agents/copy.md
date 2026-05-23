@@ -32,6 +32,10 @@ Talk deck for a personal AI agents meetup.
 7. **Demo 2**
    - Tab out to **GitHub zerogen-os repo / PR diff**.
    - Point: durable context hardens through markdown, diffs, and PR review.
+   - Raw idea examples to name quickly:
+     - A librarian agent that prunes outdated context.
+     - A Google Drive integration with explicit rules for what lives there and how it is used.
+     - A strategy shift for a generative media platform: advertising and marketing toward film and TV.
 
 8. **Demo 3**
    - Tab out to **Linear project**, then **Notion teamspace**.
