@@ -67,7 +67,7 @@
     .node.center { background: #050505; border-color: var(--cyan); left: calc(50% - 155px); top: 245px; width: 310px; }
     .node .label { color: var(--white); display: block; font-family: var(--font-heading); font-size: .82em; text-transform: uppercase; }
     .node .sub { color: var(--quiet); display: block; font-size: .78em; font-weight: 300; margin-top: .25em; }
-    .n1 { left: 0; top: 22px; } .n2 { right: 0; top: 22px; } .n3 { left: 0; bottom: 140px; } .n4 { right: 0; bottom: 140px; } .n5 { left: calc(50% - 122px); top: 0; }
+    .n1 { left: 0; top: 22px; } .n2 { right: -30px; top: 22px; } .n3 { left: 0; bottom: 105px; } .n4 { right: 0; bottom: 105px; } .n5 { left: calc(50% - 122px); top: 0; }
     .diagram-lines { height: 100%; inset: 0; pointer-events: none; position: absolute; width: 100%; z-index: 0; }
     .diagram-lines line { stroke: var(--line); stroke-width: 2; vector-effect: non-scaling-stroke; }
     .flow { align-items: stretch; display: grid; gap: .45em; grid-template-columns: repeat(5, 1fr); margin-top: 1.4em; }
@@ -77,10 +77,9 @@
     .flow-step p { font-size: .87em; }
     .demo-tag { align-items: center; background: rgba(216,255,50,.12); border: 1px solid rgba(216,255,50,.55); bottom: 2.2em; color: var(--lime); display: inline-flex; font-family: var(--font-brand); font-size: .5em; gap: .6em; left: 3.1em; letter-spacing: .08em; padding: .75em .9em; position: absolute; text-transform: uppercase; }
     .demo-tag::before { content: '↗'; font-size: 1.3em; }
-    .qr-card { align-items: center; background: rgba(0,0,0,.66); border: 1px solid var(--line); bottom: 2.2em; display: flex; gap: .72em; left: 3.1em; padding: .62em .75em; position: absolute; }
-    .qr-card img { background: var(--white); display: block; height: 118px; padding: 6px; width: 118px; }
-    .qr-card p { color: var(--white); font-family: var(--font-brand); font-size: .5em; letter-spacing: .08em; line-height: 1.25; text-transform: uppercase; }
-    .qr-card span { color: var(--quiet); display: block; font-family: var(--font-body); font-size: 1.1em; font-weight: 300; letter-spacing: 0; margin-top: .35em; text-transform: none; }
+    .qr-card { align-items: center; background: rgba(0,0,0,.66); border: 1px solid var(--line); bottom: 1.7em; display: flex; flex-direction: column; gap: .45em; left: 3.1em; padding: .7em; position: absolute; }
+    .qr-card img { background: var(--white); display: block; height: 182px; padding: 8px; width: 182px; }
+    .qr-card p { color: var(--white); font-family: var(--font-brand); font-size: .54em; letter-spacing: .08em; line-height: 1.15; text-align: center; text-transform: uppercase; }
     .table { border-collapse: collapse; margin-top: .75em; width: 100%; }
     .table th { color: var(--cyan); font-family: var(--font-brand); font-size: .66em; letter-spacing: .12em; padding: .65em .75em; text-transform: uppercase; }
     .table td { border-top: 1px solid var(--line); font-size: 1.0em; padding: .62em .75em; vertical-align: top; }
@@ -137,17 +136,17 @@
                 <span class="pill">inspect repos</span><span class="pill">edit docs</span><span class="pill">open PRs</span><span class="pill">manage project context</span><span class="pill">summarize meetings</span><span class="pill">reuse skills</span>
               </div>
               <div class="qr-card">
+                <p>Scan for slides</p>
                 <img src="assets/presentation-qr.svg" alt="QR code for this presentation">
-                <p>Scan for slides<span>hypercentric-decks.pages.dev/personal-agents</span></p>
               </div>
             </div>
             <div class="diagram">
               <svg class="diagram-lines" viewBox="0 0 930 620" preserveAspectRatio="none" aria-hidden="true">
                 <line x1="245" y1="98" x2="375" y2="245"></line>
-                <line x1="685" y1="98" x2="555" y2="245"></line>
+                <line x1="720" y1="98" x2="555" y2="245"></line>
                 <line x1="465" y1="98" x2="465" y2="245"></line>
-                <line x1="390" y1="342" x2="122" y2="384"></line>
-                <line x1="540" y1="342" x2="807" y2="384"></line>
+                <line x1="390" y1="342" x2="122" y2="420"></line>
+                <line x1="540" y1="342" x2="807" y2="420"></line>
               </svg>
               <div class="node n1"><span class="label">Slack</span><span class="sub">intent + commands</span></div>
               <div class="node n2"><span class="label">GitHub</span><span class="sub">durable truth + diffs</span></div>
