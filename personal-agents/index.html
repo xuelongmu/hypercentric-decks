@@ -37,6 +37,8 @@
     h2.context-title { font-size: 2.45em; max-width: 1280px; }
     h3 { font-size: .92em; }
     p,li,td,th { color: var(--muted); font-family: var(--font-body); font-weight: 300; line-height: 1.38; margin: 0; }
+    a { color: inherit; text-decoration-color: rgba(0,255,255,.55); text-underline-offset: .12em; }
+    a:hover { color: var(--cyan); }
     strong { color: var(--white); font-weight: 700; }
     .accent { background: var(--lime); height: 3px; margin: .65em 0 1.0em; width: 92px; }
     .accent.cyan { background: var(--cyan); }
@@ -75,9 +77,15 @@
     .flow-step p { font-size: .87em; }
     .demo-tag { align-items: center; background: rgba(216,255,50,.12); border: 1px solid rgba(216,255,50,.55); bottom: 2.2em; color: var(--lime); display: inline-flex; font-family: var(--font-brand); font-size: .5em; gap: .6em; left: 3.1em; letter-spacing: .08em; padding: .75em .9em; position: absolute; text-transform: uppercase; }
     .demo-tag::before { content: '↗'; font-size: 1.3em; }
-    .table { border-collapse: collapse; margin-top: 1.05em; width: 100%; }
+    .qr-card { align-items: center; background: rgba(0,0,0,.66); border: 1px solid var(--line); bottom: 2.2em; display: flex; gap: .72em; left: 3.1em; padding: .62em .75em; position: absolute; }
+    .qr-card img { background: var(--white); display: block; height: 118px; padding: 6px; width: 118px; }
+    .qr-card p { color: var(--white); font-family: var(--font-brand); font-size: .5em; letter-spacing: .08em; line-height: 1.25; text-transform: uppercase; }
+    .qr-card span { color: var(--quiet); display: block; font-family: var(--font-body); font-size: 1.1em; font-weight: 300; letter-spacing: 0; margin-top: .35em; text-transform: none; }
+    .table { border-collapse: collapse; margin-top: .75em; width: 100%; }
     .table th { color: var(--cyan); font-family: var(--font-brand); font-size: .66em; letter-spacing: .12em; padding: .65em .75em; text-transform: uppercase; }
     .table td { border-top: 1px solid var(--line); font-size: 1.0em; padding: .62em .75em; vertical-align: top; }
+    .integration-note { color: var(--white); font-size: .8em; max-width: 1180px; }
+    .integration-note a { color: var(--cyan); }
     .pill-row { display: flex; flex-wrap: wrap; gap: .55em; margin-top: 1.1em; }
     .pill { border: 1px solid var(--line); color: var(--white); font-family: var(--font-condensed); font-size: .62em; letter-spacing: .08em; padding: .48em .75em; text-transform: uppercase; }
     .stack { display: flex; flex-direction: column; gap: .62em; margin-top: 1.05em; }
@@ -128,6 +136,10 @@
               <div class="pill-row">
                 <span class="pill">inspect repos</span><span class="pill">edit docs</span><span class="pill">open PRs</span><span class="pill">manage project context</span><span class="pill">summarize meetings</span><span class="pill">reuse skills</span>
               </div>
+              <div class="qr-card">
+                <img src="assets/presentation-qr.svg" alt="QR code for this presentation">
+                <p>Scan for slides<span>hypercentric-decks.pages.dev/personal-agents</span></p>
+              </div>
             </div>
             <div class="diagram">
               <svg class="diagram-lines" viewBox="0 0 930 620" preserveAspectRatio="none" aria-hidden="true">
@@ -166,14 +178,15 @@
         <div class="slide-content">
           <h2 class="context-title">Every surface gets one job.</h2>
           <div class="accent cyan"></div>
+          <p class="integration-note"><a href="https://composio.dev" target="_blank" rel="noopener">composio.dev</a> is one practical way to connect these tools while keeping the operating rules explicit.</p>
           <table class="table">
             <thead><tr><th>Surface</th><th>Role</th><th>Why it matters</th></tr></thead>
             <tbody>
-              <tr><td><strong>GitHub</strong></td><td>Canonical operating context</td><td>Versioned, diffable, reviewable, agent-readable.</td></tr>
-              <tr><td><strong>Linear</strong></td><td>Execution state</td><td>Issues, priorities, projects, ownership.</td></tr>
-              <tr><td><strong>Notion</strong></td><td>Human workspace</td><td>Visual browsing, lightweight pages, collaboration.</td></tr>
-              <tr><td><strong>Slack / Granola</strong></td><td>Capture</td><td>Fast intent, discussion, meetings, raw notes.</td></tr>
-              <tr><td><strong>Memory + Skills</strong></td><td>Personalization + reusable procedure</td><td>Preferences go in memory; workflows become skills.</td></tr>
+              <tr><td><strong><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></strong></td><td>Canonical operating context</td><td>Versioned, diffable, reviewable, agent-readable.</td></tr>
+              <tr><td><strong><a href="https://linear.app" target="_blank" rel="noopener">Linear</a></strong></td><td>Execution state</td><td>Issues, priorities, projects, ownership.</td></tr>
+              <tr><td><strong><a href="https://notion.so" target="_blank" rel="noopener">Notion</a></strong></td><td>Human workspace</td><td>Visual browsing, lightweight pages, collaboration.</td></tr>
+              <tr><td><strong><a href="https://slack.com" target="_blank" rel="noopener">Slack</a> / <a href="https://www.granola.ai" target="_blank" rel="noopener">Granola</a></strong></td><td>Capture</td><td>Fast intent, discussion, meetings, raw notes.</td></tr>
+              <tr><td><strong><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">Memory + Skills</a></strong></td><td>Personalization + reusable procedure</td><td>Preferences go in memory; workflows become skills.</td></tr>
             </tbody>
           </table>
         </div>
