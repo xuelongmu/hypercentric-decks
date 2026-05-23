@@ -41,8 +41,8 @@
     .accent { background: var(--lime); height: 3px; margin: .65em 0 1.0em; width: 92px; }
     .accent.cyan { background: var(--cyan); }
     .accent.pink { background: var(--pink); }
-    .lead { color: var(--white); font-family: var(--font-light); font-size: 1.03em; font-weight: 400; max-width: 900px; }
-    .body { font-size: .72em; max-width: 920px; }
+    .lead { color: var(--white); font-family: var(--font-light); font-size: 1.18em; font-weight: 400; max-width: 980px; }
+    .body { font-size: 1.08em; max-width: 920px; }
     .muted { color: var(--quiet) !important; }
     .brand-lockup { align-items: center; display: flex; gap: .75em; left: 3.1em; position: absolute; top: 2.0em; }
     .brand-symbol { background: url('assets/ZeroSpace_Labs_Symbol_Transparent.webp') center/contain no-repeat; height: 54px; width: 54px; }
@@ -55,7 +55,7 @@
     .three-col { display: grid; gap: .8em; grid-template-columns: repeat(3, 1fr); margin-top: 1.1em; }
     .card { background: rgba(30,30,30,.88); border: 1px solid var(--line); box-shadow: 0 18px 52px rgba(0,0,0,.35); padding: .95em; }
     .card h3 { color: var(--cyan); margin-bottom: .42em; }
-    .card p { font-size: .64em; }
+    .card p { font-size: .96em; }
     .big-quote { align-items: center; display: flex; height: 100%; justify-content: center; text-align: center; }
     .quote-panel { background: rgba(0,0,0,.62); border: 1px solid var(--line); max-width: 1260px; padding: 1.3em 1.55em; }
     .quote { font-family: var(--font-heading); font-size: 2.05em; line-height: 1.1; text-transform: uppercase; }
@@ -64,30 +64,28 @@
     .node { background: var(--panel); border: 2px solid var(--line); border-radius: 8px; box-shadow: 0 18px 45px rgba(0,0,0,.3); padding: .72em .82em; position: absolute; text-align: center; width: 245px; z-index: 2; }
     .node.center { background: #050505; border-color: var(--cyan); left: calc(50% - 155px); top: 245px; width: 310px; }
     .node .label { color: var(--white); display: block; font-family: var(--font-heading); font-size: .82em; text-transform: uppercase; }
-    .node .sub { color: var(--quiet); display: block; font-size: .52em; font-weight: 300; margin-top: .25em; }
-    .n1 { left: 0; top: 22px; } .n2 { right: 0; top: 22px; } .n3 { left: 0; bottom: 36px; } .n4 { right: 0; bottom: 36px; } .n5 { left: calc(50% - 122px); top: 0; }
-    .line { background: var(--line); height: 2px; position: absolute; transform-origin: left center; z-index: 0; }
-    .l1 { left: 245px; top: 116px; transform: rotate(31deg); width: 350px; } .l2 { left: 675px; top: 116px; transform: rotate(149deg); width: 350px; }
-    .l3 { left: 525px; top: 460px; transform: rotate(145deg); width: 335px; } .l4 { left: 610px; top: 460px; transform: rotate(35deg); width: 135px; }
-    .l5 { left: calc(50% - 1px); top: 106px; transform: rotate(90deg); width: 145px; }
+    .node .sub { color: var(--quiet); display: block; font-size: .78em; font-weight: 300; margin-top: .25em; }
+    .n1 { left: 0; top: 22px; } .n2 { right: 0; top: 22px; } .n3 { left: 0; bottom: 140px; } .n4 { right: 0; bottom: 140px; } .n5 { left: calc(50% - 122px); top: 0; }
+    .diagram-lines { height: 100%; inset: 0; pointer-events: none; position: absolute; width: 100%; z-index: 0; }
+    .diagram-lines line { stroke: var(--line); stroke-width: 2; vector-effect: non-scaling-stroke; }
     .flow { align-items: stretch; display: grid; gap: .45em; grid-template-columns: repeat(5, 1fr); margin-top: 1.4em; }
     .flow-step { background: var(--panel); border: 1px solid var(--line); min-height: 176px; padding: .85em; position: relative; }
     .flow-step::before { color: var(--lime); content: attr(data-step); font-family: var(--font-brand); font-size: .48em; letter-spacing: .1em; position: absolute; right: .85em; top: .85em; }
     .flow-step h3 { color: var(--white); margin-bottom: .75em; padding-right: 2.2em; }
-    .flow-step p { font-size: .58em; }
+    .flow-step p { font-size: .87em; }
     .demo-tag { align-items: center; background: rgba(216,255,50,.12); border: 1px solid rgba(216,255,50,.55); bottom: 2.2em; color: var(--lime); display: inline-flex; font-family: var(--font-brand); font-size: .5em; gap: .6em; left: 3.1em; letter-spacing: .08em; padding: .75em .9em; position: absolute; text-transform: uppercase; }
     .demo-tag::before { content: '↗'; font-size: 1.3em; }
     .table { border-collapse: collapse; margin-top: 1.05em; width: 100%; }
-    .table th { color: var(--cyan); font-family: var(--font-brand); font-size: .56em; letter-spacing: .12em; padding: .85em; text-transform: uppercase; }
-    .table td { border-top: 1px solid var(--line); font-size: .78em; padding: .86em; vertical-align: top; }
+    .table th { color: var(--cyan); font-family: var(--font-brand); font-size: .66em; letter-spacing: .12em; padding: .65em .75em; text-transform: uppercase; }
+    .table td { border-top: 1px solid var(--line); font-size: 1.0em; padding: .62em .75em; vertical-align: top; }
     .pill-row { display: flex; flex-wrap: wrap; gap: .55em; margin-top: 1.1em; }
     .pill { border: 1px solid var(--line); color: var(--white); font-family: var(--font-condensed); font-size: .62em; letter-spacing: .08em; padding: .48em .75em; text-transform: uppercase; }
     .stack { display: flex; flex-direction: column; gap: .62em; margin-top: 1.05em; }
     .stack-row { align-items: center; background: var(--panel); border: 1px solid var(--line); display: grid; gap: .9em; grid-template-columns: 220px 1fr; padding: .74em .9em; }
     .stack-row .role { color: var(--lime); font-family: var(--font-heading); font-size: .82em; text-transform: uppercase; }
-    .stack-row p { font-size: .62em; }
+    .stack-row p { font-size: .93em; }
     .idea-list { margin: 0; padding-left: 1.05em; }
-    .idea-list li { font-size: .58em; line-height: 1.26; margin: .12em 0; }
+    .idea-list li { font-size: .87em; line-height: 1.26; margin: .12em 0; }
     .closing { justify-content: center; }
     .closing h2 { font-size: 2.4em; max-width: 1260px; }
     .closing .lead { margin-top: .8em; }
@@ -132,7 +130,13 @@
               </div>
             </div>
             <div class="diagram">
-              <div class="line l1"></div><div class="line l2"></div><div class="line l3"></div><div class="line l4"></div><div class="line l5"></div>
+              <svg class="diagram-lines" viewBox="0 0 930 620" preserveAspectRatio="none" aria-hidden="true">
+                <line x1="245" y1="98" x2="375" y2="245"></line>
+                <line x1="685" y1="98" x2="555" y2="245"></line>
+                <line x1="465" y1="98" x2="465" y2="245"></line>
+                <line x1="390" y1="342" x2="122" y2="384"></line>
+                <line x1="540" y1="342" x2="807" y2="384"></line>
+              </svg>
               <div class="node n1"><span class="label">Slack</span><span class="sub">intent + commands</span></div>
               <div class="node n2"><span class="label">GitHub</span><span class="sub">durable truth + diffs</span></div>
               <div class="node n3"><span class="label">Linear</span><span class="sub">execution state</span></div>
