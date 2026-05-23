@@ -70,6 +70,8 @@
     .n1 { left: 0; top: 22px; } .n2 { right: -30px; top: 22px; } .n3 { left: 0; bottom: 105px; } .n4 { right: 0; bottom: 105px; } .n5 { left: calc(50% - 122px); top: 0; }
     .diagram-lines { height: 100%; inset: 0; pointer-events: none; position: absolute; width: 100%; z-index: 0; }
     .diagram-lines line { stroke: var(--line); stroke-width: 2; vector-effect: non-scaling-stroke; }
+    .diagram-note { bottom: 18px; color: var(--white); font-family: var(--font-brand); font-size: .58em; left: 0; letter-spacing: .08em; line-height: 1.25; position: absolute; right: 0; text-align: center; text-transform: uppercase; z-index: 3; }
+    .diagram-note a { color: var(--cyan); }
     .flow { align-items: stretch; display: grid; gap: .45em; grid-template-columns: repeat(5, 1fr); margin-top: 1.4em; }
     .flow-step { background: var(--panel); border: 1px solid var(--line); min-height: 176px; padding: .85em; position: relative; }
     .flow-step::before { color: var(--lime); content: attr(data-step); font-family: var(--font-brand); font-size: .48em; letter-spacing: .1em; position: absolute; right: .85em; top: .85em; }
@@ -154,6 +156,7 @@
               <div class="node n4"><span class="label">Notion</span><span class="sub">human workspace</span></div>
               <div class="node n5"><span class="label">Meetings</span><span class="sub">ambient capture</span></div>
               <div class="node center"><span class="label">Hermes / ZeroGen Agent</span><span class="sub">reasoning + tools + memory + skills</span></div>
+              <p class="diagram-note">Integrations via <a href="https://composio.dev" target="_blank" rel="noopener">composio.dev</a></p>
             </div>
           </div>
         </div>
